@@ -38,7 +38,7 @@
             "name": "Forward Observer's Camouflage Cloak",
             "itemID": 124132,
             "sourceID": 95068,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -60,7 +60,7 @@
             "name": "Windswept Wanderer's Drape",
             "itemID": 124133,
             "sourceID": 92146,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -82,7 +82,7 @@
             "name": "Cloak of Desperate Temerity",
             "itemID": 124134,
             "sourceID": 95067,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -104,7 +104,7 @@
             "name": "Cloak of Tangible Dread",
             "itemID": 124135,
             "sourceID": 91349,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -128,7 +128,7 @@
             "name": "Sparkburnt Welder's Cloak",
             "itemID": 124136,
             "sourceID": 95068,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -152,7 +152,7 @@
             "name": "Shawl of Sanguinary Ritual",
             "itemID": 124137,
             "sourceID": 90378,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -176,7 +176,7 @@
             "name": "Cloak of Hideous Unity",
             "itemID": 124138,
             "sourceID": 89890,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -194,7 +194,7 @@
             "name": "Polymorphic Cloak of Absorption",
             "itemID": 124139,
             "sourceID": 90776,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -212,7 +212,7 @@
             "name": "Cloak of Insatiable Greed",
             "itemID": 124140,
             "sourceID": 91809,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -230,7 +230,7 @@
             "name": "Drape of Beckoned Souls",
             "itemID": 124141,
             "sourceID": 90296,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -250,7 +250,7 @@
             "name": "Rugged Bloodcaked Drape",
             "itemID": 124142,
             "sourceID": 92146,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -270,7 +270,7 @@
             "name": "Soulbinder's Greatcloak",
             "itemID": 124143,
             "sourceID": 90296,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -290,7 +290,7 @@
             "name": "Cloak of Incendiary Wrath",
             "itemID": 124144,
             "sourceID": 91331,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -308,7 +308,7 @@
             "name": "Ironthread Greatcloak",
             "itemID": 124145,
             "sourceID": 90284,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -326,7 +326,7 @@
             "name": "Drape of Gluttony",
             "itemID": 124146,
             "sourceID": 91809,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -344,7 +344,7 @@
             "name": "Void Lord's Wizened Cloak",
             "itemID": 124147,
             "sourceID": 93068,
-            "slot": "cloak"
+            "slot": "back"
         },
         {
             "allowed": {
@@ -362,7 +362,7 @@
             "name": "Pedal-Pushing Sandals",
             "itemID": 124148,
             "sourceID": 90284,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -380,7 +380,7 @@
             "name": "Bloody Dagger-Heeled Pumps",
             "itemID": 124149,
             "sourceID": 89890,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -398,7 +398,7 @@
             "name": "Dessicated Soulrender Slippers",
             "itemID": 124150,
             "sourceID": 7545,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -470,7 +470,7 @@
             "name": "Cowl of a Thousand Hungers",
             "itemID": 124157,
             "sourceID": 91809,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -488,7 +488,7 @@
             "name": "Countenance of the Revenant",
             "itemID": 124158,
             "sourceID": 93068,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -506,7 +506,7 @@
             "name": "Demon Prince's Ascendant Crown",
             "itemID": 124159,
             "sourceID": 91331,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -614,7 +614,7 @@
             "name": "Pilot's Pauldrons",
             "itemID": 124174,
             "sourceID": 90284,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -632,7 +632,7 @@
             "name": "Amice of Phantasmal Power",
             "itemID": 124175,
             "sourceID": 95067,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -650,7 +650,7 @@
             "name": "Mantle of the Eredar Lord",
             "itemID": 124176,
             "sourceID": 91331,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -668,7 +668,7 @@
             "name": "Sludge-Soaked Waistband",
             "itemID": 124180,
             "sourceID": 90776,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -686,7 +686,7 @@
             "name": "Sash of Unending Anguish",
             "itemID": 124181,
             "sourceID": 89890,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -704,7 +704,7 @@
             "name": "Cord of Unhinged Malice",
             "itemID": 124182,
             "sourceID": 7545,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -722,7 +722,7 @@
             "name": "Powder-Singed Bracers",
             "itemID": 124183,
             "sourceID": 95068,
-            "slot": "bracers"
+            "slot": "wrist"
         },
         {
             "allowed": {
@@ -740,7 +740,7 @@
             "name": "Cursed Blood Bracers",
             "itemID": 124184,
             "sourceID": 92146,
-            "slot": "bracers"
+            "slot": "wrist"
         },
         {
             "allowed": {
@@ -758,7 +758,7 @@
             "name": "Pristine Man'ari Cuffs",
             "itemID": 124185,
             "sourceID": 90296,
-            "slot": "bracers"
+            "slot": "wrist"
         },
         {
             "allowed": {
@@ -776,7 +776,7 @@
             "name": "Contemptuous Wristguards",
             "itemID": 124186,
             "sourceID": 93439,
-            "slot": "bracers"
+            "slot": "wrist"
         },
         {
             "allowed": {
@@ -798,7 +798,7 @@
             "name": "Pit-Extracted Stone Signet",
             "itemID": 124187,
             "sourceID": 90776,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -820,7 +820,7 @@
             "name": "Serrated Demontooth Ring",
             "itemID": 124188,
             "sourceID": 91809,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -842,7 +842,7 @@
             "name": "Portal Key Signet",
             "itemID": 124189,
             "sourceID": 93068,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -866,7 +866,7 @@
             "name": "Sootstained Felsworn Signet",
             "itemID": 124190,
             "sourceID": 95068,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -890,7 +890,7 @@
             "name": "Seal of the Traitorous Councilor",
             "itemID": 124191,
             "sourceID": 90296,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -914,7 +914,7 @@
             "name": "Loathful Encrusted Band",
             "itemID": 124192,
             "sourceID": 93439,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -932,7 +932,7 @@
             "name": "Shimmering Voidstone Band",
             "itemID": 124193,
             "sourceID": 92146,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -950,7 +950,7 @@
             "name": "Ring of Foul Temptation",
             "itemID": 124194,
             "sourceID": 95067,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -968,7 +968,7 @@
             "name": "Pompous Ceremonial Ring",
             "itemID": 124195,
             "sourceID": 93439,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -988,7 +988,7 @@
             "name": "Flanged Gasket",
             "itemID": 124196,
             "sourceID": 90284,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -1008,7 +1008,7 @@
             "name": "Congealed Globule Loop",
             "itemID": 124197,
             "sourceID": 90378,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -1028,7 +1028,7 @@
             "name": "Band of Enthralling Delusion",
             "itemID": 124198,
             "sourceID": 95067,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -1048,7 +1048,7 @@
             "name": "Loop of Beckoned Shadows",
             "itemID": 124199,
             "sourceID": 93068,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -1066,7 +1066,7 @@
             "name": "Demonbuckle Sash of Argus",
             "itemID": 124200,
             "sourceID": 91331,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -1084,7 +1084,7 @@
             "name": "Mar'tak's Rugged Seal",
             "itemID": 124201,
             "sourceID": 95068,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -1102,7 +1102,7 @@
             "name": "Filigreed Loop of Zealotry",
             "itemID": 124202,
             "sourceID": 95067,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -1120,7 +1120,7 @@
             "name": "Zakuun's Signet of Command",
             "itemID": 124203,
             "sourceID": 89890,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -1138,7 +1138,7 @@
             "name": "Mannoroth's Calcified Eye",
             "itemID": 124204,
             "sourceID": 91349,
-            "slot": "ring"
+            "slot": "finger"
         },
         {
             "allowed": {
@@ -1208,7 +1208,7 @@
             "name": "Faulty Detonator Cord",
             "itemID": 124207,
             "sourceID": 95068,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1230,7 +1230,7 @@
             "name": "Heartseeking Skull Pendant",
             "itemID": 124208,
             "sourceID": 90378,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1252,7 +1252,7 @@
             "name": "Chain of Lidless Eyes",
             "itemID": 124209,
             "sourceID": 89890,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1274,7 +1274,7 @@
             "name": "Choker of the Great Betrayer",
             "itemID": 124210,
             "sourceID": 91331,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1298,7 +1298,7 @@
             "name": "Glowing Firestone",
             "itemID": 124211,
             "sourceID": 90776,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1322,7 +1322,7 @@
             "name": "Vial of Immiscible Liquid",
             "itemID": 124212,
             "sourceID": 93068,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1346,7 +1346,7 @@
             "name": "Voltage Regulation Diode",
             "itemID": 124213,
             "sourceID": 90284,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1364,7 +1364,7 @@
             "name": "Choker of Whispered Promises",
             "itemID": 124214,
             "sourceID": 89890,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1382,7 +1382,7 @@
             "name": "Locket of Unholy Reconstitution",
             "itemID": 124215,
             "sourceID": 91349,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1402,7 +1402,7 @@
             "name": "Bolt-Latched Felsteel Gorget",
             "itemID": 124216,
             "sourceID": 95068,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1422,7 +1422,7 @@
             "name": "Shadowgorged Iron Choker",
             "itemID": 124217,
             "sourceID": 90776,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1442,7 +1442,7 @@
             "name": "Corrupted Talonguard Pendant",
             "itemID": 124218,
             "sourceID": 95067,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1462,7 +1462,7 @@
             "name": "Choker of Sneering Superiority",
             "itemID": 124219,
             "sourceID": 93439,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1480,7 +1480,7 @@
             "name": "Spiked Bloodstone Pendant",
             "itemID": 124220,
             "sourceID": 92146,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1498,7 +1498,7 @@
             "name": "Contained Fel Orb Locket",
             "itemID": 124221,
             "sourceID": 90296,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -1516,7 +1516,7 @@
             "name": "World Ender's Gorget",
             "itemID": 124222,
             "sourceID": 91331,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -2008,7 +2008,7 @@
             "name": "Spiked Irontoe Slippers",
             "itemID": 124249,
             "sourceID": 90284,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -2032,7 +2032,7 @@
             "name": "Toxicologist's Treated Boots",
             "itemID": 124250,
             "sourceID": 90378,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -2056,7 +2056,7 @@
             "name": "Oppressor's Merciless Treads",
             "itemID": 124251,
             "sourceID": 93439,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -2080,7 +2080,7 @@
             "name": "Jungle Assassin's Footpads",
             "itemID": 124252,
             "sourceID": 7545,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -2152,7 +2152,7 @@
             "name": "Gurtogg's Discarded Hood",
             "itemID": 124258,
             "sourceID": 92146,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -2176,7 +2176,7 @@
             "name": "Helm of Imagined Horrors",
             "itemID": 124259,
             "sourceID": 95067,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -2200,7 +2200,7 @@
             "name": "Hood of Unknowable Secrets",
             "itemID": 124260,
             "sourceID": 93068,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -2296,7 +2296,7 @@
             "name": "Rangefinder's Spaulders",
             "itemID": 124270,
             "sourceID": 95068,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -2320,7 +2320,7 @@
             "name": "Blood-Tanned Pauldrons",
             "itemID": 124271,
             "sourceID": 92146,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -2344,7 +2344,7 @@
             "name": "Belt of Misconceived Loyalty",
             "itemID": 124275,
             "sourceID": 95067,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -2368,7 +2368,7 @@
             "name": "Waistwrap of Banishment",
             "itemID": 124276,
             "sourceID": 91331,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -2392,7 +2392,7 @@
             "name": "Flayed Demonskin Belt",
             "itemID": 124277,
             "sourceID": 7545,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -2416,7 +2416,7 @@
             "name": "Gorebound Wristguards",
             "itemID": 124278,
             "sourceID": 95068,
-            "slot": "bracers"
+            "slot": "wrist"
         },
         {
             "allowed": {
@@ -2440,7 +2440,7 @@
             "name": "Bloodcult Bracers",
             "itemID": 124279,
             "sourceID": 90378,
-            "slot": "bracers"
+            "slot": "wrist"
         },
         {
             "allowed": {
@@ -2464,7 +2464,7 @@
             "name": "Manacles of the Multitudes",
             "itemID": 124280,
             "sourceID": 89890,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -2540,7 +2540,7 @@
             "name": "Die-Cast Ringmail Sabatons",
             "itemID": 124285,
             "sourceID": 90284,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -2559,7 +2559,7 @@
             "name": "Surefooted Chain Treads",
             "itemID": 124286,
             "sourceID": 95067,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -2578,7 +2578,7 @@
             "name": "Spiked Throatcrusher Boots",
             "itemID": 124287,
             "sourceID": 93439,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -2597,7 +2597,7 @@
             "name": "Unhallowed Voidlink Boots",
             "itemID": 124288,
             "sourceID": 7545,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -2673,7 +2673,7 @@
             "name": "Coif of Untrue Sight",
             "itemID": 124294,
             "sourceID": 95067,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -2692,7 +2692,7 @@
             "name": "Sinister Felborne Helmet",
             "itemID": 124295,
             "sourceID": 93068,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -2768,7 +2768,7 @@
             "name": "Rugged Stoneshaped Pauldrons",
             "itemID": 124304,
             "sourceID": 90776,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -2787,7 +2787,7 @@
             "name": "Pauldrons of Rapid Coagulation",
             "itemID": 124305,
             "sourceID": 90378,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -2806,7 +2806,7 @@
             "name": "Pauldrons of Contempt",
             "itemID": 124306,
             "sourceID": 93439,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -2825,7 +2825,7 @@
             "name": "Torch-Brazed Waistguard",
             "itemID": 124309,
             "sourceID": 90284,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -2844,7 +2844,7 @@
             "name": "Girdle of the Legion General",
             "itemID": 124310,
             "sourceID": 89890,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -2863,7 +2863,7 @@
             "name": "Cursed Demonchain Belt",
             "itemID": 124311,
             "sourceID": 7545,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -2882,7 +2882,7 @@
             "name": "Bloody Berserker's Bracers",
             "itemID": 124312,
             "sourceID": 92146,
-            "slot": "bracers"
+            "slot": "wrist"
         },
         {
             "allowed": {
@@ -2901,7 +2901,7 @@
             "name": "Chain Wristguards of the Stricken",
             "itemID": 124313,
             "sourceID": 90296,
-            "slot": "bracers"
+            "slot": "wrist"
         },
         {
             "allowed": {
@@ -2920,7 +2920,7 @@
             "name": "Bracers of Fel Empowerment",
             "itemID": 124314,
             "sourceID": 91349,
-            "slot": "bracers"
+            "slot": "wrist"
         },
         {
             "allowed": {
@@ -2986,7 +2986,7 @@
             "name": "Shell-Resistant Stompers",
             "itemID": 124320,
             "sourceID": 95068,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -3008,7 +3008,7 @@
             "name": "Stompers of Brazen Terror",
             "itemID": 124321,
             "sourceID": 90378,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -3030,7 +3030,7 @@
             "name": "Treads of the Defiler",
             "itemID": 124322,
             "sourceID": 91331,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -3052,7 +3052,7 @@
             "name": "Cruel Hope Crushers",
             "itemID": 124323,
             "sourceID": 7545,
-            "slot": "boots"
+            "slot": "feet"
         },
         {
             "allowed": {
@@ -3140,7 +3140,7 @@
             "name": "Helm of Precognition",
             "itemID": 124330,
             "sourceID": 90378,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -3162,7 +3162,7 @@
             "name": "Casque of Foul Concentration",
             "itemID": 124331,
             "sourceID": 90296,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -3250,7 +3250,7 @@
             "name": "Fel-Inscribed Shoulderplates",
             "itemID": 124341,
             "sourceID": 90776,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -3272,7 +3272,7 @@
             "name": "Soulgorged Pauldrons",
             "itemID": 124342,
             "sourceID": 91809,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -3294,7 +3294,7 @@
             "name": "Doomcrier's Shoulderplates",
             "itemID": 124343,
             "sourceID": 91331,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -3316,7 +3316,7 @@
             "name": "Girdle of Savage Resolve",
             "itemID": 124347,
             "sourceID": 92146,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -3338,7 +3338,7 @@
             "name": "Ravenous Girdle",
             "itemID": 124348,
             "sourceID": 91809,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -3360,7 +3360,7 @@
             "name": "Annihilan's Waistplate",
             "itemID": 124349,
             "sourceID": 91349,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -3382,7 +3382,7 @@
             "name": "Girdle of Demonic Wrath",
             "itemID": 124350,
             "sourceID": 7545,
-            "slot": "belt"
+            "slot": "waist"
         },
         {
             "allowed": {
@@ -3404,7 +3404,7 @@
             "name": "Hot-Rolled Iron Bracers",
             "itemID": 124351,
             "sourceID": 90284,
-            "slot": "bracers"
+            "slot": "wrist"
         },
         {
             "allowed": {
@@ -3426,7 +3426,7 @@
             "name": "Wristplate of the Wretched",
             "itemID": 124352,
             "sourceID": 95067,
-            "slot": "bracers"
+            "slot": "wrist"
         },
         {
             "allowed": {
@@ -3448,7 +3448,7 @@
             "name": "Breach-Scarred Wristplates",
             "itemID": 124353,
             "sourceID": 93068,
-            "slot": "bracers"
+            "slot": "wrist"
         },
         {
             "allowed": {
@@ -4121,7 +4121,7 @@
             "name": "Choker of Forbidden Indulgence",
             "itemID": 124391,
             "sourceID": 91809,
-            "slot": "necklace"
+            "slot": "neck"
         },
         {
             "allowed": {
@@ -4209,7 +4209,7 @@
             "name": "Helm of Hellfire's Conqueror",
             "itemID": 127956,
             "sourceID": 90776,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -4231,7 +4231,7 @@
             "name": "Shoulders of Hellfire's Conqueror",
             "itemID": 127957,
             "sourceID": 93068,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -4279,7 +4279,7 @@
             "name": "Helm of Hellfire's Vanquisher",
             "itemID": 127959,
             "sourceID": 90776,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -4327,7 +4327,7 @@
             "name": "Shoulders of Hellfire's Vanquisher",
             "itemID": 127961,
             "sourceID": 93068,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
@@ -4451,7 +4451,7 @@
             "name": "Helm of Hellfire's Protector",
             "itemID": 127966,
             "sourceID": 90776,
-            "slot": "helm"
+            "slot": "head"
         },
         {
             "allowed": {
@@ -4476,7 +4476,7 @@
             "name": "Shoulders of Hellfire's Protector",
             "itemID": 127967,
             "sourceID": 93068,
-            "slot": "shoulders"
+            "slot": "shoulder"
         },
         {
             "allowed": {
