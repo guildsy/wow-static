@@ -1,0 +1,565 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<style>
+		body {
+			background-color: #E4E4E4;
+		}
+
+		body, div {
+			margin: 0;
+			overflow: auto;
+		}
+
+		.list-col {
+			width: 300px;
+			height: 100%;
+			border-right: 2px solid black;
+			float: left;
+		}
+
+		.list-item {
+			font-size: 20px;
+			padding: 10px;
+			cursor: pointer;
+			border-bottom: 1px solid #D3D3D3;
+		}
+
+		.list-item:hover, .list-item.selected {
+			background-color: #D3D3D3;
+		}
+
+		.item-col {
+			padding: 10px;
+		}
+
+		.item-col.error {
+			background-color: rgba(255, 0, 0, 0.5);
+		}
+
+		[name="boss"], [name="sourceID"] {
+			display: inline-block !important;
+			width: 150px !important;
+		}
+
+		select,
+		input[type="text"] {
+			display: block;
+			margin: 10px 0;
+			padding: 5px;
+			width: 300px;
+			border: 1px solid black;
+			height: 25px;
+		}
+
+		.checkboxes {
+			display: inline-block;
+			vertical-align: top;
+			margin: 5px 20px;
+		}
+
+		.checkboxes > label {
+			display: block;
+			padding: 5px 0;
+		}
+
+		[name$="deathknight"] + span {
+			color: #C41F3B;
+		}
+
+		[name$="druid"] + span {
+			color: #FF7D0A;
+		}
+
+		[name$="hunter"] + span {
+			color: #ABD473;
+		}
+
+		[name$="mage"] + span {
+			color: #69CCF0;
+		}
+
+		[name$="monk"] + span {
+			color: #00FF96;
+		}
+
+		[name$="paladin"] + span {
+			color: #F58CBA;
+		}
+
+		[name$="priest"] + span {
+			color: #000;
+		}
+
+		[name$="rogue"] + span {
+			color: #FFF569;
+		}
+
+		[name$="shaman"] + span {
+			color: #0070DE;
+		}
+
+		[name$="warlock"] + span {
+			color: #9482C9;
+		}
+
+		[name$="warrior"] + span {
+			color: #C79C6E;
+		}
+
+		.button {
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+			background-color: gray;
+			text-transform: uppercase;
+			color: #FFF;
+		}
+
+		.button.fluid {
+			width: 100%;
+			text-align: center;
+			box-sizing: border-box;
+		}
+
+		.button.red {
+			background-color: red;
+		}
+
+		.button.green {
+			background-color: green;
+		}
+
+		.button.small {
+			padding: 5px 5px;
+		}
+
+		.mtop20 {
+			margin-top: 20px
+		}
+
+		#search {
+			margin: 0;
+			font-size: 20px;
+			border: none;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="list-col">
+		<input id="search" type="text" placeholder="item name" />
+		<div id="new" class="button fluid">new</div>
+		<div id="check" class="green button fluid">check</div>
+	</div>
+
+	<div class="item-col">
+		<label>Name: <input name="name" type="text" /></label>
+		<label>ItemID: <input name="itemID" type="text" /></label>
+		<label>SourceID:<br/>
+			<input name="sourceID" type="text" />
+			<select name="boss">
+				<option value="">Source</option>
+			</select>
+		</label>
+
+		<select name="slot">
+			<option value="">slot</option>
+			<option value="misc">Misc</option>
+			<option value="helm">Helm</option>
+			<option value="necklace">Necklace</option>
+			<option value="shoulders">Shoulders</option>
+			<option value="cloak">Cloak</option>
+			<option value="chest">Chest</option>
+			<option value="bracers">Bracers</option>
+			<option value="hands">Hands</option>
+			<option value="belt">Belt</option>
+			<option value="legs">Legs</option>
+			<option value="boots">Boots</option>
+			<option value="ring">Ring</option>
+			<option value="trinket">Trinket</option>
+			<option value="weapon">Weapon</option>
+			<option value="offhand">Offhand</option>
+			<option value="whatever_token">Whatever tier token</option>
+		</select>
+
+		<div class="buttons">
+			<div id="intellect" class="small button">intellect</div>
+			<div id="strength" class="small button">strength</div>
+			<div id="agility" class="small button">agility</div>
+			<br/>
+			<div id="cloth" class="small button">cloth</div>
+			<div id="leather" class="small button">leather</div>
+			<div id="mail" class="small button">mail</div>
+			<div id="plate" class="small button">plate</div>
+			<br/>
+			<div id="conq" class="small button">conq</div>
+			<div id="vanq" class="small button">vanq</div>
+			<div id="prot" class="small button">prot</div>
+		</div>
+
+		<div>
+			<label class="checkboxes">Melee:
+				<label><input type="checkbox" name="melee-deathknight" /><span>Death Knight</span></label>
+				<label><input type="checkbox" name="melee-paladin" /><span>Paladin</span></label>
+				<label><input type="checkbox" name="melee-warrior" /><span>Warrior</span></label>
+				<label><input type="checkbox" name="melee-shaman" /><span>Shaman</span></label>
+				<label><input type="checkbox" name="melee-druid" /><span>Druid</span></label>
+				<label><input type="checkbox" name="melee-monk" /><span>Monk</span></label>
+				<label><input type="checkbox" name="melee-rogue" /><span>Rogue</span></label>
+			</label>
+
+			<label class="checkboxes">Ranged:
+				<label><input type="checkbox" name="ranged-hunter" /><span>Hunter</span></label>
+				<label><input type="checkbox" name="ranged-shaman" /><span>Shaman</span></label>
+				<label><input type="checkbox" name="ranged-druid" /><span>Druid</span></label>
+				<label><input type="checkbox" name="ranged-priest" /><span>Priest</span></label>
+				<label><input type="checkbox" name="ranged-mage" /><span>Mage</span></label>
+				<label><input type="checkbox" name="ranged-warlock" /><span>Warlock</span></label>
+			</label>
+
+			<label class="checkboxes">Healers:
+				<label><input type="checkbox" name="healers-paladin" /><span>Paladin</span></label>
+				<label><input type="checkbox" name="healers-shaman" /><span>Shaman</span></label>
+				<label><input type="checkbox" name="healers-druid" /><span>Druid</span></label>
+				<label><input type="checkbox" name="healers-monk" /><span>Monk</span></label>
+				<label><input type="checkbox" name="healers-priest" /><span>Priest</span></label>
+			</label>
+
+			<label class="checkboxes">Tanks:
+				<label><input type="checkbox" name="tanks-deathknight" /><span>Death Knight</span></label>
+				<label><input type="checkbox" name="tanks-paladin" /><span>Paladin</span></label>
+				<label><input type="checkbox" name="tanks-warrior" /><span>Warrior</span></label>
+				<label><input type="checkbox" name="tanks-druid" /><span>Druid</span></label>
+				<label><input type="checkbox" name="tanks-monk" /><span>Monk</span></label>
+			</label>
+		</div>
+
+		<div id="remove" class="button red mtop20">remove</div>
+		<div id="send" class="button green mtop20">send</div>
+	</div>
+
+	<script>
+		BOSSES = [
+			['Hellfire Citadel Trash', 7545],
+			['Hellfire Assault', 95068],
+			['Iron Reaver', 90284],
+			['Kormrok', 90776],
+			['Kilrogg Deadeye', 90378],
+			['Hellfire High Council', 92146],
+			['Gorefiend', 91809],
+			['Shadow-Lord Iskar', 95067],
+			['Socrethar the Eternal', 90296],
+			['Tyrant Velhari', 93439],
+			['Fel Lord Zakuun', 89890],
+			['Xhul\'horac', 93068],
+			['Mannoroth', 91349],
+			['Archimonde', 91331]
+		];
+
+		ITEMS = {};
+		CURRENT_ITEM = null;
+		SEARCH = '';
+		var $list;
+		var $item;
+		var EMPTY_ITEM = {
+			allowed: {
+				melee: [],
+				ranged: [],
+				healers: [],
+				tanks: []
+			}
+		};
+
+		function getAll(cb) {
+			$.getJSON('/items', function(data) {
+				ITEMS = data;
+				if (cb) cb();
+			});
+		}
+
+		function renderList() {
+			$list.find('.list-item').remove();
+
+			var re = new RegExp(SEARCH, 'i');
+
+			Object.keys(ITEMS).forEach(function(item, i) {
+				item = ITEMS[item];
+
+				if (SEARCH && ! item.name.match(re)) return;
+
+				$('<div/>', {
+					class: 'list-item',
+					text: item.name,
+					click: function() {
+						$list.find('.list-item').removeClass('selected');
+						$(this).addClass('selected');
+						renderItem(item);
+					}
+				}).appendTo($list);
+			});
+		}
+
+		function renderItem(item) {
+			CURRENT_ITEM = item;
+			$item.removeClass('error');
+
+			$('[name="name"]').val(item.name);
+			$('[name="itemID"]').val(item.itemID);
+			$('[name="sourceID"]').val(item.sourceID);
+
+			// reset incase of blanks
+			$('[type="checkbox"]').prop('checked', false);
+
+			$('[name="slot"]').val(item.slot);
+			$('[name="boss"]').val(item.sourceID || '');
+
+			Object.keys(item.allowed).forEach(function(role) {
+				item.allowed[role].forEach(function(c) {
+					$('[name="' + role + '-' + c + '"]').prop('checked', true);
+				});
+			});
+		}
+
+		function onSend() {
+			var item = {
+				allowed: {
+					melee: [],
+					ranged: [],
+					healers: [],
+					tanks: []
+				}
+			};
+
+			$('[type="checkbox"]').each(function() {
+				var s = this.name.split('-');
+
+				if (this.checked) {
+					item.allowed[s[0]].push(s[1]);
+				}
+			});
+
+			item.name = $('[name="name"]').val();
+			item.itemID = parseInt($('[name="itemID"]').val(), 10);
+			item.sourceID = parseInt($('[name="sourceID"]').val(), 10);
+			item.slot = $('[name="slot"]').val();
+
+			if (CURRENT_ITEM && CURRENT_ITEM.itemID && item.itemID !== CURRENT_ITEM.itemID) {
+				item.oldItemID = CURRENT_ITEM.itemID;
+			}
+
+			var a = item.allowed;
+			console.log(item);
+			if ( ! item.name || ! item.itemID || ! item.sourceID
+				 || ! item.slot ||
+				 (! a.melee.length && ! a.ranged.length
+				 && ! a.healers.length && ! a.tanks.length)) {
+				return $item.addClass('error');
+			}
+
+			$.ajax('/item', {
+				type: 'POST',
+				contentType: 'application/json; chatset=utf-8',
+				dataType: 'json',
+				data: JSON.stringify(item),
+				success: function(data) {
+					console.log('saved', item);
+					getAll(renderList);
+
+					// hack to stop having to set new boss
+					EMPTY_ITEM.sourceID = item.sourceID;
+					renderItem(EMPTY_ITEM);
+				}
+			});
+		}
+
+		function onRemove() {
+			$.ajax('/item/' + CURRENT_ITEM.itemID, {
+				type: 'DELETE',
+				success: function() {
+					delete ITEMS[CURRENT_ITEM.itemID];
+					renderList();
+					renderItem(EMPTY_ITEM);
+				}
+			});
+		}
+
+		function onNew() {
+			renderItem(EMPTY_ITEM);
+		}
+
+		// go through and check that each items has
+		// all the fields filled in
+		function onCheck() {
+			console.log('starting check');
+
+			Object.keys(ITEMS).forEach(function(item) {
+				item = ITEMS[item];
+				var a = item.allowed;
+				var errors = [];
+
+				if ( ! item.name) errors.push('name');
+				if ( ! item.sourceID) errors.push('sourceID');
+				if ( ! item.slot) errors.push('slot');
+				if ( ! a.melee.length && ! a.ranged.length && ! a.healers.length && ! a.tanks.length) errors.push('allowed');
+
+				if (errors.length) {
+					console.warn('%s (%d) is missing: %s', item.name, item.itemID, errors.join(', '));
+				}
+			});
+
+			console.log('check done');
+		}
+
+		$(function() {
+			$list = $('.list-col');
+			$item = $('.item-col');
+
+			$('#send').click(onSend);
+			$('#remove').click(onRemove);
+			$('#new').click(onNew);
+			$('#check').click(onCheck);
+
+			$('#search').on('input', function(e) {
+				SEARCH = this.value;
+				renderList();
+			});
+
+			BOSSES.forEach(function(boss) {
+				$('[name="boss"]').append($('<option>', {
+					value: boss[1],
+					text: boss[0]
+				}));
+			});
+
+			$('[name="boss"]').change(function() {
+				$('[name="sourceID"]').val($(this).val());
+			});
+
+			$('#intellect').click(function() {
+				$('[name="ranged-shaman"]').prop('checked', true);
+				$('[name="ranged-druid"]').prop('checked', true);
+				$('[name="ranged-priest"]').prop('checked', true);
+				$('[name="ranged-mage"]').prop('checked', true);
+				$('[name="ranged-warlock"]').prop('checked', true);
+
+				$('[name="healers-paladin"]').prop('checked', true);
+				$('[name="healers-shaman"]').prop('checked', true);
+				$('[name="healers-druid"]').prop('checked', true);
+				$('[name="healers-monk"]').prop('checked', true);
+				$('[name="healers-priest"]').prop('checked', true);
+
+			});
+
+			$('#strength').click(function() {
+				$('[name="melee-deathknight"]').prop('checked', true);
+				$('[name="melee-paladin"]').prop('checked', true);
+				$('[name="melee-warrior"]').prop('checked', true);
+
+				$('[name="tanks-deathknight"]').prop('checked', true);
+				$('[name="tanks-paladin"]').prop('checked', true);
+				$('[name="tanks-warrior"]').prop('checked', true);
+			});
+
+			$('#agility').click(function() {
+				$('[name="ranged-hunter"]').prop('checked', true);
+
+				$('[name="melee-shaman"]').prop('checked', true);
+				$('[name="melee-druid"]').prop('checked', true);
+				$('[name="melee-monk"]').prop('checked', true);
+				$('[name="melee-rogue"]').prop('checked', true);
+
+				$('[name="tanks-druid"]').prop('checked', true);
+				$('[name="tanks-monk"]').prop('checked', true);
+			});
+
+			$('#cloth').click(function() {
+				$('[name="ranged-priest"]').prop('checked', true);
+				$('[name="ranged-mage"]').prop('checked', true);
+				$('[name="ranged-warlock"]').prop('checked', true);
+
+				$('[name="healers-priest"]').prop('checked', true);
+			});
+
+			$('#leather').click(function() {
+				$('[name="melee-druid"]').prop('checked', true);
+				$('[name="melee-monk"]').prop('checked', true);
+				$('[name="melee-rogue"]').prop('checked', true);
+
+				$('[name="ranged-druid"]').prop('checked', true);
+
+				$('[name="healers-druid"]').prop('checked', true);
+				$('[name="healers-monk"]').prop('checked', true);
+
+				$('[name="tanks-druid"]').prop('checked', true);
+				$('[name="tanks-monk"]').prop('checked', true);
+			});
+
+			$('#mail').click(function() {
+				$('[name="melee-shaman"]').prop('checked', true);
+
+				$('[name="ranged-hunter"]').prop('checked', true);
+				$('[name="ranged-shaman"]').prop('checked', true);
+
+				$('[name="healers-shaman"]').prop('checked', true);
+			});
+
+			$('#plate').click(function() {
+				$('[name="melee-deathknight"]').prop('checked', true);
+				$('[name="melee-paladin"]').prop('checked', true);
+				$('[name="melee-warrior"]').prop('checked', true);
+
+				$('[name="healers-paladin"]').prop('checked', true);
+
+				$('[name="tanks-deathknight"]').prop('checked', true);
+				$('[name="tanks-paladin"]').prop('checked', true);
+				$('[name="tanks-warrior"]').prop('checked', true);
+			});
+
+			$('#conq').click(function() {
+				$('[name="melee-paladin"]').prop('checked', true);
+
+				$('[name="ranged-priest"]').prop('checked', true);
+				$('[name="ranged-warlock"]').prop('checked', true);
+
+				$('[name="healers-paladin"]').prop('checked', true);
+				$('[name="healers-priest"]').prop('checked', true);
+
+				$('[name="tanks-paladin"]').prop('checked', true);
+			});
+
+			$('#vanq').click(function() {
+				$('[name="melee-deathknight"]').prop('checked', true);
+				$('[name="melee-druid"]').prop('checked', true);
+				$('[name="melee-rogue"]').prop('checked', true);
+
+				$('[name="ranged-druid"]').prop('checked', true);
+				$('[name="ranged-mage"]').prop('checked', true);
+
+				$('[name="healers-druid"]').prop('checked', true);
+
+				$('[name="tanks-deathknight"]').prop('checked', true);
+				$('[name="tanks-druid"]').prop('checked', true);
+			});
+
+			$('#prot').click(function() {
+				$('[name="melee-warrior"]').prop('checked', true);
+				$('[name="melee-shaman"]').prop('checked', true);
+				$('[name="melee-monk"]').prop('checked', true);
+
+				$('[name="ranged-hunter"]').prop('checked', true);
+				$('[name="ranged-shaman"]').prop('checked', true);
+
+				$('[name="healers-shaman"]').prop('checked', true);
+				$('[name="healers-monk"]').prop('checked', true);
+
+				$('[name="tanks-warrior"]').prop('checked', true);
+				$('[name="tanks-monk"]').prop('checked', true);
+			});
+
+			getAll(renderList);
+		});
+	</script>
+</body>
+</html>
