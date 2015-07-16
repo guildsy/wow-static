@@ -1,16 +1,18 @@
 {
-  "name": "wow-items",
+  "name": "wow-static",
   "version": "0.0.0",
-  "description": "Easily create, update and remove items in the Guildsy wow_items JSON file.",
-  "main": "gulpfile.js",
+  "description": "Easily create, update and remove items in the Guildsy wow_items JSON file + a list of wow instances!",
+  "main": "lib/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node lib/server.js"
+    "start": "node lib/server.js",
+    "instances": "cat wow_instances.json | ./node_modules/json-minify/index.js > wow_instances.min.json"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.13.2",
-    "express": "^4.13.1"
+    "express": "^4.13.1",
+    "json-minify": "^1.0.0"
   }
 }
