@@ -235,14 +235,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -255,14 +255,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -275,14 +275,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -298,7 +298,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -316,7 +316,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -334,7 +334,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -973,14 +973,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -993,14 +993,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -1013,14 +1013,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -1033,14 +1033,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -1074,7 +1074,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -1092,7 +1092,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -1110,7 +1110,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -1128,7 +1128,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -1387,14 +1387,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -1407,14 +1407,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -1427,14 +1427,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -1447,14 +1447,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -1470,7 +1470,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -1488,7 +1488,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -1506,7 +1506,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -1765,14 +1765,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -1785,14 +1785,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -1805,14 +1805,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -1825,14 +1825,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -1848,7 +1848,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -1866,7 +1866,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -1884,7 +1884,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -1902,7 +1902,7 @@
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR",
                     "DRUID",
@@ -2925,7 +2925,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -2934,7 +2934,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -2947,7 +2947,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -2956,7 +2956,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -2969,7 +2969,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -2978,7 +2978,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -2991,7 +2991,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3000,7 +3000,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3013,7 +3013,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3022,7 +3022,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3035,7 +3035,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3044,7 +3044,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3057,7 +3057,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3066,7 +3066,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3079,7 +3079,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3088,7 +3088,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3101,7 +3101,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3110,7 +3110,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3123,7 +3123,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3132,7 +3132,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3145,7 +3145,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3154,7 +3154,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3167,7 +3167,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3176,7 +3176,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3189,7 +3189,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3198,7 +3198,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3211,7 +3211,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3220,7 +3220,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3233,7 +3233,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3242,7 +3242,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3255,7 +3255,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3264,7 +3264,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3277,7 +3277,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3286,7 +3286,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3299,7 +3299,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3308,7 +3308,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3321,7 +3321,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3330,7 +3330,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3343,7 +3343,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3352,7 +3352,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3365,7 +3365,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3374,7 +3374,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3387,7 +3387,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3396,7 +3396,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3409,7 +3409,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3418,7 +3418,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3431,7 +3431,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3440,7 +3440,7 @@
                     "PALADIN"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ]
@@ -3545,14 +3545,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT"
+                    "DEATH_KNIGHT"
                 ]
             },
             "name": "Hellrender",
@@ -3764,7 +3764,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
@@ -3783,7 +3783,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "WARRIOR"
                 ],
                 "RANGED": [],
@@ -3801,14 +3801,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT"
+                    "DEATH_KNIGHT"
                 ]
             },
             "name": "Maul of Tyranny",
@@ -3997,7 +3997,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "WARRIOR"
                 ],
                 "RANGED": [],
@@ -4015,7 +4015,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "WARRIOR"
                 ],
                 "RANGED": [],
@@ -4048,14 +4048,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT"
+                    "DEATH_KNIGHT"
                 ]
             },
             "name": "Fel-Burning Blade",
@@ -4066,14 +4066,14 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "PALADIN",
                     "WARRIOR"
                 ],
                 "RANGED": [],
                 "HEALERS": [],
                 "TANKS": [
-                    "DEATHKNIGHT"
+                    "DEATH_KNIGHT"
                 ]
             },
             "name": "Calamity's Edge",
@@ -4236,7 +4236,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "DRUID",
                     "ROGUE"
                 ],
@@ -4248,7 +4248,7 @@
                     "DRUID"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "DRUID"
                 ]
             },
@@ -4260,7 +4260,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "DRUID",
                     "ROGUE"
                 ],
@@ -4272,7 +4272,7 @@
                     "DRUID"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "DRUID"
                 ]
             },
@@ -4284,7 +4284,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "DRUID",
                     "ROGUE"
                 ],
@@ -4296,7 +4296,7 @@
                     "DRUID"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "DRUID"
                 ]
             },
@@ -4308,7 +4308,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "DRUID",
                     "ROGUE"
                 ],
@@ -4320,7 +4320,7 @@
                     "DRUID"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "DRUID"
                 ]
             },
@@ -4332,7 +4332,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "DRUID",
                     "ROGUE"
                 ],
@@ -4344,7 +4344,7 @@
                     "DRUID"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "DRUID"
                 ]
             },
@@ -4481,7 +4481,7 @@
         {
             "allowed": {
                 "MELEE": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "DRUID",
                     "ROGUE"
                 ],
@@ -4493,7 +4493,7 @@
                     "DRUID"
                 ],
                 "TANKS": [
-                    "DEATHKNIGHT",
+                    "DEATH_KNIGHT",
                     "DRUID"
                 ]
             },
