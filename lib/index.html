@@ -38,6 +38,11 @@
 			background-color: rgba(255, 0, 0, 0.5);
 		}
 
+		#icon {
+			display: block;
+			margin-bottom:  5px
+		}
+
 		[name="boss"], [name="sourceID"] {
 			display: inline-block !important;
 			width: 150px !important;
@@ -155,6 +160,7 @@
 	</div>
 
 	<div class="item-col">
+		<img id="icon" />
 		<label>Name: <input name="name" type="text" /></label>
 		<label>id: <input name="id" type="text" /></label>
 		<label>SourceID:<br/>
@@ -305,6 +311,8 @@
 			CURRENT_ITEM = item;
 			$item.removeClass('error');
 
+			$('#icon').prop('src', item.icon);
+
 			$('[name="name"]').val(item.name);
 			$('[name="id"]').val(item.id);
 			$('[name="sourceID"]').val(item.sourceID);
@@ -404,8 +412,10 @@
 				if ( ! item.slot) errors.push('slot');
 				if ( ! a.melee.length && ! a.ranged.length && ! a.healers.length && ! a.tanks.length) errors.push('allowed');
 
+				if ( ! item.icon) errors.push('icon');
+
 				if (errors.length) {
-					console.warn('%s (%d) is missing: %s', item.name, item.id, errors.join(', '));
+					console.warn('%s (%s) is missing: %s', item.name, item.id, errors.join(', '));
 				}
 			});
 
