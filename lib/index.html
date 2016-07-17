@@ -43,7 +43,7 @@
 			margin-bottom:  5px
 		}
 
-		[name="boss"], [name="sourceID"] {
+		[name="boss"], [name="sourceId"] {
 			display: inline-block !important;
 			width: 150px !important;
 		}
@@ -164,7 +164,7 @@
 		<label>Name: <input name="name" type="text" /></label>
 		<label>id: <input name="id" type="text" /></label>
 		<label>SourceID:<br/>
-			<input name="sourceID" type="text" />
+			<input name="sourceId" type="text" />
 			<select name="boss">
 				<option value="">Source</option>
 			</select>
@@ -315,13 +315,13 @@
 
 			$('[name="name"]').val(item.name);
 			$('[name="id"]').val(item.id);
-			$('[name="sourceID"]').val(item.sourceID);
+			$('[name="sourceId"]').val(item.sourceId);
 
 			// reset incase of blanks
 			$('[type="checkbox"]').prop('checked', false);
 
 			$('[name="slot"]').val(item.slot);
-			$('[name="boss"]').val(item.sourceID || '');
+			$('[name="boss"]').val(item.sourceId || '');
 
 			Object.keys(item.allowed).forEach(function(role) {
 				item.allowed[role].forEach(function(c) {
@@ -350,7 +350,7 @@
 
 			item.name = $('[name="name"]').val();
 			item.id = $('[name="id"]').val();
-			item.sourceID = $('[name="sourceID"]').val();
+			item.sourceId = $('[name="sourceId"]').val();
 			item.slot = $('[name="slot"]').val();
 
 			if (CURRENT_ITEM && CURRENT_ITEM.id && item.id !== CURRENT_ITEM.id) {
@@ -359,7 +359,7 @@
 
 			var a = item.allowed;
 			console.log(item);
-			if ( ! item.name || ! item.id || ! item.sourceID
+			if ( ! item.name || ! item.id || ! item.sourceId
 				 || ! item.slot ||
 				 (! a.melee.length && ! a.ranged.length
 				 && ! a.healers.length && ! a.tanks.length)) {
@@ -376,7 +376,7 @@
 					getAll(renderList);
 
 					// hack to stop having to set new boss
-					EMPTY_ITEM.sourceID = item.sourceID;
+					EMPTY_ITEM.sourceId = item.sourceId;
 					renderItem(EMPTY_ITEM);
 				}
 			});
@@ -408,7 +408,7 @@
 				var errors = [];
 
 				if ( ! item.name) errors.push('name');
-				if ( ! item.sourceID) errors.push('sourceID');
+				if ( ! item.sourceId) errors.push('sourceId');
 				if ( ! item.slot) errors.push('slot');
 				if ( ! a.melee.length && ! a.ranged.length && ! a.healers.length && ! a.tanks.length) errors.push('allowed');
 
@@ -444,7 +444,7 @@
 			});
 
 			$('[name="boss"]').change(function() {
-				$('[name="sourceID"]').val($(this).val());
+				$('[name="sourceId"]').val($(this).val());
 			});
 
 			$('#intellect').click(function() {
