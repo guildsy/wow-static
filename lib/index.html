@@ -73,6 +73,10 @@
 			color: #C41F3B;
 		}
 
+		[name$="demon_hunter"] + span {
+			color: #A330C9 !important;
+		}
+
 		[name$="druid"] + span {
 			color: #FF7D0A;
 		}
@@ -150,6 +154,10 @@
 			border: none;
 			height: auto;
 		}
+
+		#wowhead input {
+			display: inline-block;
+		}
 	</style>
 </head>
 <body>
@@ -161,6 +169,17 @@
 
 	<div class="item-col">
 		<img id="icon" />
+
+		<form id="wowhead">
+			<label>
+				Fill via wowhead:
+				<div>
+					<input name="wowhead" type="text" />
+					<button type="submit">Go</button>
+				</div>
+			</label>
+		</form>
+
 		<label>Name: <input name="name" type="text" /></label>
 		<label>id: <input name="id" type="text" /></label>
 		<label>SourceID:<br/>
@@ -180,7 +199,7 @@
 			<option value="chest">Chest</option>
 			<option value="wrist">Wrist</option>
 			<option value="hands">Hands</option>
-			<option value="waist">waist</option>
+			<option value="waist">Waist</option>
 			<option value="legs">Legs</option>
 			<option value="feet">Feet</option>
 			<option value="finger">Finger</option>
@@ -214,6 +233,7 @@
 				<label><input type="checkbox" name="melee-druid" /><span>Druid</span></label>
 				<label><input type="checkbox" name="melee-monk" /><span>Monk</span></label>
 				<label><input type="checkbox" name="melee-rogue" /><span>Rogue</span></label>
+				<label><input type="checkbox" name="melee-demon_hunter" /><span>Demon Hunter</span></label>
 			</label>
 
 			<label class="checkboxes">ranged:
@@ -233,12 +253,13 @@
 				<label><input type="checkbox" name="healers-priest" /><span>Priest</span></label>
 			</label>
 
-			<label class="checkboxes">rogue:
+			<label class="checkboxes">tanks:
 				<label><input type="checkbox" name="tanks-death_knight" /><span>Death Knight</span></label>
 				<label><input type="checkbox" name="tanks-paladin" /><span>Paladin</span></label>
 				<label><input type="checkbox" name="tanks-warrior" /><span>Warrior</span></label>
 				<label><input type="checkbox" name="tanks-druid" /><span>Druid</span></label>
 				<label><input type="checkbox" name="tanks-monk" /><span>Monk</span></label>
+				<label><input type="checkbox" name="tanks-demon_hunter" /><span>Demon Hunter</span></label>
 			</label>
 		</div>
 
@@ -247,7 +268,7 @@
 	</div>
 
 	<script>
-		BOSSES = [
+		var HELLFIRE_BOSSES = [
 			['Hellfire Citadel Trash', '7545'],
 			['Hellfire Assault', '95068'],
 			['Iron Reaver', '90284'],
@@ -263,6 +284,23 @@
 			['Mannoroth', '91349'],
 			['Archimonde', '91331']
 		];
+
+		var EMERALD_NIGHTMARE_BOSSES = [
+			['Emerald Nightmare Trash', '8026'],
+			['Nythendra', '103160'],
+			['Il\'gynoth', '105393'],
+			['Elerethe Renferal', '106087'],
+			['Ursoc', '100497'],
+			['Dragons of Nightmare', '39407'],
+			['Cenarius', '113534'],
+			['Xavius', '102206']
+		];
+
+		var NIGHTHOLD_BOSSES = [
+
+		];
+
+		BOSSES = EMERALD_NIGHTMARE_BOSSES;
 
 		ITEMS = {};
 		CURRENT_ITEM = null;
@@ -310,6 +348,8 @@
 		function renderItem(item) {
 			CURRENT_ITEM = item;
 			$item.removeClass('error');
+
+			$('#wowhead').find('input').val('');
 
 			$('#icon').prop('src', item.icon);
 
@@ -422,6 +462,29 @@
 			console.log('check done');
 		}
 
+		function onWowhead(e) {
+			e.preventDefault();
+			var id = $(this).find('input').val();
+			if ( ! id) return;
+
+			if (id.indexOf('wowhead.com')) {
+				var match = /https?:\/\/www.wowhead.com\/item=(\d+).*/.exec(id);
+				if (match) id = match[1];
+			}
+
+
+			$.ajax('/wowhead/' + id, {
+				type: 'GET',
+				success: function(data) {
+					console.log('wowhead', data);
+
+					$('[name="name"]').val(data.name);
+					$('[name="id"]').val(id);
+					if (data.slot) $('[name="slot"]').val(data.slot.toLowerCase());
+				}
+			});
+		}
+
 		$(function() {
 			$list = $('.list-col');
 			$item = $('.item-col');
@@ -435,6 +498,8 @@
 				SEARCH = this.value;
 				renderList();
 			});
+
+			$('#wowhead').on('submit', onWowhead);
 
 			BOSSES.forEach(function(boss) {
 				$('[name="boss"]').append($('<option>', {
@@ -479,9 +544,12 @@
 				$('[name="melee-druid"]').prop('checked', true);
 				$('[name="melee-monk"]').prop('checked', true);
 				$('[name="melee-hunter"]').prop('checked', true);
+				$('[name="melee-rogue"]').prop('checked', true);
+				$('[name="melee-demon_hunter"]').prop('checked', true);
 
 				$('[name="tanks-druid"]').prop('checked', true);
 				$('[name="tanks-monk"]').prop('checked', true);
+				$('[name="tanks-demon_hunter"]').prop('checked', true);
 			});
 
 			$('#cloth').click(function() {
@@ -496,6 +564,7 @@
 				$('[name="melee-druid"]').prop('checked', true);
 				$('[name="melee-monk"]').prop('checked', true);
 				$('[name="melee-rogue"]').prop('checked', true);
+				$('[name="melee-demon_hunter"]').prop('checked', true);
 
 				$('[name="ranged-druid"]').prop('checked', true);
 
@@ -504,6 +573,7 @@
 
 				$('[name="tanks-druid"]').prop('checked', true);
 				$('[name="tanks-monk"]').prop('checked', true);
+				$('[name="tanks-demon_hunter"]').prop('checked', true);
 			});
 
 			$('#mail').click(function() {
@@ -529,6 +599,7 @@
 
 			$('#conq').click(function() {
 				$('[name="melee-paladin"]').prop('checked', true);
+				$('[name="melee-demon_hunter"]').prop('checked', true);
 
 				$('[name="ranged-priest"]').prop('checked', true);
 				$('[name="ranged-warlock"]').prop('checked', true);
@@ -537,6 +608,7 @@
 				$('[name="healers-priest"]').prop('checked', true);
 
 				$('[name="tanks-paladin"]').prop('checked', true);
+				$('[name="tanks-demon_hunter"]').prop('checked', true);
 			});
 
 			$('#vanq').click(function() {

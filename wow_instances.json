@@ -57,6 +57,47 @@
 					"name": "Archimonde"
 				}
 			]
+		},
+
+		{
+			"id": "8026",
+			"name": "The Emerald Nightmare",
+			"bosses": [
+				{
+					"id": "103160",
+					"name": "Nythendra"
+				},
+
+				{
+					"id": "105393",
+					"name": "Il'gynoth, Heart of Corruption"
+				},
+
+				{
+					"id": "106087",
+					"name": "Elerethe Renferal"
+				},
+
+				{
+					"id": "100497",
+					"name": "Ursoc"
+				},
+
+				{
+					"id": "39407",
+					"name": "Dragons of Nightmare"
+				},
+
+				{
+					"id": "113534",
+					"name": "Cenarius"
+				},
+
+				{
+					"id": "102206",
+					"name": "Xavius"
+				}
+			]
 		}
 	]
 }
