@@ -6988,6 +6988,25 @@
         {
             "allowed": {
                 "melee": [],
+                "ranged": [],
+                "healers": [
+                    "paladin",
+                    "shaman",
+                    "druid",
+                    "monk",
+                    "priest"
+                ],
+                "tanks": []
+            },
+            "name": "Cocoon of Enforced Solitude",
+            "id": "139322",
+            "sourceId": "106087",
+            "slot": "trinket",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [],
                 "ranged": [
                     "hunter",
                     "shaman",
