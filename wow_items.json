@@ -7272,7 +7272,14 @@
                     "hunter"
                 ],
                 "healers": [],
-                "tanks": []
+                "tanks": [
+                    "death_knight",
+                    "paladin",
+                    "warrior",
+                    "druid",
+                    "monk",
+                    "demon_hunter"
+                ]
             },
             "name": "Nature's Call",
             "id": "139334",
