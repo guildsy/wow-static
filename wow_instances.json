@@ -1,6 +1,27 @@
 {
 	"instances": [
 		{
+			"id": "8440",
+			"name": "Trial of Valor",
+			"bosses": [
+				{
+					"id": "95676",
+					"name": "Odyn"
+				},
+
+				{
+					"id": "114344",
+					"name": "Guarm"
+				},
+
+				{
+					"id": "114537",
+					"name": "Helya"
+				}
+			]
+		},
+
+		{
 			"id": "8026",
 			"name": "The Emerald Nightmare",
 			"bosses": [
