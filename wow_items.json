@@ -7408,24 +7408,16 @@
         },
         {
             "allowed": {
-                "melee": [
-                    "druid",
-                    "monk",
-                    "rogue",
-                    "demon_hunter"
-                ],
+                "melee": [],
                 "ranged": [
-                    "druid"
+                    "priest",
+                    "mage",
+                    "warlock"
                 ],
                 "healers": [
-                    "druid",
-                    "monk"
+                    "priest"
                 ],
-                "tanks": [
-                    "druid",
-                    "monk",
-                    "demon_hunter"
-                ]
+                "tanks": []
             },
             "name": "Leggings of the Lower Planes",
             "id": "142413",
