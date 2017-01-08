@@ -1,6 +1,17 @@
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script async defer src="https://wow.zamimg.com/widgets/power.js"></script>
+
+	<script>
+		window.wowhead_tooltips = {
+			colorlinks: true,
+			hide: {
+				sellprice: true,
+				dropchance: true
+			}
+		};
+	</script>
 
 	<style>
 		body {
@@ -170,6 +181,8 @@
 	<div class="item-col">
 		<img id="icon" />
 
+		<a id="tooltip" href="#" rel="">tooltip</a>
+
 		<form id="wowhead">
 			<label>
 				Fill via wowhead:
@@ -213,15 +226,33 @@
 			<div id="intellect" class="small button">intellect</div>
 			<div id="strength" class="small button">strength</div>
 			<div id="agility" class="small button">agility</div>
-			<br/>
+
+			<br />
+
 			<div id="cloth" class="small button">cloth</div>
 			<div id="leather" class="small button">leather</div>
 			<div id="mail" class="small button">mail</div>
 			<div id="plate" class="small button">plate</div>
-			<br/>
+
+			<br />
+
 			<div id="conq" class="small button">conq</div>
 			<div id="vanq" class="small button">vanq</div>
 			<div id="prot" class="small button">prot</div>
+
+			<br />
+
+			<div id="arcane" class="small button">arcane</div>
+			<div id="blood" class="small button">blood</div>
+			<div id="fel" class="small button">fel</div>
+			<div id="fire" class="small button">fire</div>
+			<div id="frost" class="small button">frost</div>
+			<div id="holy" class="small button">holy</div>
+			<div id="iron" class="small button">iron</div>
+			<div id="life" class="small button">life</div>
+			<div id="shadow" class="small button">shadow</div>
+			<div id="water" class="small button">water</div>
+			<div id="storm" class="small button">storm</div>
 		</div>
 
 		<div>
@@ -303,10 +334,19 @@
 		];
 
 		var NIGHTHOLD_BOSSES = [
-
+			['Skorpyron', '102263'],
+			['Chronomatic Anomaly', '104415'],
+			['Trilliax', '104288'],
+			['Spellblade Aluriel ', '107699'],
+			['High Botanist Tel\'arn', '104528'],
+			['Star Augur Etraeus', '103758'],
+			['Tichondrius', '103685'],
+			['Krosus', '101002'],
+			['Elisande', '110965'],
+			['Gul\'dan', '105503']
 		];
 
-		BOSSES = TRIAL_OF_VALOR_BOSSES;
+		BOSSES = NIGHTHOLD_BOSSES;
 
 		ITEMS = {};
 		CURRENT_ITEM = null;
@@ -486,7 +526,33 @@
 
 					$('[name="name"]').val(data.name);
 					$('[name="id"]').val(id);
-					if (data.slot) $('[name="slot"]').val(data.slot.toLowerCase());
+					if (data.slot) {
+						$('[name="slot"]').val(data.slot.toLowerCase());
+					}
+
+					// tooltip
+					var link = 'https://www.wowhead.com/item=' + id;
+					var t = $('#tooltip').attr('href', link);
+					t.remove();
+
+					setTimeout(function() {
+						t.insertBefore('#wowhead');
+					}, 500);
+
+
+					// auto tick armour types
+					function is(a, type) {
+						return a.indexOf(type) === 0;
+					}
+
+					var armour = (data.armour || '').toLowerCase();
+					var types = ['cloth', 'leather', 'mail', 'plate'];
+
+					types.forEach(function(type) {
+						if (is(armour, type)) {
+							$('#' + type).click();
+						}
+					});
 				}
 			});
 		}
@@ -644,6 +710,133 @@
 
 				$('[name="tanks-warrior"]').prop('checked', true);
 				$('[name="tanks-monk"]').prop('checked', true);
+			});
+
+			$('#arcane').click(function() {
+				$('[name="ranged-mage"]').prop('checked', true);
+				$('[name="ranged-druid"]').prop('checked', true);
+				$('[name="ranged-hunter"]').prop('checked', true);
+
+				$('[name="tanks-paladin"]').prop('checked', true);
+				$('[name="tanks-demon_hunter"]').prop('checked', true);
+			});
+
+			$('#blood').click(function() {
+				$('[name="melee-rogue"]').prop('checked', true);
+				$('[name="melee-druid"]').prop('checked', true);
+				$('[name="melee-warrior"]').prop('checked', true);
+				$('[name="melee-death_knight"]').prop('checked', true);
+
+				$('[name="ranged-warlock"]').prop('checked', true);
+				$('[name="ranged-priest"]').prop('checked', true);
+				$('[name="ranged-hunter"]').prop('checked', true);
+
+				$('[name="tanks-death_knight"]').prop('checked', true);
+				$('[name="tanks-warrior"]').prop('checked', true);
+				$('[name="tanks-druid"]').prop('checked', true);
+			});
+
+			$('#fel').click(function() {
+				$('[name="tanks-demon_hunter"]').prop('checked', true);
+
+				$('[name="ranged-warlock"]').prop('checked', true);
+
+				$('[name="melee-demon_hunter"]').prop('checked', true);
+				$('[name="melee-rogue"]').prop('checked', true);
+			});
+
+			$('#fire').click(function() {
+				$('[name="melee-death_knight"]').prop('checked', true);
+				$('[name="melee-paladin"]').prop('checked', true);
+				$('[name="melee-warrior"]').prop('checked', true);
+				$('[name="melee-shaman"]').prop('checked', true);
+
+				$('[name="ranged-warlock"]').prop('checked', true);
+				$('[name="ranged-mage"]').prop('checked', true);
+
+				$('[name="tanks-druid"]').prop('checked', true);
+				$('[name="tanks-warrior"]').prop('checked', true);
+			});
+
+			$('#frost').click(function() {
+				$('[name="melee-death_knight"]').prop('checked', true);
+				$('[name="melee-druid"]').prop('checked', true);
+
+				$('[name="ranged-mage"]').prop('checked', true);
+				$('[name="ranged-shaman"]').prop('checked', true);
+
+				$('[name="healers-monk"]').prop('checked', true);
+				$('[name="healers-druid"]').prop('checked', true);
+				$('[name="healers-shaman"]').prop('checked', true);
+			});
+
+			$('#holy').click(function() {
+				$('[name="healers-priest"]').prop('checked', true);
+				$('[name="healers-paladin"]').prop('checked', true);
+
+				$('[name="tanks-paladin"]').prop('checked', true);
+
+				$('[name="melee-paladin"]').prop('checked', true);
+			});
+
+			$('#iron').click(function() {
+				$('[name="ranged-hunter"]').prop('checked', true);
+
+				$('[name="tanks-paladin"]').prop('checked', true);
+				$('[name="tanks-demon_hunter"]').prop('checked', true);
+				$('[name="tanks-monk"]').prop('checked', true);
+				$('[name="tanks-warrior"]').prop('checked', true);
+				$('[name="tanks-death_knight"]').prop('checked', true);
+
+				$('[name="melee-rogue"]').prop('checked', true);
+				$('[name="melee-shaman"]').prop('checked', true);
+				$('[name="melee-warrior"]').prop('checked', true);
+				$('[name="melee-monk"]').prop('checked', true);
+
+			});
+
+			$('#life').click(function() {
+				$('[name="healers-druid"]').prop('checked', true);
+				$('[name="healers-monk"]').prop('checked', true);
+				$('[name="healers-shaman"]').prop('checked', true);
+				$('[name="healers-priest"]').prop('checked', true);
+				$('[name="healers-paladin"]').prop('checked', true);
+
+				$('[name="tanks-druid"]').prop('checked', true);
+				$('[name="tanks-monk"]').prop('checked', true);
+
+				$('[name="melee-druid"]').prop('checked', true);
+
+				$('[name="ranged-hunter"]').prop('checked', true);
+				$('[name="ranged-druid"]').prop('checked', true);
+			});
+
+			$('#shadow').click(function() {
+				$('[name="melee-death_knight"]').prop('checked', true);
+				$('[name="melee-demon_hunter"]').prop('checked', true);
+				$('[name="melee-rogue"]').prop('checked', true);
+				$('[name="melee-warrior"]').prop('checked', true);
+
+				$('[name="healers-priest"]').prop('checked', true);
+
+				$('[name="ranged-warlock"]').prop('checked', true);
+				$('[name="ranged-priest"]').prop('checked', true);
+
+				$('[name="tanks-death_knight"]').prop('checked', true);
+			});
+
+			$('#storm').click(function() {
+				$('[name="melee-rogue"]').prop('checked', true);
+				$('[name="melee-shaman"]').prop('checked', true);
+				$('[name="melee-monk"]').prop('checked', true);
+				$('[name="melee-warrior"]').prop('checked', true);
+
+				$('[name="ranged-hunter"]').prop('checked', true);
+				$('[name="ranged-shaman"]').prop('checked', true);
+
+				$('[name="tanks-monk"]').prop('checked', true);
+
+				$('[name="healers-monk"]').prop('checked', true);
 			});
 
 			getAll(renderList);
