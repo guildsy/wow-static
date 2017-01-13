@@ -8135,6 +8135,26 @@
                     "demon_hunter"
                 ]
             },
+            "name": "Writ of Subjugation",
+            "id": "140824",
+            "sourceId": "103685",
+            "slot": "misc",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "rogue",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "warlock"
+                ],
+                "healers": [],
+                "tanks": [
+                    "demon_hunter"
+                ]
+            },
             "name": "Felfire Pitch",
             "id": "140825",
             "sourceId": "101002",
@@ -11302,6 +11322,462 @@
             "sourceId": "95676",
             "slot": "back",
             "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "paladin",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "priest",
+                    "warlock"
+                ],
+                "healers": [
+                    "paladin",
+                    "priest"
+                ],
+                "tanks": [
+                    "paladin",
+                    "demon_hunter"
+                ]
+            },
+            "name": "Chest of the Foreseen Conqueror",
+            "id": "143562",
+            "sourceId": "101002",
+            "slot": "chest",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "paladin",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "priest",
+                    "warlock"
+                ],
+                "healers": [
+                    "paladin",
+                    "priest"
+                ],
+                "tanks": [
+                    "paladin",
+                    "demon_hunter"
+                ]
+            },
+            "name": "Gauntlets of the Foreseen Conqueror",
+            "id": "143563",
+            "sourceId": "103758",
+            "slot": "hands",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "paladin",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "priest",
+                    "warlock"
+                ],
+                "healers": [
+                    "paladin",
+                    "priest"
+                ],
+                "tanks": [
+                    "paladin",
+                    "demon_hunter"
+                ]
+            },
+            "name": "Leggings of the Foreseen Conqueror",
+            "id": "143564",
+            "sourceId": "105503",
+            "slot": "legs",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "paladin",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "priest",
+                    "warlock"
+                ],
+                "healers": [
+                    "paladin",
+                    "priest"
+                ],
+                "tanks": [
+                    "paladin",
+                    "demon_hunter"
+                ]
+            },
+            "name": "Helm of the Foreseen Conqueror",
+            "id": "143565",
+            "sourceId": "110965",
+            "slot": "head",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "paladin",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "priest",
+                    "warlock"
+                ],
+                "healers": [
+                    "paladin",
+                    "priest"
+                ],
+                "tanks": [
+                    "paladin",
+                    "demon_hunter"
+                ]
+            },
+            "name": "Shoulders of the Foreseen Conqueror",
+            "id": "143566",
+            "sourceId": "103685",
+            "slot": "shoulder",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "druid",
+                    "rogue"
+                ],
+                "ranged": [
+                    "druid",
+                    "mage"
+                ],
+                "healers": [
+                    "druid"
+                ],
+                "tanks": [
+                    "death_knight",
+                    "druid"
+                ]
+            },
+            "name": "Gauntlets of the Foreseen Vanquisher",
+            "id": "143567",
+            "sourceId": "103758",
+            "slot": "hands",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "druid",
+                    "rogue"
+                ],
+                "ranged": [
+                    "druid",
+                    "mage"
+                ],
+                "healers": [
+                    "druid"
+                ],
+                "tanks": [
+                    "death_knight",
+                    "druid"
+                ]
+            },
+            "name": "Helm of the Foreseen Vanquisher",
+            "id": "143568",
+            "sourceId": "110965",
+            "slot": "head",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "druid",
+                    "rogue"
+                ],
+                "ranged": [
+                    "druid",
+                    "mage"
+                ],
+                "healers": [
+                    "druid"
+                ],
+                "tanks": [
+                    "death_knight",
+                    "druid"
+                ]
+            },
+            "name": "Leggings of the Foreseen Vanquisher",
+            "id": "143569",
+            "sourceId": "105503",
+            "slot": "legs",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "druid",
+                    "rogue"
+                ],
+                "ranged": [
+                    "druid",
+                    "mage"
+                ],
+                "healers": [
+                    "druid"
+                ],
+                "tanks": [
+                    "death_knight",
+                    "druid"
+                ]
+            },
+            "name": "Shoulders of the Foreseen Vanquisher",
+            "id": "143570",
+            "sourceId": "103685",
+            "slot": "shoulder",
+            "icon": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAA4ADgDASIAAhEBAxEB/8QAHAAAAgIDAQEAAAAAAAAAAAAAAAYFBwIECAMJ/8QAMxAAAQMDAwIEBAUEAwAAAAAAAQIDBAUGEQASIQcxExQiQQhRYYEVFjKRsSMkRXFTguH/xAAaAQACAwEBAAAAAAAAAAAAAAACBAABAwUG/8QALBEAAQMCBAQEBwAAAAAAAAAAAQACEQMhBBIxQQVhocETMnHRIiMzUYGRsf/aAAwDAQACEQMRAD8A42kvvypLsmS84++6srcccUVKWonJUSeSSec6sToz0ZvTqnNCaFBLNOS5tfqMgbY7WO/PdR5HpSCefkCQt9LmKZJ6i0CPWYSJ1PcntIfjLcKA8kqHpJHIz219MaBcVHpEBqkw6KimQYqdjbTOEobSM9gAPf8AnOorSH05+G7pzYG+pS4jl0VFBCm3akhJabwnna1+jvk5UFEcYxjJnb/rjzMNRJSltpPpZSdqUJAwEgftqFvnrfBhIkR4NryZyAS2XjL8PH127ScZz9tU10gui1W6uu3L/tJqqPS3HXoFQD58QlSiotOerkjJwrPYAY1nWrNosL3aBEBmMBb9yXa/aVzU6+4bja1hYj1eM26EolRTnaSATlxsn0nv2Bz2LH1qlRlU5VeiVFlMJyOyuM5JWAhCHEJUFe4JIUOAOTrZuy4LNFyyLcszpEzWpjDaBJkDw2Gm0PJxnKsKIxkbgBg5545rrp3Vqn+EUu0qvHisVmBVX6XSm6jhbVMShPiuyVIV6XnGkFKGwrABOcnONI0uJCoC7KQ20Exf8aiOaI04tKqeTIDE0vFqfGbW6FsSHWlsncDlKgrA2qzggg5Bx20amb0erS410Vm5ZdVFNmoTHpUOryAuS86FI/qhAASjaEknASOcAaNMYbEeOCRt7dtCgeMhUJ8LVjyr66yUeIhrMKnuCfNcIVtQ22QQMj3KtoHI7/TXcfWZ+LS4yG4UZHjOoO9DafmeCca5t+DS7a85Il2fYduW7CnmKqXUqtUnHXHXglW1ONuAEpK0gIwRySSedNHUzqJ1PpV1fl+VctAM+O2hUl6JSOEbvUlGVrJV6Tu7DGfrptVsoS4ZwYiOIcyHneAn3PzzqtLqeaKUtPx3MfqBSSkoI5BB9iNMN1S7uSwubIutlQUsFamYSULX9ASTj7f+arOrszKnHkrkVGdLdKDsS68dufokcfb66pUrToCbxmWzTr8KI1KDSPL+eqFQTF86Av0qa5yVJyQVkDO7jODpavRuezmXWp7qfO1Tz8Kp0lxEpLjuxKXgHEEEK9IPtyO2Bkzl+ecvhuzU0RDEy3abR2IqoqZadsFxKQHlup4KDwCVHuB3PGlu3SimUCoshx5USJXYcmGpSOXULLqNwHHdAPPb/WvOj6cNNgfLGkk2n12IiDayZ3umyixqT+HqrcxDFo05zJdrlePn61NVyf7ZogJbyMp3hJI77iRo1Tledl1e5JxqMt+Qpp5aUblkhOFYGAc4A0abpYCo5gL6hBP2juCT05AIC8Tor++D6K1b9SVXLPrVCuGpzIHg1KizVKgzGTu3YYWQpLo9IJPA45wTxo31JeVftSrFfiS6F+IvFbbdRbDXpAxhKwShWMYznPGcc6evhT6b2HePQIMXVRKZNkKqkhxL4cDUpsYSlPrQQsDIPpJwcDg8aiOoNnXDYlKXKtq6J9RozToQKTXWkTWcJwMpK/0DJHAA799BX4g6hUiZ5G3UA9QoynmEqubtrDS4oYjLjvKWShCW1BeARjPH7aU429rYWQfET2GM86wr9QRIml+fZEOEoD/HoKGyQAMhIOMcZ++vCJVYDSstVadDH/G4guDH/YH+dPU8XnAJb+oP8QFkJ/te1Y1ST48qIkl3IWGyUoIPcL55Hvj+dZXpKjya/wCDS/DXTFVOBTor0cYbWYyFrcCRnlKSoDIOOPvpRj3NTXFJYrdx1l+jqUS/DiIS2pwAg7OwGCCRznnB9tWbb9Ik3Ha8rqDMpn5Wse3KXIbt6AlRLjy1JIU7u43LWrALh7q2jnaTpTH4n5cR2vsBOpnpdHTbdc/SVOKn1GYyv0F9ZwPcFROjXnTWnn0eRUsI8RJcWopycHRrrNEABZEyVL9OKZUPEqVaXHdcplG8NyoMIlrjOr3r8NCUFIyV7yMD54Hvqxn3uqRblW6mZdz9wQUb1U5aESWmYwCVJKic71EYxgZyMYzo0aF9Jj/MJUBI0Wm1d9brkeJSVVSlSaepBQ7On03wGoTu1R2lYwAs7T/s4+elUvVNLUqRLiQG22W/FaU8pTXmm8lO9ncPWMgfuNGjWDcDh2iGsA9ERqOIuVuWxc4h19uHJs4TZpUQmMvhe7BOTkAjA5+2pXqP1ZubqBQm7ajUpynUKEpBeabQXV+k8b1ADCU+yRgcD5aNGsxw/DCqKuX4hzPvChqOiJSLDK/HeqDLQcj7Q2kg4JOfYe/Jx/GjRo09KzX/2Q=="
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "druid",
+                    "rogue"
+                ],
+                "ranged": [
+                    "druid",
+                    "mage"
+                ],
+                "healers": [
+                    "druid"
+                ],
+                "tanks": [
+                    "death_knight",
+                    "druid"
+                ]
+            },
+            "name": "Chest of the Foreseen Vanquisher",
+            "id": "143571",
+            "sourceId": "101002",
+            "slot": "chest",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "warrior",
+                    "shaman",
+                    "monk"
+                ],
+                "ranged": [
+                    "hunter",
+                    "shaman"
+                ],
+                "healers": [
+                    "shaman",
+                    "monk"
+                ],
+                "tanks": [
+                    "warrior",
+                    "monk"
+                ]
+            },
+            "name": "Chest of the Foreseen Protector",
+            "id": "143572",
+            "sourceId": "101002",
+            "slot": "chest",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "warrior",
+                    "shaman",
+                    "monk"
+                ],
+                "ranged": [
+                    "hunter",
+                    "shaman"
+                ],
+                "healers": [
+                    "shaman",
+                    "monk"
+                ],
+                "tanks": [
+                    "warrior",
+                    "monk"
+                ]
+            },
+            "name": "Gauntlets of the Foreseen Protector",
+            "id": "143573",
+            "sourceId": "103758",
+            "slot": "hands",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "warrior",
+                    "shaman",
+                    "monk"
+                ],
+                "ranged": [
+                    "hunter",
+                    "shaman"
+                ],
+                "healers": [
+                    "shaman",
+                    "monk"
+                ],
+                "tanks": [
+                    "warrior",
+                    "monk"
+                ]
+            },
+            "name": "Leggings of the Foreseen Protector",
+            "id": "143574",
+            "sourceId": "105503",
+            "slot": "legs",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "warrior",
+                    "shaman",
+                    "monk"
+                ],
+                "ranged": [
+                    "hunter",
+                    "shaman"
+                ],
+                "healers": [
+                    "shaman",
+                    "monk"
+                ],
+                "tanks": [
+                    "warrior",
+                    "monk"
+                ]
+            },
+            "name": "Helm of the Foreseen Protector",
+            "id": "143575",
+            "sourceId": "110965",
+            "slot": "head",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "warrior",
+                    "shaman",
+                    "monk"
+                ],
+                "ranged": [
+                    "hunter",
+                    "shaman"
+                ],
+                "healers": [
+                    "shaman",
+                    "monk"
+                ],
+                "tanks": [
+                    "warrior",
+                    "monk"
+                ]
+            },
+            "name": "Shoulders of the Foreseen Protector",
+            "id": "143576",
+            "sourceId": "103685",
+            "slot": "shoulder",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "paladin",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "priest",
+                    "warlock"
+                ],
+                "healers": [
+                    "paladin",
+                    "priest"
+                ],
+                "tanks": [
+                    "paladin",
+                    "demon_hunter"
+                ]
+            },
+            "name": "Cloak of the Foreseen Conqueror",
+            "id": "143577",
+            "sourceId": "104288",
+            "slot": "back",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "druid",
+                    "rogue"
+                ],
+                "ranged": [
+                    "druid",
+                    "mage"
+                ],
+                "healers": [
+                    "druid"
+                ],
+                "tanks": [
+                    "death_knight",
+                    "druid"
+                ]
+            },
+            "name": "Cloak of the Foreseen Vanquisher",
+            "id": "143578",
+            "sourceId": "104288",
+            "slot": "back",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "warrior",
+                    "shaman",
+                    "monk"
+                ],
+                "ranged": [
+                    "hunter",
+                    "shaman"
+                ],
+                "healers": [
+                    "shaman",
+                    "monk"
+                ],
+                "tanks": [
+                    "warrior",
+                    "monk"
+                ]
+            },
+            "name": "Cloak of the Foreseen Protector",
+            "id": "143579",
+            "sourceId": "104288",
+            "slot": "back",
+            "icon": "data:image/jpeg;base64,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"
         }
     ]
 }
