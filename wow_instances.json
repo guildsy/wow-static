@@ -3,6 +3,11 @@
 		{
 			"id": "8025",
 			"name": "The Nighthold",
+			"wowheadBonuses": {
+				"normal": "0",
+				"heroic": "3444",
+				"mythic": "3445"
+			},
 			"bosses": [
 				{
 					"id": "102263",
@@ -62,6 +67,11 @@
 		{
 			"id": "8440",
 			"name": "Trial of Valor",
+			"wowheadBonuses": {
+				"normal": "0",
+				"heroic": "3468",
+				"mythic": "3469"
+			},
 			"bosses": [
 				{
 					"id": "95676",
@@ -83,6 +93,11 @@
 		{
 			"id": "8026",
 			"name": "The Emerald Nightmare",
+			"wowheadBonuses": {
+				"normal": "0",
+				"heroic": "1805",
+				"mythic": "1806"
+			},
 			"bosses": [
 				{
 					"id": "103160",
@@ -124,6 +139,11 @@
 		{
 			"id": "7545",
 			"name": "Hellfire Citadel",
+			"wowheadBonuses": {
+				"normal": "0",
+				"heroic": "1798",
+				"mythic": "1799"
+			},
 			"bosses": [
 				{
 					"id": "95068",
