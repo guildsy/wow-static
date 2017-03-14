@@ -7924,14 +7924,20 @@
         {
             "allowed": {
                 "melee": [
-                    "rogue",
-                    "demon_hunter"
+                    "warrior",
+                    "shaman",
+                    "monk",
+                    "rogue"
                 ],
                 "ranged": [
-                    "warlock"
+                    "hunter"
                 ],
                 "healers": [],
                 "tanks": [
+                    "death_knight",
+                    "paladin",
+                    "warrior",
+                    "monk",
                     "demon_hunter"
                 ]
             },
