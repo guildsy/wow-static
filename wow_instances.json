@@ -1,6 +1,62 @@
 {
 	"instances": [
 		{
+			"id": "8524",
+			"name": "Tomb of Sargeras",
+			"wowheadBonuses": {
+				"normal": "0",
+				"heroic": "3444",
+				"mythic": "3445"
+			},
+			"bosses": [
+				{
+					"id": "116407",
+					"name": "Harjatan"
+				},
+
+				{
+					"id": "115767",
+					"name": "Mistress Sassz'ine"
+				},
+
+				{
+					"id": "115844",
+					"name": "Goroth"
+				},
+
+				{
+					"id": "120996",
+					"name": "Atrigan"
+				},
+
+				{
+					"id": "120436",
+					"name": "Fallen Avatar"
+				},
+
+				{
+					"id": "118460",
+					"name": "Engine of Souls"
+				},
+
+				{
+					"id": "118289",
+					"name": "Maiden of Vigilance"
+				},
+
+				{
+					"id": "117269",
+					"name": "Kil'jaeden"
+				},
+
+				{
+					"id": "118523",
+					"name": "Huntress Kasparian"
+				}
+			]
+		},
+
+		{
 			"id": "8025",
 			"name": "The Nighthold",
 			"wowheadBonuses": {

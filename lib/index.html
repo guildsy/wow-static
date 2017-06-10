@@ -346,7 +346,32 @@
 			['Gul\'dan', '105503']
 		];
 
-		BOSSES = NIGHTHOLD_BOSSES;
+		var NIGHTHOLD_BOSSES = [
+			['Skorpyron', '102263'],
+			['Chronomatic Anomaly', '104415'],
+			['Trilliax', '104288'],
+			['Spellblade Aluriel ', '107699'],
+			['High Botanist Tel\'arn', '104528'],
+			['Star Augur Etraeus', '103758'],
+			['Tichondrius', '103685'],
+			['Krosus', '101002'],
+			['Elisande', '110965'],
+			['Gul\'dan', '105503']
+		];
+
+		var TOMB = [
+			['Harjatan','116407'],
+			['Mistress Sassz\'ine','115767'],
+			['Goroth','115844'],
+			['Atrigan','120996'],
+			['Fallen Avatar','120436'],
+			['Engine of Souls','118460'],
+			['Maiden of Vigilance','118289'],
+			['Kil\'jaeden','117269'],
+			['Huntress Kasparian','118523']
+		];
+
+		BOSSES = TOMB;
 
 		ITEMS = {};
 		CURRENT_ITEM = null;
@@ -508,9 +533,7 @@
 			console.log('check done');
 		}
 
-		function onWowhead(e) {
-			e.preventDefault();
-			var id = $(this).find('input').val();
+		function onWowhead(id) {
 			if ( ! id) return;
 
 			if (id.indexOf('wowhead.com')) {
@@ -526,9 +549,9 @@
 
 					$('[name="name"]').val(data.name);
 					$('[name="id"]').val(id);
-					if (data.slot) {
-						$('[name="slot"]').val(data.slot.toLowerCase());
-					}
+
+					var slot = data.slot || 'misc';
+					$('[name="slot"]').val(slot.toLowerCase());
 
 					// tooltip
 					var link = 'https://www.wowhead.com/item=' + id;
@@ -571,7 +594,13 @@
 				renderList();
 			});
 
-			$('#wowhead').on('submit', onWowhead);
+			$('#wowhead').on('submit', function(e) {
+				e.preventDefault();
+				onWowhead($(this).find('input').val());
+			});
+			$('#wowhead').on('paste', function(e) {
+				onWowhead(e.originalEvent.clipboardData.getData('text'));
+			});
 
 			BOSSES.forEach(function(boss) {
 				$('[name="boss"]').append($('<option>', {
