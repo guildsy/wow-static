@@ -10,8 +10,23 @@
 			},
 			"bosses": [
 				{
+					"id": "115844",
+					"name": "Goroth"
+				},
+
+				{
+					"id": "120996",
+					"name": "Demonic inquisiton"
+				},
+
+				{
 					"id": "116407",
 					"name": "Harjatan"
+				},
+
+				{
+					"id": "118523",
+					"name": "Sisters of the Moon"
 				},
 
 				{
@@ -20,23 +35,8 @@
 				},
 
 				{
-					"id": "115844",
-					"name": "Goroth"
-				},
-
-				{
-					"id": "120996",
-					"name": "Atrigan"
-				},
-
-				{
-					"id": "120436",
-					"name": "Fallen Avatar"
-				},
-
-				{
 					"id": "118460",
-					"name": "Engine of Souls"
+					"name": "The Desolate Host"
 				},
 
 				{
@@ -45,13 +45,13 @@
 				},
 
 				{
-					"id": "117269",
-					"name": "Kil'jaeden"
+					"id": "120436",
+					"name": "Fallen Avatar"
 				},
 
 				{
-					"id": "118523",
-					"name": "Huntress Kasparian"
+					"id": "117269",
+					"name": "Kil'jaeden"
 				}
 			]
 		},
