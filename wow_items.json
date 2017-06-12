@@ -12576,8 +12576,15 @@
         },
         {
             "allowed": {
-                "melee": [],
+                "melee": [
+                    "shaman",
+                    "druid",
+                    "monk",
+                    "rogue",
+                    "demon_hunter"
+                ],
                 "ranged": [
+                    "hunter",
                     "shaman",
                     "druid",
                     "priest",
