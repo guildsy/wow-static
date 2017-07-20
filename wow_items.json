@@ -14888,16 +14888,22 @@
         },
         {
             "allowed": {
-                "melee": [],
+                "melee": [
+                    "paladin",
+                    "demon_hunter"
+                ],
                 "ranged": [
                     "priest",
-                    "mage",
                     "warlock"
                 ],
                 "healers": [
+                    "paladin",
                     "priest"
                 ],
-                "tanks": []
+                "tanks": [
+                    "paladin",
+                    "demon_hunter"
+                ]
             },
             "name": "Chest of the Foregone Conqueror",
             "id": "147317",
