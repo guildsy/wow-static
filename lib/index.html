@@ -183,6 +183,11 @@
 
 		<a id="tooltip" href="#" rel="">tooltip</a>
 
+		<div>
+			<div id="remove" class="button red mtop20">remove</div>
+			<div id="send" class="button green mtop20">send</div>
+		</div>
+
 		<form id="wowhead">
 			<label>
 				Fill via wowhead:
@@ -205,6 +210,7 @@
 		<select name="slot">
 			<option value="">slot</option>
 			<option value="misc">Misc</option>
+			<option value="relic">Relic</option>
 			<option value="head">Head</option>
 			<option value="neck">Neck</option>
 			<option value="shoulder">Shoulder</option>
@@ -293,9 +299,6 @@
 				<label><input type="checkbox" name="tanks-demon_hunter" /><span>Demon Hunter</span></label>
 			</label>
 		</div>
-
-		<div id="remove" class="button red mtop20">remove</div>
-		<div id="send" class="button green mtop20">send</div>
 	</div>
 
 	<script>
@@ -371,7 +374,21 @@
 			['Kil\'jaeden','117269']
 		];
 
-		BOSSES = TOMB;
+		var ANTORUS = [
+			['Varimathras', '125075'],
+			['Aggramar', '124691'],
+			['Portal Keeper Hasabel', '124393'],
+			['Coven of Shivarra', '118523'],
+			['Felhounds of Sargeras', '126916'],
+			['Garothi Worldbreaker', '123371'],
+			['Antoran High Command', '122367'],
+			['Kin\'garoth', '125050'],
+			['Imonar the Soulhunter', '125055'],
+			['Eonar the Life Binder', '125562'],
+			['Argus the Unmaker', '124828']
+		];
+
+		BOSSES = ANTORUS;
 
 		ITEMS = {};
 		CURRENT_ITEM = null;
@@ -489,6 +506,7 @@
 					// hack to stop having to set new boss
 					EMPTY_ITEM.sourceId = item.sourceId;
 					renderItem(EMPTY_ITEM);
+					$('#wowhead').find('input').focus();
 				}
 			});
 		}
@@ -569,13 +587,21 @@
 					}
 
 					var armour = (data.armour || '').toLowerCase();
-					var types = ['cloth', 'leather', 'mail', 'plate'];
 
-					types.forEach(function(type) {
-						if (is(armour, type)) {
-							$('#' + type).click();
-						}
-					});
+					if (armour.indexOf('relic') !== -1) {
+						$('#' + armour.split(' ')[0]).click();
+						$('[name="slot"]').val('relic');
+					} else {
+						var types = ['cloth', 'leather', 'mail', 'plate'];
+
+						types.forEach(function(type) {
+							if (is(armour, type)) {
+								$('#' + type).click();
+							}
+						});
+					}
+
+					$('#send').click();
 				}
 			});
 		}

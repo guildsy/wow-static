@@ -1,6 +1,73 @@
 {
 	"instances": [
 		{
+			"id": "8638",
+			"name": "Antorus, the Burning Throne",
+			"wowheadBonuses": {
+				"normal": "3610",
+				"heroic": "3611",
+				"mythic": "3612"
+			},
+			"blockOnGuildsy": true,
+			"bosses": [
+				{
+					"id": "125075",
+					"name": "Varimathras"
+				},
+
+				{
+					"id": "124691",
+					"name": "Aggramar"
+				},
+
+				{
+					"id": "124393",
+					"name": "Portal Keeper Hasabel"
+				},
+
+				{
+					"id": "118523",
+					"name": "Coven of Shivarra"
+				},
+
+				{
+					"id": "126916",
+					"name": "Felhounds of Sargeras"
+				},
+
+				{
+					"id": "123371",
+					"name": "Garothi Worldbreaker"
+				},
+
+				{
+					"id": "122367",
+					"name": "Antoran High Command"
+				},
+
+				{
+					"id": "125050",
+					"name": "Kin'garoth"
+				},
+
+				{
+					"id": "125055",
+					"name": "Imonar the Soulhunter"
+				},
+
+				{
+					"id": "125562",
+					"name": "Eonar the Life Binder"
+				},
+
+				{
+					"id": "124828",
+					"name": "Argus the Unmaker"
+				}
+			]
+		},
+
+		{
 			"id": "8524",
 			"name": "Tomb of Sargeras",
 			"wowheadBonuses": {
