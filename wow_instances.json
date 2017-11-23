@@ -11,23 +11,8 @@
 			"blockOnGuildsy": true,
 			"bosses": [
 				{
-					"id": "125075",
-					"name": "Varimathras"
-				},
-
-				{
-					"id": "124691",
-					"name": "Aggramar"
-				},
-
-				{
-					"id": "124393",
-					"name": "Portal Keeper Hasabel"
-				},
-
-				{
-					"id": "118523",
-					"name": "Coven of Shivarra"
+					"id": "123371",
+					"name": "Garothi Worldbreaker"
 				},
 
 				{
@@ -36,18 +21,18 @@
 				},
 
 				{
-					"id": "123371",
-					"name": "Garothi Worldbreaker"
-				},
-
-				{
 					"id": "122367",
 					"name": "Antoran High Command"
 				},
 
 				{
-					"id": "125050",
-					"name": "Kin'garoth"
+					"id": "124393",
+					"name": "Portal Keeper Hasabel"
+				},
+
+				{
+					"id": "125562",
+					"name": "Eonar the Life Binder"
 				},
 
 				{
@@ -56,8 +41,23 @@
 				},
 
 				{
-					"id": "125562",
-					"name": "Eonar the Life Binder"
+					"id": "125050",
+					"name": "Kin'garoth"
+				},
+
+				{
+					"id": "125075",
+					"name": "Varimathras"
+				},
+
+				{
+					"id": "122468",
+					"name": "Coven of Shivarra"
+				},
+
+				{
+					"id": "124691",
+					"name": "Aggramar"
 				},
 
 				{
