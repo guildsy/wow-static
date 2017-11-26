@@ -266,6 +266,7 @@
 				<label><input type="checkbox" name="melee-death_knight" /><span>Death Knight</span></label>
 				<label><input type="checkbox" name="melee-paladin" /><span>Paladin</span></label>
 				<label><input type="checkbox" name="melee-warrior" /><span>Warrior</span></label>
+				<label><input type="checkbox" name="melee-hunter" /><span>Hunter</span></label>
 				<label><input type="checkbox" name="melee-shaman" /><span>Shaman</span></label>
 				<label><input type="checkbox" name="melee-druid" /><span>Druid</span></label>
 				<label><input type="checkbox" name="melee-monk" /><span>Monk</span></label>
@@ -704,6 +705,7 @@
 			});
 
 			$('#mail').click(function() {
+				$('[name="melee-hunter"]').prop('checked', true);
 				$('[name="melee-shaman"]').prop('checked', true);
 
 				$('[name="ranged-hunter"]').prop('checked', true);
@@ -754,6 +756,7 @@
 
 			$('#prot').click(function() {
 				$('[name="melee-warrior"]').prop('checked', true);
+				$('[name="melee-hunter"]').prop('checked', true);
 				$('[name="melee-shaman"]').prop('checked', true);
 				$('[name="melee-monk"]').prop('checked', true);
 
@@ -779,6 +782,7 @@
 			$('#blood').click(function() {
 				$('[name="melee-rogue"]').prop('checked', true);
 				$('[name="melee-druid"]').prop('checked', true);
+				$('[name="melee-hunter"]').prop('checked', true);
 				$('[name="melee-warrior"]').prop('checked', true);
 				$('[name="melee-death_knight"]').prop('checked', true);
 
@@ -844,6 +848,7 @@
 				$('[name="tanks-death_knight"]').prop('checked', true);
 
 				$('[name="melee-rogue"]').prop('checked', true);
+				$('[name="melee-hunter"]').prop('checked', true);
 				$('[name="melee-shaman"]').prop('checked', true);
 				$('[name="melee-warrior"]').prop('checked', true);
 				$('[name="melee-monk"]').prop('checked', true);
@@ -882,6 +887,7 @@
 
 			$('#storm').click(function() {
 				$('[name="melee-rogue"]').prop('checked', true);
+				$('[name="melee-hunter"]').prop('checked', true);
 				$('[name="melee-shaman"]').prop('checked', true);
 				$('[name="melee-monk"]').prop('checked', true);
 				$('[name="melee-warrior"]').prop('checked', true);

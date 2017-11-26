@@ -15407,6 +15407,7 @@
                     "death_knight",
                     "paladin",
                     "warrior",
+                    "hunter",
                     "shaman",
                     "druid",
                     "monk",
@@ -15449,6 +15450,7 @@
                     "death_knight",
                     "paladin",
                     "warrior",
+                    "hunter",
                     "shaman",
                     "druid",
                     "monk",
@@ -15918,6 +15920,7 @@
                     "death_knight",
                     "paladin",
                     "warrior",
+                    "hunter",
                     "shaman",
                     "druid",
                     "monk",
@@ -15949,6 +15952,7 @@
                     "death_knight",
                     "paladin",
                     "warrior",
+                    "hunter",
                     "shaman",
                     "druid",
                     "monk",
@@ -16062,6 +16066,7 @@
                     "death_knight",
                     "paladin",
                     "warrior",
+                    "hunter",
                     "shaman",
                     "druid",
                     "monk",
@@ -16714,6 +16719,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16734,6 +16740,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16754,6 +16761,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16774,6 +16782,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16794,6 +16803,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16814,6 +16824,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16834,6 +16845,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16854,6 +16866,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16874,6 +16887,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16894,6 +16908,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16914,6 +16929,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16934,6 +16950,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16954,6 +16971,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16974,6 +16992,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -16994,6 +17013,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -17441,6 +17461,7 @@
                 "melee": [
                     "death_knight",
                     "warrior",
+                    "hunter",
                     "druid",
                     "rogue"
                 ],
@@ -17467,6 +17488,7 @@
                 "melee": [
                     "death_knight",
                     "warrior",
+                    "hunter",
                     "druid",
                     "rogue"
                 ],
@@ -17840,6 +17862,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk",
                     "rogue"
@@ -17866,6 +17889,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk",
                     "rogue"
@@ -17892,6 +17916,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk",
                     "rogue"
@@ -18099,6 +18124,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk",
                     "rogue"
@@ -18124,6 +18150,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk",
                     "rogue"
@@ -18149,6 +18176,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk",
                     "rogue"
@@ -18174,6 +18202,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk",
                     "rogue"
@@ -18201,6 +18230,7 @@
                     "death_knight",
                     "paladin",
                     "warrior",
+                    "hunter",
                     "shaman",
                     "druid",
                     "monk",
@@ -18353,6 +18383,7 @@
                 "melee": [
                     "death_knight",
                     "warrior",
+                    "hunter",
                     "druid",
                     "rogue"
                 ],
@@ -18380,6 +18411,7 @@
                     "death_knight",
                     "paladin",
                     "warrior",
+                    "hunter",
                     "shaman",
                     "druid",
                     "monk",
@@ -18406,6 +18438,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -18607,6 +18640,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk",
                     "rogue"
@@ -18634,6 +18668,7 @@
                 "melee": [
                     "death_knight",
                     "warrior",
+                    "hunter",
                     "druid",
                     "rogue"
                 ],
@@ -18735,6 +18770,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -18775,6 +18811,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk"
                 ],
@@ -18901,6 +18938,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk"
                 ],
@@ -18977,6 +19015,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk"
                 ],
@@ -19053,6 +19092,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk"
                 ],
@@ -19129,6 +19169,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk"
                 ],
@@ -19205,6 +19246,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk"
                 ],
@@ -19315,6 +19357,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -19335,6 +19378,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman"
                 ],
                 "ranged": [
@@ -19525,6 +19569,7 @@
         {
             "allowed": {
                 "melee": [
+                    "hunter",
                     "shaman",
                     "druid",
                     "monk",
@@ -19675,6 +19720,7 @@
                 "melee": [
                     "death_knight",
                     "warrior",
+                    "hunter",
                     "druid",
                     "rogue"
                 ],
@@ -19812,6 +19858,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk",
                     "rogue"
@@ -19864,6 +19911,7 @@
             "allowed": {
                 "melee": [
                     "warrior",
+                    "hunter",
                     "shaman",
                     "monk",
                     "rogue"
