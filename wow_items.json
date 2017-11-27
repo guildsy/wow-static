@@ -16098,6 +16098,7 @@
                     "death_knight",
                     "paladin",
                     "warrior",
+                    "hunter",
                     "shaman",
                     "druid",
                     "monk",
@@ -16112,7 +16113,9 @@
                     "mage",
                     "warlock"
                 ],
-                "healers": [],
+                "healers": [
+                    "priest"
+                ],
                 "tanks": [
                     "death_knight",
                     "paladin",
