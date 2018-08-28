@@ -1,6 +1,58 @@
 {
 	"instances": [
 		{
+			"id": "9389",
+			"name": "Uldir",
+			"wowheadBonuses": {
+				"normal": "4798",
+				"heroic": "4799",
+				"mythic": "4800"
+			},
+			"blockOnGuildsy": true,
+			"bosses": [
+				{
+					"id": "137119",
+					"name": "Taloc"
+				},
+
+				{
+					"id": "140853",
+					"name": "MOTHER"
+				},
+
+				{
+					"id": "133298",
+					"name": "Fetid Devourer"
+				},
+
+				{
+					"id": "134445",
+					"name": "Zek'voz"
+				},
+
+				{
+					"id": "134442",
+					"name": "Vectis"
+				},
+
+				{
+					"id": "138967",
+					"name": "Zul"
+				},
+
+				{
+					"id": "136383",
+					"name": "Mythrax the Unraveler"
+				},
+
+				{
+					"id": "132998",
+					"name": "G'huun"
+				}
+			]
+		},
+
+		{
 			"id": "8638",
 			"name": "Antorus, the Burning Throne",
 			"wowheadBonuses": {

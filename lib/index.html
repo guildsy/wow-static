@@ -389,7 +389,18 @@
 			['Argus the Unmaker', '124828']
 		];
 
-		BOSSES = ANTORUS;
+		var ULDIR = [
+			['Taloc', '137119'],
+			['MOTHER', '140853'],
+			['Fetid Devourer', '133298'],
+			['Zek\'voz', '134445'],
+			['Vectis', '134442'],
+			['Zul', '138967'],
+			['Mythrax the Unraveler', '136383'],
+			['G\'huun', '132998']
+		];
+
+		BOSSES = ULDIR;
 
 		ITEMS = {};
 		CURRENT_ITEM = null;
@@ -592,6 +603,8 @@
 					if (armour.indexOf('relic') !== -1) {
 						$('#' + armour.split(' ')[0]).click();
 						$('[name="slot"]').val('relic');
+					} else if (slot === 'trinket') {
+						return;
 					} else {
 						var types = ['cloth', 'leather', 'mail', 'plate'];
 
