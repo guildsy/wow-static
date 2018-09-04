@@ -21000,6 +21000,7 @@
             "allowed": {
                 "melee": [],
                 "ranged": [
+                    "hunter",
                     "shaman",
                     "druid",
                     "priest",
