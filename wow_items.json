@@ -20998,7 +20998,17 @@
         },
         {
             "allowed": {
-                "melee": [],
+                "melee": [
+                    "death_knight",
+                    "paladin",
+                    "warrior",
+                    "hunter",
+                    "shaman",
+                    "druid",
+                    "monk",
+                    "rogue",
+                    "demon_hunter"
+                ],
                 "ranged": [
                     "hunter",
                     "shaman",
@@ -21007,14 +21017,15 @@
                     "mage",
                     "warlock"
                 ],
-                "healers": [
+                "healers": [],
+                "tanks": [
+                    "death_knight",
                     "paladin",
-                    "shaman",
+                    "warrior",
                     "druid",
                     "monk",
-                    "priest"
-                ],
-                "tanks": []
+                    "demon_hunter"
+                ]
             },
             "name": "Vanquished Tendril of G'huun",
             "id": "160654",
