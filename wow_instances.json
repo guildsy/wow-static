@@ -4,9 +4,9 @@
 			"id": "9389",
 			"name": "Uldir",
 			"wowheadBonuses": {
-				"normal": "4798",
-				"heroic": "4799",
-				"mythic": "4800"
+				"normal": "4798:1477",
+				"heroic": "4799:1492",
+				"mythic": "4800:1507"
 			},
 			"blockOnGuildsy": true,
 			"bosses": [
