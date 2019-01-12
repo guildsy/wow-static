@@ -23760,12 +23760,11 @@
                     "hunter",
                     "druid"
                 ],
-                "ranged": [
-                    "druid"
-                ],
+                "ranged": [],
                 "healers": [],
                 "tanks": [
-                    "druid"
+                    "druid",
+                    "monk"
                 ]
             },
             "name": "Hornridged Crusher",
@@ -23946,25 +23945,12 @@
         },
         {
             "allowed": {
-                "melee": [
-                    "druid",
-                    "monk",
-                    "rogue",
-                    "demon_hunter"
-                ],
+                "melee": [],
                 "ranged": [
-                    "hunter",
-                    "druid"
+                    "hunter"
                 ],
-                "healers": [
-                    "druid",
-                    "monk"
-                ],
-                "tanks": [
-                    "druid",
-                    "monk",
-                    "demon_hunter"
-                ]
+                "healers": [],
+                "tanks": []
             },
             "name": "Pterrorwing Longbow",
             "id": "165599",
