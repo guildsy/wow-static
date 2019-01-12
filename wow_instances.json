@@ -1,6 +1,63 @@
 {
 	"instances": [
 		{
+			"id": "10076",
+			"name": "Battle of Dazar'alor",
+			"wowheadBonuses": {
+				"normal": "4822:1507",
+				"heroic": "4823:1522",
+				"mythic": "4824:1537"
+			},
+			"blockOnGuildsy": true,
+			"bosses": [
+				{
+					"id": "144683",
+					"name": "Champion of the Light"
+				},
+
+				{
+					"id": "146099",
+					"name": "Jadefire Masters"
+				},
+
+				{
+					"id": "144638",
+					"name": "Grong the Revenant"
+				},
+
+				{
+					"id": "147564",
+					"name": "Opulence"
+				},
+
+				{
+					"id": "144747",
+					"name": "Conclave of the Chosen"
+				},
+
+				{
+					"id": "145616",
+					"name": "King Rastakhan"
+				},
+
+				{
+					"id": "144838",
+					"name": "High Tinker Mekkatorque"
+				},
+
+				{
+					"id": "146256",
+					"name": "Stormwall Blockade"
+				},
+
+				{
+					"id": "149684",
+					"name": "Lady Jaina Proudmoore"
+				}
+			]
+		},
+
+		{
 			"id": "9389",
 			"name": "Uldir",
 			"wowheadBonuses": {

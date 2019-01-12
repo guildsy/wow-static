@@ -400,7 +400,19 @@
 			['G\'huun', '132998']
 		];
 
-		BOSSES = ULDIR;
+		var DAZARALOR = [
+			["Champion of the Light", "144683"],
+			["Jadefire Masters", "146099"],
+			["Grong the Revenant", "144638"],
+			["Opulence", "147564"],
+			["Conclave of the Chosen", "144747"],
+			["King Rastakhan", "145616"],
+			["High Tinker Mekkatorque", "144838"],
+			["Stormwall Blockade", "146256"],
+			["Lady Jaina Proudmoore","149684"]
+		];
+
+		BOSSES = DAZARALOR;
 
 		ITEMS = {};
 		CURRENT_ITEM = null;
@@ -594,9 +606,9 @@
 
 
 					// auto tick armour types
-					function is(a, type) {
-						return a.indexOf(type) === 0;
-					}
+					// function is(a, type) {
+					// 	return a.indexOf(type) === 0;
+					// }
 
 					var armour = (data.armour || '').toLowerCase();
 
@@ -608,8 +620,8 @@
 					} else {
 						var types = ['cloth', 'leather', 'mail', 'plate'];
 
-						types.forEach(function(type) {
-							if (is(armour, type)) {
+						types.forEach(function(type, i) {
+							if (armour == i + 1) {
 								$('#' + type).click();
 							}
 						});
