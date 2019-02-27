@@ -1,6 +1,7 @@
 {
 	"instances": [
 		{
+			"order": 8,
 			"id": "10076",
 			"name": "Battle of Dazar'alor",
 			"wowheadBonuses": {
@@ -58,6 +59,7 @@
 		},
 
 		{
+			"order": 7,
 			"id": "9389",
 			"name": "Uldir",
 			"wowheadBonuses": {
@@ -110,6 +112,7 @@
 		},
 
 		{
+			"order": 6,
 			"id": "8638",
 			"name": "Antorus, the Burning Throne",
 			"wowheadBonuses": {
@@ -177,6 +180,7 @@
 		},
 
 		{
+			"order": 5,
 			"id": "8524",
 			"name": "Tomb of Sargeras",
 			"wowheadBonuses": {
@@ -233,6 +237,7 @@
 		},
 
 		{
+			"order": 4,
 			"id": "8025",
 			"name": "The Nighthold",
 			"wowheadBonuses": {
@@ -297,6 +302,7 @@
 		},
 
 		{
+			"order": 3,
 			"id": "8440",
 			"name": "Trial of Valor",
 			"wowheadBonuses": {
@@ -323,6 +329,7 @@
 		},
 
 		{
+			"order": 2,
 			"id": "8026",
 			"name": "The Emerald Nightmare",
 			"wowheadBonuses": {
@@ -369,6 +376,7 @@
 		},
 
 		{
+			"order": 1,
 			"id": "7545",
 			"name": "Hellfire Citadel",
 			"wowheadBonuses": {
