@@ -1,7 +1,7 @@
 {
 	"instances": [
 		{
-			"order": 8,
+			"order": 9,
 			"id": "10076",
 			"name": "Battle of Dazar'alor",
 			"wowheadBonuses": {
@@ -54,6 +54,29 @@
 				{
 					"id": "149684",
 					"name": "Lady Jaina Proudmoore"
+				}
+			]
+		},
+
+		{
+			"order": 8,
+			"id": "10057",
+			"name": "Crucible of Storms",
+			"wowheadBonuses": {
+				"normal": "4798:1512",
+				"heroic": "4799:1527",
+				"mythic": "4800:1542"
+			},
+			"blockOnGuildsy": true,
+			"bosses": [
+				{
+					"id": "146497",
+					"name": "The Restless Cabal"
+				},
+
+				{
+					"id": "145371",
+					"name": "Uu'nat"
 				}
 			]
 		},
