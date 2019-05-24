@@ -23776,15 +23776,13 @@
         {
             "allowed": {
                 "melee": [
-                    "hunter"
-                ],
-                "ranged": [
+                    "hunter",
                     "druid"
                 ],
-                "healers": [
-                    "druid"
-                ],
+                "ranged": [],
+                "healers": [],
                 "tanks": [
+                    "druid",
                     "monk"
                 ]
             },
