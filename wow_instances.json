@@ -1,6 +1,59 @@
 {
 	"instances": [
 		{
+			"order": 10,
+			"id": "10425",
+			"name": "The Eternal Palace",
+			"wowheadBonuses": {
+				"normal": "1487:4798",
+				"heroic": "1502:4799",
+				"mythic": "1517:4800"
+			},
+			"blockOnGuildsy": true,
+			"bosses": [
+				{
+					"name": "Abyssal Commander Sivara",
+					"id": "155144"
+				},
+
+				{
+					"name": "Blackwater Behemoth",
+					"id": "154986"
+				},
+
+				{
+					"name": "Radiance of Azshara",
+					"id": "152364"
+				},
+
+				{
+					"name": "Lady Ashvane",
+					"id": "153142"
+				},
+
+				{
+					"name": "Orgozoa",
+					"id": "152128"
+				},
+
+				{
+					"name": "Za'qul",
+					"id": "150859"
+				},
+
+				{
+					"name": "The Queen's Court",
+					"id": "152853"
+				},
+
+				{
+					"name": "Queen Azshara",
+					"id": "54853"
+				}
+			]
+		},
+
+		{
 			"order": 9,
 			"id": "10076",
 			"name": "Battle of Dazar'alor",
