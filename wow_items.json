@@ -26210,7 +26210,6 @@
             "allowed": {
                 "melee": [],
                 "ranged": [
-                    "shaman",
                     "druid",
                     "priest",
                     "mage",
@@ -26218,7 +26217,6 @@
                 ],
                 "healers": [
                     "paladin",
-                    "shaman",
                     "druid",
                     "monk",
                     "priest"
@@ -26234,14 +26232,14 @@
         {
             "allowed": {
                 "melee": [
-                    "death_knight"
+                    "death_knight",
+                    "paladin",
+                    "warrior"
                 ],
                 "ranged": [],
                 "healers": [],
                 "tanks": [
-                    "death_knight",
-                    "druid",
-                    "monk"
+                    "death_knight"
                 ]
             },
             "name": "Monstrosity's Shipbreaker",
@@ -26307,6 +26305,29 @@
             "sourceId": "155144",
             "slot": "weapon",
             "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "paladin",
+                    "warrior"
+                ],
+                "ranged": [],
+                "healers": [
+                    "paladin"
+                ],
+                "tanks": [
+                    "death_knight",
+                    "paladin",
+                    "warrior"
+                ]
+            },
+            "name": "Pauldrons of Za'qul",
+            "id": "168868",
+            "sourceId": "150859",
+            "slot": "shoulder",
+            "icon": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAA4ADgDASIAAhEBAxEB/8QAHAAAAgEFAQAAAAAAAAAAAAAAAAUGAQIDBAcI/8QAMRAAAgEDAwQBAwEHBQAAAAAAAQIDBAURABIhBhMxQSIUUWEHFTJCcYGx8CNScqHR/8QAGAEAAwEBAAAAAAAAAAAAAAAAAwQFBgL/xAArEQABBAEDAQcEAwAAAAAAAAABAAIDESEEEjEFExRBYXGRoVGxwfAigeH/2gAMAwEAAhEDEQA/APJ9e85rZZaqd6iaVjI8rsWZ2JyWJPJJOedWRnd+BqRXa2U5ZZZJljp3yxmbOI24GDjnB459EfnWtarRR1tWYYq2SskC7hBRU7yO3P8AIAD8k6rP0csZzx6hNRtJStRxwCT+NVainlTmMg59jU3tlohhjdbin0sSvkU1O6919p43yDOM+1HP5GugdG9Gfpr1TItOIaigu7H4x1M7vHK554bPPOeD58aUm1MDDtu/3zRxC+QYFhcHa3TRDDbBj7sNYmopfQ3f8edeh6rouSnu03T9BYun6W4ogkgael70VZHhipRzyCdpABHJGCRrXorbRXMvar10XaKh1zK09l+E8eDgMFO1gNy4wpxkEY9a4bLA80MfvouHRAEArz7A9RR1UdTTTSQTwuJI5I2KujA5DAjkEHkEaNT/AK36LW2LFXUVYldap+IqzYUZTnxKMffIDAckYPPg0fubnZbkIZipOYeoKm3LNS0ziCJiwKqoAydZLFUy1dWmZnld2AAZjj8cai96paZWkkjEKgfIMkhIbPjjjWa325lmUzPLIyLkB353458cYB/tpDWMay2h+4f3+aR4ZCXBvK6xR9BwN1vZ7fcaeQ2+OGTuljgzyJ/CT555J/Cn75E+/Vnpjpu22QVdhtUFju9Bb3ucVTSJ2QBDNCvbcrjcX7hxnnKa5/T9bTTdCU3T09JFPXyNtFW43MCfiHBJ3K4Ugbgeec+TlnfOpZuoUFv6p6mrpLbRLHI0MdMFEkgC/CQhPlhjz5HjA8kZDqOg1U+rinilpjbsZ+3Dr4o4VyKRrQGujo39fT8A+6qa+vuj2nqaukkFXvJj7j5JSJwV+2BuL8/+a26i/fXdc1F7pKXsVZEKRlDiN5wrNISB/v3IjHjnJ8gHS3qe6pcqW1W21kR06U5aYooTGCeAPsCfJ8+dadTK1E1I0UESsiNIV7o3hAQd5Xzj3+c51oogN5I4x7qfrHXE1p5s15C/8+U+6uudmrJbtdbHQtLaIYYRc3gdXWeSTkyrGTwQCFfnBPoeSaTfptNM3UHUbO1ULJPVu8tLCxRahXY/FyvOzaRlQRnIzwMaNPDApS/5OyFya2WevqbtJQSPDTVEJOHmJJ8k/wCmuME45z6Gm9JbJaSZCa6eaNGyyyKp3/jxxxjTbqWeg7DfVlQ5yUX+In1451ReuqW5zrT1Fp/ZTt+6qzdyCTPo8Dj1zn+2KHW+lN0M+xrw4H3HkUxK0ad5DTd/Cxw75Ek3JElEfhK0jKu7nH7x4QeRnySOPGdXrFOrT1ENZFcKNlRZHhmR3jI8Fip5494Hgaj3UMlItwt1LJR962000sBpjKQu9idjH2cAgffjyNW2VprZLPdbPA6VNPiRo4wRFLD5dG8+PR86j9kPBcNmJOVM7PN2ZpJYXBbsv2sjPywzLx7+RGoJE22pr5N3drW2VH1kjEylXX5DPrycn2Dp7cOr7RGpmtFpeo7ysSKoYSN8+UAHPvPPn0NRq5fUUlG94udT3K2qJjEQwDjHsD90+8euPZ1SGidCO0kGChyFpoNNrUW4XKODvUNQ9KEVVllMxVR/PbjPA8aNKrpLI9ojKSMsXdy0YPxJI8/9EaNOHUMjAG28IRbtXR6zonqGqu8s9TF3oZHJiq1cPFLHwVZMZypBBH88cc60b70rVUNskni21UqMrFApDBR5x9z44+2dGjWwi6PpptES4Zdm/GzZWgf02ERb82fhKJ7Zd62igmkp5sGTdvMYG0nnJHknjVKWiW4VKvI8kaxc4MZ+WT+f850aNZnukcOvbGOBX2tSOwa11crYqJ4KSMikpGLeN20sT/XSxqH6tqiCWCQylgyE5XkjOfHOjRprrMjyBZx9KXUrAG4S+6Q1MVtSinpp4ptwOxkIPlv8/qNGjRqKIhIMnhD2Ar//2Q=="
         },
         {
             "allowed": {
@@ -26941,7 +26962,6 @@
             "allowed": {
                 "melee": [],
                 "ranged": [
-                    "shaman",
                     "druid",
                     "priest",
                     "mage",
@@ -26949,7 +26969,6 @@
                 ],
                 "healers": [
                     "paladin",
-                    "shaman",
                     "druid",
                     "monk",
                     "priest"
@@ -26967,15 +26986,12 @@
                 "melee": [
                     "death_knight",
                     "paladin",
-                    "warrior",
-                    "druid"
+                    "warrior"
                 ],
                 "ranged": [],
                 "healers": [],
                 "tanks": [
-                    "death_knight",
-                    "druid",
-                    "monk"
+                    "death_knight"
                 ]
             },
             "name": "Tentacle Crusher",
