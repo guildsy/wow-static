@@ -428,11 +428,27 @@
 			["Queen Azshara", "54853"]
 		];
 
-		BOSSES = ETERNAL_PALACE;
+		var NYALOTHA = [
+			["Wrathion", "156818"],
+			["Maut", "156523"],
+			["The Prophet Skitra", "161901"],
+			["Dark Inquisitor Xanesh", "160229"],
+			["The Hivemind", "157253"],
+			["Shad'har the Insatiable", "157231"],
+			["Drest'agath", "157602"],
+			["Il'gynoth", "158328"],
+			["Vexiona", "157354"],
+			["Ra-den", "156866"],
+			["Carapace of N'Zoth", "157439"],
+			["N'Zoth the Corruptor", "158041"]
+		];
+
+		BOSSES = NYALOTHA;
 
 		ITEMS = {};
 		CURRENT_ITEM = null;
 		SEARCH = '';
+		var IS_PTR = true;
 		var $list;
 		var $item;
 		var EMPTY_ITEM = {
@@ -595,7 +611,8 @@
 			if ( ! id) return;
 
 			if (id.indexOf('wowhead.com')) {
-				var match = /https?:\/\/www.wowhead.com\/item=(\d+).*/.exec(id);
+
+				var match = /wowhead.com\/item=(\d+).*/.exec(id);
 				if (match) id = match[1];
 			}
 
@@ -608,11 +625,18 @@
 					$('[name="name"]').val(data.name);
 					$('[name="id"]').val(id);
 
-					var slot = data.slot || 'misc';
-					$('[name="slot"]').val(slot.toLowerCase());
+					var slot = (data.slot || 'misc').toLowerCase();
+
+					const isWeapon = ['ranged', 'one-hand', 'two-hand'].includes(slot);
+					const isOffhand = ['shield', 'held in off-hand'].includes(slot);
+					let selectSlot = slot;
+					if (isWeapon) selectSlot = 'weapon';
+					else if (isOffhand) selectSlot = 'offhand';
+					$('[name="slot"]').val(selectSlot);
 
 					// tooltip
-					var link = 'https://www.wowhead.com/item=' + id;
+					var prefix = IS_PTR ? 'ptr' : 'www';
+					var link = `https://${prefix}.wowhead.com/item=` + id;
 					var t = $('#tooltip').attr('href', link);
 					t.remove();
 
@@ -631,8 +655,10 @@
 					if (armour.indexOf('relic') !== -1) {
 						$('#' + armour.split(' ')[0]).click();
 						$('[name="slot"]').val('relic');
-					} else if (slot === 'trinket') {
-						return;
+					} else if (slot === 'finger') {
+						$('[type="checkbox"]').prop('checked', true);
+					} else if (isOffhand || isWeapon || slot === 'trinket') {
+						selectSpecs(data.specs);
 					} else {
 						var types = ['cloth', 'leather', 'mail', 'plate'];
 
@@ -646,6 +672,135 @@
 					$('#send').click();
 				}
 			});
+		}
+
+		function selectSpec(spec) {
+			console.log(spec);
+			switch (spec) {
+				case 62:
+				case 63:
+				case 64:
+					$('[name="ranged-mage"]').prop('checked', true);
+					break;
+
+				case 65:
+					$('[name="healers-paladin"]').prop('checked', true);
+					break;
+
+				case 66:
+					$('[name="tanks-paladin"]').prop('checked', true);
+					break;
+
+				case 70:
+					$('[name="melee-paladin"]').prop('checked', true);
+					break;
+
+				case 102:
+					$('[name="ranged-druid"]').prop('checked', true);
+					break;
+
+				case 103:
+					$('[name="melee-druid"]').prop('checked', true);
+					break;
+
+				case 104:
+						$('[name="tanks-druid"]').prop('checked', true);
+					break;
+
+				case 105:
+					$('[name="healers-druid"]').prop('checked', true);
+					break;
+
+				case 71:
+				case 72:
+					$('[name="melee-warrior"]').prop('checked', true);
+					break;
+
+				case 73:
+					$('[name="tanks-warrior"]').prop('checked', true);
+					break;
+
+				case 250:
+					$('[name="tanks-death_knight"]').prop('checked', true);
+					break;
+
+				case 251:
+				case 252:
+						$('[name="melee-death_knight"]').prop('checked', true);
+					break;
+
+				case 255:
+					$('[name="melee-hunter"]').prop('checked', true);
+					break;
+
+				case 256:
+				case 257:
+					$('[name="healers-priest"]').prop('checked', true);
+					break;
+
+				case 258:
+					$('[name="ranged-priest"]').prop('checked', true);
+					break;
+
+				case 259:
+				case 260:
+				case 261:
+					$('[name="melee-rogue"]').prop('checked', true);
+					break;
+
+				case 262:
+					$('[name="ranged-shaman"]').prop('checked', true);
+					break;
+
+				case 263:
+					$('[name="melee-shaman"]').prop('checked', true);
+					break;
+
+				case 264:
+					$('[name="healers-shaman"]').prop('checked', true);
+					break;
+
+				case 265:
+				case 266:
+				case 267:
+					$('[name="ranged-warlock"]').prop('checked', true);
+					break;
+
+				case 268:
+					$('[name="tanks-monk"]').prop('checked', true);
+					break;
+
+				case 269:
+					$('[name="melee-monk"]').prop('checked', true);
+					break;
+
+				case 270:
+					$('[name="healers-monk"]').prop('checked', true);
+					break;
+
+				case 253:
+				case 254:
+					$('[name="ranged-hunter"]').prop('checked', true);
+					break;
+
+				case 577:
+					$('[name="melee-demon_hunter"]').prop('checked', true);
+					break;
+
+				case 581:
+					$('[name="tanks-demon_hunter"]').prop('checked', true);
+					break;
+
+				default:
+					throw new Error(`unknown ${spec}`);
+
+
+
+			}
+		}
+
+		function selectSpecs(specs) {
+			specs.forEach((spec) => selectSpec(spec));
 		}
 
 		$(function() {

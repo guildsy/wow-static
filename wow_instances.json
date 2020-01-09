@@ -1,6 +1,79 @@
 {
 	"instances": [
 		{
+			"order": 11,
+			"id": "10522",
+			"name": "Ny'alotha, The Waking City",
+			"wowheadBonuses": {
+				"normal": "4822:1487",
+				"heroic": "4823:1502",
+				"mythic": "4824:1517"
+			},
+			"blockOnGuildsy": true,
+			"bosses": [
+				{
+					"name": "Wrathion",
+					"id": "156818"
+				},
+
+				{
+					"name": "Maut",
+					"id": "156523"
+				},
+
+				{
+					"name": "Prophet Skitra",
+					"id": "161901"
+				},
+
+				{
+					"name": "Dark Inquisitor Xanesh",
+					"id": "160229"
+				},
+
+				{
+					"name": "Ka'zir",
+					"id": "157253"
+				},
+
+				{
+					"name": "Shad'har the Insatiable",
+					"id": "157231"
+				},
+
+				{
+					"name": "Drest'agath",
+					"id": "157602"
+				},
+
+				{
+					"name": "Il'gynoth",
+					"id": "158328"
+				},
+
+				{
+					"name": "Vexiona",
+					"id": "157354"
+				},
+
+				{
+					"name": "Ra-den",
+					"id": "156866"
+				},
+
+				{
+					"name": "Fury of N'Zoth",
+					"id": "157439"
+				},
+
+				{
+					"name": "N'Zoth the Corruptor",
+					"id": "158041"
+				}
+			]
+		},
+
+		{
 			"order": 10,
 			"id": "10425",
 			"name": "The Eternal Palace",
