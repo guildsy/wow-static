@@ -29963,6 +29963,49 @@
             "sourceId": "158041",
             "slot": "finger",
             "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "paladin",
+                    "warrior",
+                    "hunter",
+                    "shaman",
+                    "druid",
+                    "monk",
+                    "rogue",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "hunter",
+                    "shaman",
+                    "druid",
+                    "priest",
+                    "mage",
+                    "warlock"
+                ],
+                "healers": [
+                    "paladin",
+                    "shaman",
+                    "druid",
+                    "monk",
+                    "priest"
+                ],
+                "tanks": [
+                    "death_knight",
+                    "paladin",
+                    "warrior",
+                    "druid",
+                    "monk",
+                    "demon_hunter"
+                ]
+            },
+            "name": "Ny'alotha Allseer",
+            "id": "174872",
+            "sourceId": "158041",
+            "slot": "misc",
+            "icon": "data:image/jpeg;base64,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"
         }
     ]
 }
