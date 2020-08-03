@@ -24526,6 +24526,49 @@
                 "melee": [
                     "death_knight",
                     "paladin",
+                    "warrior",
+                    "hunter",
+                    "shaman",
+                    "druid",
+                    "monk",
+                    "rogue",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "hunter",
+                    "shaman",
+                    "druid",
+                    "priest",
+                    "mage",
+                    "warlock"
+                ],
+                "healers": [
+                    "paladin",
+                    "shaman",
+                    "druid",
+                    "monk",
+                    "priest"
+                ],
+                "tanks": [
+                    "death_knight",
+                    "paladin",
+                    "warrior",
+                    "druid",
+                    "monk",
+                    "demon_hunter"
+                ]
+            },
+            "name": "Glacial Tidestorm",
+            "id": "166705",
+            "sourceId": "149684",
+            "slot": "misc",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "paladin",
                     "warrior"
                 ],
                 "ranged": [],
