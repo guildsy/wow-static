@@ -1,7 +1,7 @@
 {
 	"instances": [
 		{
-			"order": 11,
+			"order": 12,
 			"id": "10522",
 			"name": "Ny'alotha, The Waking City",
 			"wowheadBonuses": {
@@ -69,6 +69,69 @@
 				{
 					"name": "N'Zoth the Corruptor",
 					"id": "158041"
+				}
+			]
+		},
+
+		{
+			"order": 11,
+			"id": "13224",
+			"name": "Castle Nathria",
+			"wowheadBonuses": {
+				"normal": "4822:1487",
+				"heroic": "4823:1502",
+				"mythic": "4824:1517"
+			},
+			"blockOnGuildsy": true,
+			"bosses": [
+				{
+					"name": "Shriekwing",
+					"id": "172145"
+				},
+
+				{
+					"name": "Huntsman Altimor",
+					"id": "165066"
+				},
+
+				{
+					"name": "Sun King's Salvation",
+					"id": "24664"
+				},
+
+				{
+					"name": "Artificer Xy'mox",
+					"id": "166644"
+				},
+
+				{
+					"name": "Hungering Destroyer",
+					"id": "164261"
+				},
+
+				{
+					"name": "Lady Inerva Darkvein",
+					"id": "167517"
+				},
+
+				{
+					"name": "The Council of Blood",
+					"id": "166971"
+				},
+
+				{
+					"name": "Sludgefist",
+					"id": "174733"
+				},
+
+				{
+					"name": "Stone Legion Generals",
+					"id": "165318"
+				},
+
+				{
+					"name": "Sire Denathrius",
+					"id": "168938"
 				}
 			]
 		},
