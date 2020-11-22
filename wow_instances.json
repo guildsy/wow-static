@@ -78,9 +78,9 @@
 			"id": "13224",
 			"name": "Castle Nathria",
 			"wowheadBonuses": {
-				"normal": "4822:1487",
-				"heroic": "4823:1502",
-				"mythic": "4824:1517"
+				"normal": "6652",
+				"heroic": "7188:1485",
+				"mythic": "7187:1498"
 			},
 			"blockOnGuildsy": true,
 			"bosses": [
