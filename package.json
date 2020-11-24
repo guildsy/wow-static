@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node lib/server.js",
-    "instances": "node lib/minify-instances.js"
+    "instances": "node lib/minify-instances.js",
+    "items": "node lib/minify-items.js"
   },
   "author": "",
   "license": "MIT",
