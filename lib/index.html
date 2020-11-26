@@ -227,6 +227,8 @@
 			<option value="weapon">Weapon</option>
 			<option value="offhand">Offhand</option>
 			<option value="whatever_token">Whatever tier token</option>
+			<option value="weapon_token">Weapon token</option>
+			<option value="legendary_recipe">Legendary recipe</option>
 		</select>
 
 		<div class="buttons">
@@ -243,23 +245,33 @@
 
 			<br />
 
-			<div id="conq" class="small button">conq</div>
+			<!-- <div id="conq" class="small button">conq</div>
 			<div id="vanq" class="small button">vanq</div>
 			<div id="prot" class="small button">prot</div>
 
+			<br /> -->
+
+			<div id="death_knight" class="small button">death_knight</div>
+			<div id="paladin" class="small button">paladin</div>
+			<div id="warrior" class="small button">warrior</div>
+			<div id="hunter" class="small button">hunter</div>
+			<div id="shaman" class="small button">shaman</div>
+			<div id="druid" class="small button">druid</div>
+			<div id="monk" class="small button">monk</div>
+			<div id="rogue" class="small button">rogue</div>
+			<div id="demon_hunter" class="small button">demon_hunter</div>
+			<div id="priest" class="small button">priest</div>
+			<div id="mage" class="small button">mage</div>
+			<div id="warlock" class="small button">warlock</div>
+
 			<br />
 
-			<div id="arcane" class="small button">arcane</div>
-			<div id="blood" class="small button">blood</div>
-			<div id="fel" class="small button">fel</div>
-			<div id="fire" class="small button">fire</div>
-			<div id="frost" class="small button">frost</div>
-			<div id="holy" class="small button">holy</div>
-			<div id="iron" class="small button">iron</div>
-			<div id="life" class="small button">life</div>
-			<div id="shadow" class="small button">shadow</div>
-			<div id="water" class="small button">water</div>
-			<div id="storm" class="small button">storm</div>
+			<div id="abominable" class="small button">abominable</div>
+			<div id="mystic" class="small button">mystic</div>
+			<div id="venerated" class="small button">venerated</div>
+			<div id="zenith" class="small button">zenith</div>
+			<div id="apogee" class="small button">apogee</div>
+			<div id="thaumaturgic" class="small button">thaumaturgic</div>
 		</div>
 
 		<div>
@@ -692,6 +704,9 @@
 					let selectSlot = slot;
 					if (isWeapon) selectSlot = 'weapon';
 					else if (isOffhand) selectSlot = 'offhand';
+					else if (data.name.includes('Anima') && data.armour === '1') {
+						selectSlot = 'weapon_token';
+					}
 					$('[name="slot"]').val(selectSlot);
 
 					// tooltip
@@ -712,7 +727,9 @@
 
 					var armour = (data.armour || '').toLowerCase();
 
-					if (armour.indexOf('relic') !== -1) {
+					if (armour === '1') {
+						// do nothing
+					} else if (armour.indexOf('relic') !== -1) {
 						$('#' + armour.split(' ')[0]).click();
 						$('[name="slot"]').val('relic');
 					} else if (slot === 'finger') {
@@ -721,6 +738,8 @@
 						selectSpecs(data.specs);
 					} else {
 						var types = ['cloth', 'leather', 'mail', 'plate'];
+
+						console.log('a', armour);
 
 						types.forEach(function(type, i) {
 							if (armour == i + 1) {
@@ -1023,134 +1042,105 @@
 				$('[name="tanks-monk"]').prop('checked', true);
 			});
 
-			$('#arcane').click(function() {
-				$('[name="ranged-mage"]').prop('checked', true);
-				$('[name="ranged-druid"]').prop('checked', true);
-				$('[name="ranged-hunter"]').prop('checked', true);
 
-				$('[name="tanks-paladin"]').prop('checked', true);
-				$('[name="tanks-demon_hunter"]').prop('checked', true);
-			});
-
-			$('#blood').click(function() {
-				$('[name="melee-rogue"]').prop('checked', true);
-				$('[name="melee-druid"]').prop('checked', true);
-				$('[name="melee-hunter"]').prop('checked', true);
-				$('[name="melee-warrior"]').prop('checked', true);
+			$('#death_knight').click(function() {
 				$('[name="melee-death_knight"]').prop('checked', true);
-
-				$('[name="ranged-warlock"]').prop('checked', true);
-				$('[name="ranged-priest"]').prop('checked', true);
-				$('[name="ranged-hunter"]').prop('checked', true);
-
 				$('[name="tanks-death_knight"]').prop('checked', true);
-				$('[name="tanks-warrior"]').prop('checked', true);
-				$('[name="tanks-druid"]').prop('checked', true);
 			});
 
-			$('#fel').click(function() {
-				$('[name="tanks-demon_hunter"]').prop('checked', true);
-
-				$('[name="ranged-warlock"]').prop('checked', true);
-
-				$('[name="melee-demon_hunter"]').prop('checked', true);
-				$('[name="melee-rogue"]').prop('checked', true);
-			});
-
-			$('#fire').click(function() {
-				$('[name="melee-death_knight"]').prop('checked', true);
+			$('#paladin').click(function() {
 				$('[name="melee-paladin"]').prop('checked', true);
+				$('[name="healers-paladin"]').prop('checked', true);
+				$('[name="tanks-paladin"]').prop('checked', true);
+			});
+
+			$('#warrior').click(function() {
 				$('[name="melee-warrior"]').prop('checked', true);
-				$('[name="melee-shaman"]').prop('checked', true);
-
-				$('[name="ranged-warlock"]').prop('checked', true);
-				$('[name="ranged-mage"]').prop('checked', true);
-
-				$('[name="tanks-druid"]').prop('checked', true);
 				$('[name="tanks-warrior"]').prop('checked', true);
 			});
 
-			$('#frost').click(function() {
-				$('[name="melee-death_knight"]').prop('checked', true);
-				$('[name="melee-druid"]').prop('checked', true);
+			$('#hunter').click(function() {
+				$('[name="ranged-hunter"]').prop('checked', true);
+				$('[name="melee-hunter"]').prop('checked', true);
+			});
 
-				$('[name="ranged-mage"]').prop('checked', true);
+			$('#shaman').click(function() {
+				$('[name="melee-shaman"]').prop('checked', true);
 				$('[name="ranged-shaman"]').prop('checked', true);
-
-				$('[name="healers-monk"]').prop('checked', true);
-				$('[name="healers-druid"]').prop('checked', true);
 				$('[name="healers-shaman"]').prop('checked', true);
 			});
 
-			$('#holy').click(function() {
-				$('[name="healers-priest"]').prop('checked', true);
-				$('[name="healers-paladin"]').prop('checked', true);
-
-				$('[name="tanks-paladin"]').prop('checked', true);
-
-				$('[name="melee-paladin"]').prop('checked', true);
-			});
-
-			$('#iron').click(function() {
-				$('[name="ranged-hunter"]').prop('checked', true);
-
-				$('[name="tanks-paladin"]').prop('checked', true);
-				$('[name="tanks-demon_hunter"]').prop('checked', true);
-				$('[name="tanks-monk"]').prop('checked', true);
-				$('[name="tanks-warrior"]').prop('checked', true);
-				$('[name="tanks-death_knight"]').prop('checked', true);
-
-				$('[name="melee-rogue"]').prop('checked', true);
-				$('[name="melee-hunter"]').prop('checked', true);
-				$('[name="melee-shaman"]').prop('checked', true);
-				$('[name="melee-warrior"]').prop('checked', true);
-				$('[name="melee-monk"]').prop('checked', true);
-
-			});
-
-			$('#life').click(function() {
-				$('[name="healers-druid"]').prop('checked', true);
-				$('[name="healers-monk"]').prop('checked', true);
-				$('[name="healers-shaman"]').prop('checked', true);
-				$('[name="healers-priest"]').prop('checked', true);
-				$('[name="healers-paladin"]').prop('checked', true);
-
-				$('[name="tanks-druid"]').prop('checked', true);
-				$('[name="tanks-monk"]').prop('checked', true);
-
+			$('#druid').click(function() {
 				$('[name="melee-druid"]').prop('checked', true);
-
-				$('[name="ranged-hunter"]').prop('checked', true);
 				$('[name="ranged-druid"]').prop('checked', true);
+				$('[name="healers-druid"]').prop('checked', true);
+				$('[name="tanks-druid"]').prop('checked', true);
 			});
 
-			$('#shadow').click(function() {
-				$('[name="melee-death_knight"]').prop('checked', true);
-				$('[name="melee-demon_hunter"]').prop('checked', true);
-				$('[name="melee-rogue"]').prop('checked', true);
-				$('[name="melee-warrior"]').prop('checked', true);
-
-				$('[name="healers-priest"]').prop('checked', true);
-
-				$('[name="ranged-warlock"]').prop('checked', true);
-				$('[name="ranged-priest"]').prop('checked', true);
-
-				$('[name="tanks-death_knight"]').prop('checked', true);
-			});
-
-			$('#storm').click(function() {
-				$('[name="melee-rogue"]').prop('checked', true);
-				$('[name="melee-hunter"]').prop('checked', true);
-				$('[name="melee-shaman"]').prop('checked', true);
+			$('#monk').click(function() {
 				$('[name="melee-monk"]').prop('checked', true);
-				$('[name="melee-warrior"]').prop('checked', true);
-
-				$('[name="ranged-hunter"]').prop('checked', true);
-				$('[name="ranged-shaman"]').prop('checked', true);
-
-				$('[name="tanks-monk"]').prop('checked', true);
-
 				$('[name="healers-monk"]').prop('checked', true);
+				$('[name="tanks-monk"]').prop('checked', true);
+			});
+
+			$('#rogue').click(function() {
+				$('[name="melee-rogue"]').prop('checked', true);
+			});
+
+			$('#demon_hunter').click(function() {
+				$('[name="melee-demon_hunter"]').prop('checked', true);
+				$('[name="tanks-demon_hunter"]').prop('checked', true);
+			});
+
+			$('#priest').click(function() {
+				$('[name="ranged-priest"]').prop('checked', true);
+				$('[name="healers-priest"]').prop('checked', true);
+			});
+
+			$('#mage').click(function() {
+				$('[name="ranged-mage"]').prop('checked', true);
+			});
+
+			$('#warlock').click(function() {
+				$('[name="ranged-warlock"]').prop('checked', true);
+			});
+
+			$('#abominable').click(function() {
+				$('#death_knight').click();
+				$('#warlock').click();
+				$('#demon_hunter').click();
+			});
+
+			$('#mystic').click(function() {
+				$('#hunter').click();
+				$('#mage').click();
+				$('#druid').click();
+			});
+
+			$('#venerated').click(function() {
+				$('#paladin').click();
+				$('#priest').click();
+				$('#shaman').click();
+			});
+
+			$('#zenith').click(function() {
+				$('#warrior').click();
+				$('#rogue').click();
+				$('#monk').click();
+			});
+
+			$('#apogee').click(function() {
+				$('#warrior').click();
+				$('#paladin').click();
+				$('#priest').click();
+				$('#monk').click();
+			});
+
+			$('#thaumaturgic').click(function() {
+				$('#shaman').click();
+				$('#mage').click();
+				$('#warlock').click();
+				$('#druid').click();
 			});
 
 			getAll(renderList);
