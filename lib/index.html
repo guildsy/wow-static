@@ -458,56 +458,58 @@
 		];
 
 		const CASTLE_NATHRIA = [
-				{
-					"name": "Shriekwing",
-					"id": "172145"
-				},
+			{
+				"name": "Shriekwing",
+				"id": "172145"
+			},
 
-				{
-					"name": "Huntsman Altimor",
-					"id": "165066"
-				},
+			{
+				"name": "Huntsman Altimor",
+				"id": "165066"
+			},
 
-				{
-					"name": "Sun King's Salvation",
-					"id": "24664"
-				},
+			{
+				"name": "Sun King's Salvation",
+				"id": "24664"
+			},
 
-				{
-					"name": "Artificer Xy'mox",
-					"id": "166644"
-				},
+			{
+				"name": "Artificer Xy'mox",
+				"id": "166644"
+			},
 
-				{
-					"name": "Hungering Destroyer",
-					"id": "164261"
-				},
+			{
+				"name": "Hungering Destroyer",
+				"id": "164261"
+			},
 
-				{
-					"name": "Lady Inerva Darkvein",
-					"id": "167517"
-				},
+			{
+				"name": "Lady Inerva Darkvein",
+				"id": "167517"
+			},
 
-				{
-					"name": "The Council of Blood",
-					"id": "166971"
-				},
+			{
+				"name": "The Council of Blood",
+				"id": "166971"
+			},
 
-				{
-					"name": "Sludgefist",
-					"id": "174733"
-				},
+			{
+				"name": "Sludgefist",
+				"id": "174733"
+			},
 
-				{
-					"name": "Stone Legion Generals",
-					"id": "165318"
-				},
+			{
+				"name": "Stone Legion Generals",
+				"id": "165318"
+			},
 
-				{
-					"name": "Sire Denathrius",
-					"id": "168938"
-				}
-			].map(({name, id}) => [name, id]);
+			{
+				"name": "Sire Denathrius",
+				"id": "168938"
+			},
+
+			{name: 'Trash', id: '10522'}
+		].map(({name, id}) => [name, id]);
 
 		BOSSES = CASTLE_NATHRIA;
 
@@ -727,9 +729,7 @@
 
 					var armour = (data.armour || '').toLowerCase();
 
-					if (armour === '1') {
-						// do nothing
-					} else if (armour.indexOf('relic') !== -1) {
+					if (armour.indexOf('relic') !== -1) {
 						$('#' + armour.split(' ')[0]).click();
 						$('[name="slot"]').val('relic');
 					} else if (slot === 'finger') {
