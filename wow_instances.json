@@ -2,6 +2,7 @@
 	"instances": [
 		{
 			"order": 12,
+			"encounterInstanceId": "1190",
 			"id": "13224",
 			"name": "Castle Nathria",
 			"wowheadBonuses": {
@@ -9,54 +10,64 @@
 				"heroic": "7188:1485",
 				"mythic": "7187:1498"
 			},
-			"blockOnGuildsy": true,
+			"isKillCountSupported": true,
 			"bosses": [
 				{
+					"encounterId": "2393",
 					"name": "Shriekwing",
 					"id": "172145"
 				},
 
 				{
+					"encounterId": "2429",
 					"name": "Huntsman Altimor",
 					"id": "165066"
 				},
 
 				{
+					"encounterId": "2422",
 					"name": "Sun King's Salvation",
 					"id": "24664"
 				},
 
 				{
+					"encounterId": "2418",
 					"name": "Artificer Xy'mox",
 					"id": "166644"
 				},
 
 				{
+					"encounterId": "2428",
 					"name": "Hungering Destroyer",
 					"id": "164261"
 				},
 
 				{
+					"encounterId": "2420",
 					"name": "Lady Inerva Darkvein",
 					"id": "167517"
 				},
 
 				{
+					"encounterId": "2426",
 					"name": "The Council of Blood",
 					"id": "166971"
 				},
 
 				{
+					"encounterId": "2394",
 					"name": "Sludgefist",
 					"id": "174733"
 				},
 
 				{
+					"encounterId": "2425",
 					"name": "Stone Legion Generals",
 					"id": "165318"
 				},
 
 				{
+					"encounterId": "2424",
 					"name": "Sire Denathrius",
 					"id": "168938"
 				}
