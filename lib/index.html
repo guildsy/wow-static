@@ -732,6 +732,8 @@
 					if (armour.indexOf('relic') !== -1) {
 						$('#' + armour.split(' ')[0]).click();
 						$('[name="slot"]').val('relic');
+					} else if (slot === 'conduit') {
+						(data.classes || []).forEach((cls) => $(`#${cls}`).click());
 					} else if (slot === 'finger') {
 						$('[type="checkbox"]').prop('checked', true);
 					} else if (isOffhand || isWeapon || slot === 'trinket') {
@@ -752,7 +754,7 @@
 		}
 
 		function selectSpec(spec) {
-			console.log(spec);
+			console.log('spec', spec);
 			switch (spec) {
 				case 62:
 				case 63:
