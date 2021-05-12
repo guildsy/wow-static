@@ -1,7 +1,7 @@
 {
 	"instances": [
 		{
-			"order": 12,
+			"order": 13,
 			"encounterInstanceId": "1190",
 			"id": "13224",
 			"name": "Castle Nathria",
@@ -70,6 +70,80 @@
 					"encounterId": "2424",
 					"name": "Sire Denathrius",
 					"id": "168938"
+				}
+			]
+		},
+
+		{
+			"order": 12,
+			"encounterInstanceId": "",
+			"id": "13561",
+			"name": "Sanctum of Domination",
+			"wowheadBonuses": {
+				"normal": "",
+				"heroic": "",
+				"mythic": ""
+			},
+			"isKillCountSupported": false,
+			"bosses": [
+				{
+					"encounterId": "",
+					"name": "The Tarragrue",
+					"id": "152253"
+				},
+
+				{
+					"encounterId": "",
+					"name": "Eye of the Jailer",
+					"id": "179128"
+				},
+
+				{
+					"encounterId": "",
+					"name": "The Nine",
+					"id": "178738"
+				},
+
+				{
+					"encounterId": "",
+					"name": "Remnant of Ner'zhul",
+					"id": "175729"
+				},
+
+				{
+					"encounterId": "",
+					"name": "Soulrender Dormazain",
+					"id": "175727"
+				},
+
+				{
+					"encounterId": "",
+					"name": "Painsmith Raznal",
+					"id": "176523"
+				},
+
+				{
+					"encounterId": "",
+					"name": "Guardian of the First Ones",
+					"id": "175731"
+				},
+
+				{
+					"encounterId": "",
+					"name": "Fatescribe Roh-Kalo",
+					"id": "175730"
+				},
+
+				{
+					"encounterId": "",
+					"name": "Kel'Thuzad",
+					"id": "176974"
+				},
+
+				{
+					"encounterId": "",
+					"name": "Sylvanas Windrunner",
+					"id": "179687"
 				}
 			]
 		},
