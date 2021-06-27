@@ -639,8 +639,22 @@
 			console.log('check done');
 		}
 
-		function onBossUrl(bossUrl) {
-			console.log(bossUrl);
+		async function onBossUrl(bossUrl) {
+			// console.log(bossUrl);
+			if (!bossUrl) return;
+
+			const res = await fetch('/wowhead/boss', {
+				method: 'POST',
+				body: JSON.stringify({
+					url: bossUrl
+				}),
+				headers: {
+					'Content-Type': 'application/json',
+				},
+			});
+
+			const {urls} = await res.json();
+			console.log('boss item urls', urls);
 		}
 
 		function onWowhead(id) {
