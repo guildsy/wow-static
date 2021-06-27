@@ -40,14 +40,19 @@
 
 		.automation-col {
 			flex-shrink: 0;
-			width: 300px;
+			width: 400px;
 			border-left: 2px solid black;
 			padding: 20px;
 		}
 
 		.automation-col input {
-			max-width: 200px;
+			max-width: 300px;
 			display: inline-block !important;
+		}
+
+		.automation-col textarea {
+			width: 100%;
+			height: 400px;
 		}
 
 		.list-col, .automation-col {
@@ -350,6 +355,8 @@
 				</div>
 			</label>
 		</form>
+
+		<textarea id="boss-url-list"></textarea>
 	</div>
 
 	<script>
@@ -486,6 +493,8 @@
 			}
 		};
 
+		let bossItemUrlsCache = [];
+
 		window.addEventListener('focus', () => {
 			window.setTimeout(() => {
 				document.querySelector('#wowhead input').focus();
@@ -497,6 +506,10 @@
 				ITEMS = data;
 				if (cb) cb();
 			});
+		}
+
+		function updateBossUrlList() {
+			$('#boss-url-list').val(bossItemUrlsCache.join('\n'));
 		}
 
 		function renderList() {
@@ -546,7 +559,7 @@
 			});
 		}
 
-		function onSend() {
+		async function onSend() {
 			var item = {
 				allowed: {
 					melee: [],
@@ -582,12 +595,16 @@
 				return $item.addClass('error');
 			}
 
-			$.ajax('/item', {
-				type: 'POST',
-				contentType: 'application/json; chatset=utf-8',
-				dataType: 'json',
-				data: JSON.stringify(item),
-				success: function(data) {
+			const res = await fetch('/item', {
+				method: 'POST',
+				body: JSON.stringify(item),
+				headers: {
+					'Content-Type': 'application/json',
+				},
+			});
+
+			const data = await res.json();
+
 					console.log('saved', item);
 					getAll(renderList);
 
@@ -596,8 +613,6 @@
 					renderItem(EMPTY_ITEM);
 					$('#wowhead').find('input').focus();
 				}
-			});
-		}
 
 		function onRemove() {
 			$.ajax('/item/' + CURRENT_ITEM.id, {
@@ -655,21 +670,22 @@
 
 			const {urls} = await res.json();
 			console.log('boss item urls', urls);
+
+			bossItemUrlsCache = urls;
+			updateBossUrlList();
 		}
 
-		function onWowhead(id) {
+		async function onWowhead(id, isAutomated) {
 			if ( ! id) return;
 
 			if (id.indexOf('wowhead.com')) {
-
 				var match = /wowhead.com\/item=(\d+).*/.exec(id);
 				if (match) id = match[1];
 			}
 
+			const res = await fetch('/wowhead/' + id);
+			const data = await res.json();
 
-			$.ajax('/wowhead/' + id, {
-				type: 'GET',
-				success: function(data) {
 					console.log('wowhead', data);
 
 					$('[name="name"]').val(data.name);
@@ -693,9 +709,11 @@
 					var t = $('#tooltip').attr('href', link);
 					t.remove();
 
+			if (!isAutomated) {
 					setTimeout(function() {
 						t.insertBefore('#wowhead');
 					}, 500);
+			}
 
 
 					// auto tick armour types
@@ -730,8 +748,6 @@
 
 					$('#send').click();
 				}
-			});
-		}
 
 		function selectSpec(spec) {
 			console.log('spec', spec);
