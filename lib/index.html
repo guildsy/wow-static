@@ -511,7 +511,69 @@
 			{name: 'Trash', id: '13224'}
 		].map(({name, id}) => [name, id]);
 
-		BOSSES = CASTLE_NATHRIA;
+		const SANCTUM_OF_DOMINATiON = [
+			{
+				"encounterId": "",
+				"name": "The Tarragrue",
+				"id": "152253"
+			},
+
+			{
+				"encounterId": "",
+				"name": "Eye of the Jailer",
+				"id": "179128"
+			},
+
+			{
+				"encounterId": "",
+				"name": "The Nine",
+				"id": "178738"
+			},
+
+			{
+				"encounterId": "",
+				"name": "Remnant of Ner'zhul",
+				"id": "175729"
+			},
+
+			{
+				"encounterId": "",
+				"name": "Soulrender Dormazain",
+				"id": "175727"
+			},
+
+			{
+				"encounterId": "",
+				"name": "Painsmith Raznal",
+				"id": "176523"
+			},
+
+			{
+				"encounterId": "",
+				"name": "Guardian of the First Ones",
+				"id": "175731"
+			},
+
+			{
+				"encounterId": "",
+				"name": "Fatescribe Roh-Kalo",
+				"id": "175730"
+			},
+
+			{
+				"encounterId": "",
+				"name": "Kel'Thuzad",
+				"id": "176974"
+			},
+
+			{
+				"encounterId": "",
+				"name": "Sylvanas Windrunner",
+				"id": "179687"
+			}
+		].map(({name, id}) => [name, id]);
+
+		BOSSES = SANCTUM_OF_DOMINATiON;
 
 		ITEMS = {};
 		CURRENT_ITEM = null;
@@ -733,7 +795,11 @@
 						$('#' + armour.split(' ')[0]).click();
 						$('[name="slot"]').val('relic');
 					} else if (slot === 'conduit') {
-						(data.classes || []).forEach((cls) => $(`#${cls}`).click());
+						(data.classes || []).forEach((cls) => {
+							if (cls === 'death') $(`#death_knight`).click();
+							else if (cls === 'demon') $(`#demon_hunter`).click();
+							else $(`#${cls}`).click();
+						});
 					} else if (slot === 'finger') {
 						$('[type="checkbox"]').prop('checked', true);
 					} else if (isOffhand || isWeapon || slot === 'trinket') {
