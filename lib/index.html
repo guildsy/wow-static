@@ -14,20 +14,21 @@
 	</script>
 
 	<style>
-		body {
-			background-color: #E4E4E4;
+		* {
+			box-sizing: border-box;
 		}
 
-		body, div {
+		body {
 			margin: 0;
-			overflow: auto;
+			background-color: #E4E4E4;
+			display: flex;
+			flex-direction: row;
 		}
 
 		.list-col {
+			flex-shrink: 0;
 			width: 300px;
-			height: 100%;
 			border-right: 2px solid black;
-			float: left;
 		}
 
 		.list-item {
@@ -37,11 +38,29 @@
 			border-bottom: 1px solid #D3D3D3;
 		}
 
+		.automation-col {
+			flex-shrink: 0;
+			width: 300px;
+			border-left: 2px solid black;
+			padding: 20px;
+		}
+
+		.automation-col input {
+			max-width: 200px;
+			display: inline-block !important;
+		}
+
+		.list-col, .automation-col {
+			height: 100vh;
+			overflow: auto;
+		}
+
 		.list-item:hover, .list-item.selected {
 			background-color: #D3D3D3;
 		}
 
 		.item-col {
+			flex-grow: 1;
 			padding: 10px;
 		}
 
@@ -126,6 +145,10 @@
 
 		[name$="warrior"] + span {
 			color: #C79C6E;
+		}
+
+		.buttons > .button-row {
+			margin-top: 1rem;
 		}
 
 		.button {
@@ -232,18 +255,18 @@
 		</select>
 
 		<div class="buttons">
-			<div id="intellect" class="small button">intellect</div>
-			<div id="strength" class="small button">strength</div>
-			<div id="agility" class="small button">agility</div>
+			<div class="button-row">
+				<div id="intellect" class="small button">intellect</div>
+				<div id="strength" class="small button">strength</div>
+				<div id="agility" class="small button">agility</div>
+			</div>
 
-			<br />
-
-			<div id="cloth" class="small button">cloth</div>
-			<div id="leather" class="small button">leather</div>
-			<div id="mail" class="small button">mail</div>
-			<div id="plate" class="small button">plate</div>
-
-			<br />
+			<div class="button-row">
+				<div id="cloth" class="small button">cloth</div>
+				<div id="leather" class="small button">leather</div>
+				<div id="mail" class="small button">mail</div>
+				<div id="plate" class="small button">plate</div>
+			</div>
 
 			<!-- <div id="conq" class="small button">conq</div>
 			<div id="vanq" class="small button">vanq</div>
@@ -251,27 +274,30 @@
 
 			<br /> -->
 
-			<div id="death_knight" class="small button">death_knight</div>
-			<div id="paladin" class="small button">paladin</div>
-			<div id="warrior" class="small button">warrior</div>
-			<div id="hunter" class="small button">hunter</div>
-			<div id="shaman" class="small button">shaman</div>
-			<div id="druid" class="small button">druid</div>
-			<div id="monk" class="small button">monk</div>
-			<div id="rogue" class="small button">rogue</div>
-			<div id="demon_hunter" class="small button">demon_hunter</div>
-			<div id="priest" class="small button">priest</div>
-			<div id="mage" class="small button">mage</div>
-			<div id="warlock" class="small button">warlock</div>
+			<div class="button-row">
+				<div id="death_knight" class="small button">death_knight</div>
+				<div id="paladin" class="small button">paladin</div>
+				<div id="warrior" class="small button">warrior</div>
+				<div id="hunter" class="small button">hunter</div>
+				<div id="shaman" class="small button">shaman</div>
+				<div id="druid" class="small button">druid</div>
+				<br />
+				<div id="monk" class="small button">monk</div>
+				<div id="rogue" class="small button">rogue</div>
+				<div id="demon_hunter" class="small button">demon_hunter</div>
+				<div id="priest" class="small button">priest</div>
+				<div id="mage" class="small button">mage</div>
+				<div id="warlock" class="small button">warlock</div>
+			</div>
 
-			<br />
-
-			<div id="abominable" class="small button">abominable</div>
-			<div id="mystic" class="small button">mystic</div>
-			<div id="venerated" class="small button">venerated</div>
-			<div id="zenith" class="small button">zenith</div>
-			<div id="apogee" class="small button">apogee</div>
-			<div id="thaumaturgic" class="small button">thaumaturgic</div>
+			<!-- <div class="button-row">
+				<div id="abominable" class="small button">abominable</div>
+				<div id="mystic" class="small button">mystic</div>
+				<div id="venerated" class="small button">venerated</div>
+				<div id="zenith" class="small button">zenith</div>
+				<div id="apogee" class="small button">apogee</div>
+				<div id="thaumaturgic" class="small button">thaumaturgic</div>
+			</div> -->
 		</div>
 
 		<div>
@@ -315,148 +341,18 @@
 		</div>
 	</div>
 
+	<div class="automation-col">
+		<form id="boss-url">
+			<label>
+				<div>
+					<input name="boss-url" type="text" placeholder="boss url" />
+					<button type="submit">Go</button>
+				</div>
+			</label>
+		</form>
+	</div>
+
 	<script>
-		var HELLFIRE_BOSSES = [
-			['Hellfire Citadel Trash', '7545'],
-			['Hellfire Assault', '95068'],
-			['Iron Reaver', '90284'],
-			['Kormrok', '90776'],
-			['Kilrogg Deadeye', '90378'],
-			['Hellfire High Council', '92146'],
-			['Gorefiend', '91809'],
-			['Shadow-Lord Iskar', '95067'],
-			['Socrethar the Eternal', '90296'],
-			['Tyrant Velhari', '93439'],
-			['Fel Lord Zakuun', '89890'],
-			['Xhul\'horac', '93068'],
-			['Mannoroth', '91349'],
-			['Archimonde', '91331']
-		];
-
-		var EMERALD_NIGHTMARE_BOSSES = [
-			['Emerald Nightmare Trash', '8026'],
-			['Nythendra', '103160'],
-			['Il\'gynoth', '105393'],
-			['Elerethe Renferal', '106087'],
-			['Ursoc', '100497'],
-			['Dragons of Nightmare', '39407'],
-			['Cenarius', '113534'],
-			['Xavius', '102206']
-		];
-
-		var TRIAL_OF_VALOR_BOSSES = [
-			['Odyn', '95676'],
-			['Guarm', '114344'],
-			['Helya', '114537']
-		];
-
-		var NIGHTHOLD_BOSSES = [
-			['Skorpyron', '102263'],
-			['Chronomatic Anomaly', '104415'],
-			['Trilliax', '104288'],
-			['Spellblade Aluriel ', '107699'],
-			['High Botanist Tel\'arn', '104528'],
-			['Star Augur Etraeus', '103758'],
-			['Tichondrius', '103685'],
-			['Krosus', '101002'],
-			['Elisande', '110965'],
-			['Gul\'dan', '105503']
-		];
-
-		var NIGHTHOLD_BOSSES = [
-			['Skorpyron', '102263'],
-			['Chronomatic Anomaly', '104415'],
-			['Trilliax', '104288'],
-			['Spellblade Aluriel ', '107699'],
-			['High Botanist Tel\'arn', '104528'],
-			['Star Augur Etraeus', '103758'],
-			['Tichondrius', '103685'],
-			['Krosus', '101002'],
-			['Elisande', '110965'],
-			['Gul\'dan', '105503']
-		];
-
-		var TOMB = [
-			['Goroth','115844'],
-			['Demonic inquisiton','120996'],
-			['Harjatan','116407'],
-			['Sisters of the Moon','118523'],
-			['Mistress Sassz\'ine','115767'],
-			['The Desolate Host','118460'],
-			['Maiden of Vigilance','118289'],
-			['Fallen Avatar','120436'],
-			['Kil\'jaeden','117269']
-		];
-
-		var ANTORUS = [
-			['Varimathras', '125075'],
-			['Aggramar', '124691'],
-			['Portal Keeper Hasabel', '124393'],
-			['Coven of Shivarra', '122468'],
-			['Felhounds of Sargeras', '126916'],
-			['Garothi Worldbreaker', '123371'],
-			['Antoran High Command', '122367'],
-			['Kin\'garoth', '125050'],
-			['Imonar the Soulhunter', '125055'],
-			['Eonar the Life Binder', '125562'],
-			['Argus the Unmaker', '124828']
-		];
-
-		var ULDIR = [
-			['Taloc', '137119'],
-			['MOTHER', '140853'],
-			['Fetid Devourer', '133298'],
-			['Zek\'voz', '134445'],
-			['Vectis', '134442'],
-			['Zul', '138967'],
-			['Mythrax the Unraveler', '136383'],
-			['G\'huun', '132998']
-		];
-
-		var DAZARALOR = [
-			["Champion of the Light", "144683"],
-			["Jadefire Masters", "146099"],
-			["Grong the Revenant", "144638"],
-			["Opulence", "147564"],
-			["Conclave of the Chosen", "144747"],
-			["King Rastakhan", "145616"],
-			["High Tinker Mekkatorque", "144838"],
-			["Stormwall Blockade", "146256"],
-			["Lady Jaina Proudmoore","149684"]
-		];
-
-		var CRUCIBLE_OF_STORMS = [
-			["The Restless Cabal", "146497"],
-			["Uu'nat", "145371"]
-		];
-
-		var ETERNAL_PALACE = [
-			["Abyssal Commander Sivara", "155144"],
-			["Blackwater Behemoth", "154986"],
-			["Radiance of Azshara", "152364"],
-			["Lady Ashvane", "153142"],
-			["Orgozoa", "152128"],
-			["Za'qul", "150859"],
-			["The Queen's Court", "152853"],
-			["Queen Azshara", "54853"]
-		];
-
-		var NYALOTHA = [
-			["Wrathion", "156818"],
-			["Maut", "156523"],
-			["The Prophet Skitra", "161901"],
-			["Dark Inquisitor Xanesh", "160229"],
-			["The Hivemind", "157253"],
-			["Shad'har the Insatiable", "157231"],
-			["Drest'agath", "157602"],
-			["Il'gynoth", "158328"],
-			["Vexiona", "157354"],
-			["Ra-den", "156866"],
-			["Carapace of N'Zoth", "157439"],
-			["N'Zoth the Corruptor", "158041"],
-			["Trash", "10522"]
-		];
-
 		const CASTLE_NATHRIA = [
 			{
 				"name": "Shriekwing",
@@ -743,6 +639,10 @@
 			console.log('check done');
 		}
 
+		function onBossUrl(bossUrl) {
+			console.log(bossUrl);
+		}
+
 		function onWowhead(id) {
 			if ( ! id) return;
 
@@ -966,6 +866,12 @@
 			$('#wowhead').on('paste', function(e) {
 				onWowhead(e.originalEvent.clipboardData.getData('text'));
 			});
+
+			// automation
+			$('#boss-url').on('submit', function(e) {
+				e.preventDefault();
+				onBossUrl($(this).find('input').val());
+			})
 
 			BOSSES.forEach(function(boss) {
 				$('[name="boss"]').append($('<option>', {
