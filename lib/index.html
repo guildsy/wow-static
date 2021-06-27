@@ -512,6 +512,20 @@
 			$('#boss-url-list').val(bossItemUrlsCache.join('\n'));
 		}
 
+		async function automateItemUrlSubmission() {
+			const itemUrls = [...bossItemUrlsCache];
+			for (let itemUrl of itemUrls) {
+				// pass the url to the submission function
+				const isOk = await onWowhead(itemUrl, true);
+
+				if (isOk) {
+					// remove this item from the cache as it's been handled
+					bossItemUrlsCache = bossItemUrlsCache.filter((x) => x !== itemUrl);
+					updateBossUrlList();
+				}
+			}
+		}
+
 		function renderList() {
 			$list.find('.list-item').remove();
 
@@ -592,7 +606,8 @@
 				 || ! item.slot ||
 				 (! a.melee.length && ! a.ranged.length
 				 && ! a.healers.length && ! a.tanks.length)) {
-				return $item.addClass('error');
+				$item.addClass('error');
+				return false;
 			}
 
 			const res = await fetch('/item', {
@@ -605,14 +620,15 @@
 
 			const data = await res.json();
 
-					console.log('saved', item);
-					getAll(renderList);
+			console.log('saved', item);
+			getAll(renderList);
 
-					// hack to stop having to set new boss
-					EMPTY_ITEM.sourceId = item.sourceId;
-					renderItem(EMPTY_ITEM);
-					$('#wowhead').find('input').focus();
-				}
+			// hack to stop having to set new boss
+			EMPTY_ITEM.sourceId = item.sourceId;
+			renderItem(EMPTY_ITEM);
+			$('#wowhead').find('input').focus();
+			return true;
+		}
 
 		function onRemove() {
 			$.ajax('/item/' + CURRENT_ITEM.id, {
@@ -673,6 +689,7 @@
 
 			bossItemUrlsCache = urls;
 			updateBossUrlList();
+			automateItemUrlSubmission();
 		}
 
 		async function onWowhead(id, isAutomated) {
@@ -686,68 +703,69 @@
 			const res = await fetch('/wowhead/' + id);
 			const data = await res.json();
 
-					console.log('wowhead', data);
+			console.log('wowhead', data);
 
-					$('[name="name"]').val(data.name);
-					$('[name="id"]').val(id);
+			$('[name="name"]').val(data.name);
+			$('[name="id"]').val(id);
 
-					var slot = (data.slot || 'misc').toLowerCase();
+			var slot = (data.slot || 'misc').toLowerCase();
 
-					const isWeapon = ['ranged', 'one-hand', 'two-hand'].includes(slot);
-					const isOffhand = ['shield', 'held in off-hand'].includes(slot);
-					let selectSlot = slot;
-					if (isWeapon) selectSlot = 'weapon';
-					else if (isOffhand) selectSlot = 'offhand';
-					else if (data.name.includes('Anima') && data.armour === '1') {
-						selectSlot = 'weapon_token';
-					}
-					$('[name="slot"]').val(selectSlot);
+			const isWeapon = ['ranged', 'one-hand', 'two-hand'].includes(slot);
+			const isOffhand = ['shield', 'held in off-hand'].includes(slot);
+			let selectSlot = slot;
+			if (isWeapon) selectSlot = 'weapon';
+			else if (isOffhand) selectSlot = 'offhand';
+			else if (data.name.includes('Anima') && data.armour === '1') {
+				selectSlot = 'weapon_token';
+			}
+			$('[name="slot"]').val(selectSlot);
 
-					// tooltip
-					var prefix = IS_PTR ? 'ptr' : 'www';
-					var link = `https://${prefix}.wowhead.com/item=` + id;
-					var t = $('#tooltip').attr('href', link);
-					t.remove();
+			// tooltip
+			var prefix = IS_PTR ? 'ptr' : 'www';
+			var link = `https://${prefix}.wowhead.com/item=` + id;
+			var t = $('#tooltip').attr('href', link);
 
 			if (!isAutomated) {
-					setTimeout(function() {
-						t.insertBefore('#wowhead');
-					}, 500);
+				t.remove();
+
+				setTimeout(function() {
+					t.insertBefore('#wowhead');
+				}, 500);
 			}
 
 
-					// auto tick armour types
-					// function is(a, type) {
-					// 	return a.indexOf(type) === 0;
-					// }
+			// auto tick armour types
+			// function is(a, type) {
+			// 	return a.indexOf(type) === 0;
+			// }
 
-					var armour = (data.armour || '').toLowerCase();
+			var armour = (data.armour || '').toLowerCase();
 
-					if (armour.indexOf('relic') !== -1) {
-						$('#' + armour.split(' ')[0]).click();
-						$('[name="slot"]').val('relic');
-					} else if (slot === 'conduit') {
-						(data.classes || []).forEach((cls) => {
-							if (cls === 'death') $(`#death_knight`).click();
-							else if (cls === 'demon') $(`#demon_hunter`).click();
-							else $(`#${cls}`).click();
-						});
-					} else if (slot === 'finger') {
-						$('[type="checkbox"]').prop('checked', true);
-					} else if (isOffhand || isWeapon || slot === 'trinket') {
-						selectSpecs(data.specs);
-					} else {
-						var types = ['cloth', 'leather', 'mail', 'plate'];
+			if (armour.indexOf('relic') !== -1) {
+				$('#' + armour.split(' ')[0]).click();
+				$('[name="slot"]').val('relic');
+			} else if (slot === 'conduit') {
+				(data.classes || []).forEach((cls) => {
+					if (cls === 'death') $(`#death_knight`).click();
+					else if (cls === 'demon') $(`#demon_hunter`).click();
+					else $(`#${cls}`).click();
+				});
+			} else if (slot === 'finger') {
+				$('[type="checkbox"]').prop('checked', true);
+			} else if (isOffhand || isWeapon || slot === 'trinket') {
+				selectSpecs(data.specs);
+			} else {
+				var types = ['cloth', 'leather', 'mail', 'plate'];
 
-						types.forEach(function(type, i) {
-							if (armour == i + 1) {
-								$('#' + type).click();
-							}
-						});
+				types.forEach(function(type, i) {
+					if (armour == i + 1) {
+						$('#' + type).click();
 					}
+				});
+			}
 
-					$('#send').click();
-				}
+			return await onSend();
+		}
 
 		function selectSpec(spec) {
 			console.log('spec', spec);
