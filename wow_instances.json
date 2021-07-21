@@ -10,64 +10,64 @@
 				"heroic": "7188:1485",
 				"mythic": "7187:1498"
 			},
-			"isKillCountSupported": false,
+			"isKillCountSupported": true,
 			"bosses": [
 				{
-					"encounterId": "",
+					"encounterId": "2435",
 					"name": "The Tarragrue",
 					"id": "152253"
 				},
 
 				{
-					"encounterId": "",
+					"encounterId": "2442",
 					"name": "Eye of the Jailer",
 					"id": "179128"
 				},
 
 				{
-					"encounterId": "",
+					"encounterId": "2439",
 					"name": "The Nine",
 					"id": "178738"
 				},
 
 				{
-					"encounterId": "",
+					"encounterId": "2444",
 					"name": "Remnant of Ner'zhul",
 					"id": "175729"
 				},
 
 				{
-					"encounterId": "",
+					"encounterId": "2445",
 					"name": "Soulrender Dormazain",
 					"id": "175727"
 				},
 
 				{
-					"encounterId": "",
+					"encounterId": "2443",
 					"name": "Painsmith Raznal",
 					"id": "176523"
 				},
 
 				{
-					"encounterId": "",
+					"encounterId": "2446",
 					"name": "Guardian of the First Ones",
 					"id": "175731"
 				},
 
 				{
-					"encounterId": "",
+					"encounterId": "2447",
 					"name": "Fatescribe Roh-Kalo",
 					"id": "175730"
 				},
 
 				{
-					"encounterId": "",
+					"encounterId": "2440",
 					"name": "Kel'Thuzad",
 					"id": "176974"
 				},
 
 				{
-					"encounterId": "",
+					"encounterId": "2441",
 					"name": "Sylvanas Windrunner",
 					"id": "179687"
 				}
