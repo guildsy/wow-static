@@ -84,7 +84,7 @@
 				"heroic": "7188:1485",
 				"mythic": "7187:1498"
 			},
-			"isKillCountSupported": true,
+			"isKillCountSupported": false,
 			"bosses": [
 				{
 					"encounterId": "2393",
