@@ -360,125 +360,77 @@
 	</div>
 
 	<script>
-		const CASTLE_NATHRIA = [
-			{
-				"name": "Shriekwing",
-				"id": "172145"
-			},
+		const SEPULCHER_OF_THE_FIRST_ONES = [
+		{
+          "encounterId": "",
+          "name": "Vigilant Guardian",
+          "id": "180773"
+        },
 
-			{
-				"name": "Huntsman Altimor",
-				"id": "165066"
-			},
+        {
+          "encounterId": "",
+          "name": "Skolex <The Insatiable Ravener>",
+          "id": "183937"
+        },
 
-			{
-				"name": "Sun King's Salvation",
-				"id": "24664"
-			},
+        {
+          "encounterId": "",
+          "name": "Artificer Xy'mox <Cartel Xy>",
+          "id": "183501"
+        },
 
-			{
-				"name": "Artificer Xy'mox",
-				"id": "166644"
-			},
+        {
+          "encounterId": "",
+          "name": "Dausegne <The Fallen Oracle>",
+          "id": "181224"
+        },
 
-			{
-				"name": "Hungering Destroyer",
-				"id": "164261"
-			},
+        {
+          "encounterId": "",
+          "name": "Prototype Pantheon",
+          "id": "181549"
+        },
 
-			{
-				"name": "Lady Inerva Darkvein",
-				"id": "167517"
-			},
+        {
+          "encounterId": "",
+          "name": "Lihuvim <Principal Architect>",
+          "id": "182169"
+        },
 
-			{
-				"name": "The Council of Blood",
-				"id": "166971"
-			},
+        {
+          "encounterId": "",
+          "name": "Halondrus <The Reclaimer>",
+          "id": "184915"
+        },
 
-			{
-				"name": "Sludgefist",
-				"id": "174733"
-			},
+        {
+          "encounterId": "",
+          "name": "Anduin Wrynn",
+          "id": "181954"
+        },
 
-			{
-				"name": "Stone Legion Generals",
-				"id": "165318"
-			},
+        {
+          "encounterId": "",
+          "name": "Lords of Dread",
+          "id": "26533"
+        },
 
-			{
-				"name": "Sire Denathrius",
-				"id": "168938"
-			},
+        {
+          "encounterId": "",
+          "name": "Rygelon",
+          "id": "182777"
+        },
 
-			{name: 'Trash', id: '13224'}
+        {
+          "encounterId": "",
+          "name": "The Jailer",
+          "id": "185421"
+        },
+
+			{name: 'Trash', id: '13742'}
 		].map(({name, id}) => [name, id]);
 
-		const SANCTUM_OF_DOMINATiON = [
-			{
-				"encounterId": "",
-				"name": "The Tarragrue",
-				"id": "152253"
-			},
-
-			{
-				"encounterId": "",
-				"name": "Eye of the Jailer",
-				"id": "179128"
-			},
-
-			{
-				"encounterId": "",
-				"name": "The Nine",
-				"id": "178738"
-			},
-
-			{
-				"encounterId": "",
-				"name": "Remnant of Ner'zhul",
-				"id": "175729"
-			},
-
-			{
-				"encounterId": "",
-				"name": "Soulrender Dormazain",
-				"id": "175727"
-			},
-
-			{
-				"encounterId": "",
-				"name": "Painsmith Raznal",
-				"id": "176523"
-			},
-
-			{
-				"encounterId": "",
-				"name": "Guardian of the First Ones",
-				"id": "175731"
-			},
-
-			{
-				"encounterId": "",
-				"name": "Fatescribe Roh-Kalo",
-				"id": "175730"
-			},
-
-			{
-				"encounterId": "",
-				"name": "Kel'Thuzad",
-				"id": "176974"
-			},
-
-			{
-				"encounterId": "",
-				"name": "Sylvanas Windrunner",
-				"id": "179687"
-			},
-
-			{name: 'Trash', id: '13561'}
-		].map(({name, id}) => [name, id]);
-
-		BOSSES = SANCTUM_OF_DOMINATiON;
+		BOSSES = SEPULCHER_OF_THE_FIRST_ONES;
 
 		ITEMS = {};
 		CURRENT_ITEM = null;
@@ -603,7 +555,7 @@
 			}
 
 			var a = item.allowed;
-			console.log(item);
+			console.log('item info', item);
 			if ( ! item.name || ! item.id || ! item.sourceId
 				 || ! item.slot ||
 				 (! a.melee.length && ! a.ranged.length
@@ -707,13 +659,17 @@
 
 			console.log('wowhead', data);
 
+			if (data.isClassSpecific) {
+				console.warn('probably tier piece', data);
+			}
+
 			$('[name="name"]').val(data.name);
 			$('[name="id"]').val(id);
 
 			var slot = (data.slot || 'misc').toLowerCase();
 
 			const isWeapon = ['ranged', 'one-hand', 'two-hand'].includes(slot);
-			const isOffhand = ['shield', 'held in off-hand'].includes(slot);
+			const isOffhand = ['shield', 'held in off-hand', 'off hand'].includes(slot);
 			let selectSlot = slot;
 			if (isWeapon) selectSlot = 'weapon';
 			else if (isOffhand) selectSlot = 'offhand';
@@ -752,9 +708,9 @@
 					else if (cls === 'demon') $(`#demon_hunter`).click();
 					else $(`#${cls}`).click();
 				});
-			} else if (slot === 'finger') {
+			} else if (slot === 'finger' || slot === 'back' || slot === 'neck') {
 				$('[type="checkbox"]').prop('checked', true);
-			} else if (isOffhand || isWeapon || slot === 'trinket') {
+			} else if (isOffhand || isWeapon || slot === 'trinket' || data.isClassSpecific) {
 				selectSpecs(data.specs);
 			} else {
 				var types = ['cloth', 'leather', 'mail', 'plate'];
