@@ -469,13 +469,17 @@
 		async function automateItemUrlSubmission() {
 			const itemUrls = [...bossItemUrlsCache];
 			for (let itemUrl of itemUrls) {
-				// pass the url to the submission function
-				const isOk = await onWowhead(itemUrl, true);
+				try {
+					// pass the url to the submission function
+					const isOk = await onWowhead(itemUrl, true);
 
-				if (isOk) {
-					// remove this item from the cache as it's been handled
-					bossItemUrlsCache = bossItemUrlsCache.filter((x) => x !== itemUrl);
-					updateBossUrlList();
+					if (isOk) {
+						// remove this item from the cache as it's been handled
+						bossItemUrlsCache = bossItemUrlsCache.filter((x) => x !== itemUrl);
+						updateBossUrlList();
+					}
+				} catch (e) {
+					console.error('error handling auto loot', e)
 				}
 			}
 		}
