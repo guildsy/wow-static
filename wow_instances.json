@@ -2,7 +2,7 @@
   "instances": [
     {
       "order": 14,
-      "encounterInstanceId": "",
+      "encounterInstanceId": "1195",
       "id": "13742",
       "name": " Sepulcher of the First Ones",
       "wowheadBonuses": {
@@ -10,70 +10,70 @@
         "heroic": "7188",
         "mythic": "7187"
       },
-      "isKillCountSupported": false,
+      "isKillCountSupported": true,
       "bosses": [
         {
-          "encounterId": "",
+          "encounterId": "2458",
           "name": "Vigilant Guardian",
           "id": "180773"
         },
 
         {
-          "encounterId": "",
+          "encounterId": "2465",
           "name": "Skolex",
           "id": "183937"
         },
 
         {
-          "encounterId": "",
+          "encounterId": "2470",
           "name": "Artificer Xy'mox",
           "id": "183501"
         },
 
         {
-          "encounterId": "",
+          "encounterId": "2459",
           "name": "Dausegne",
           "id": "181224"
         },
 
         {
-          "encounterId": "",
+          "encounterId": "2460",
           "name": "Prototype Pantheon",
           "id": "181549"
         },
 
         {
-          "encounterId": "",
+          "encounterId": "2461",
           "name": "Lihuvim",
           "id": "182169"
         },
 
         {
-          "encounterId": "",
+          "encounterId": "2463",
           "name": "Halondrus",
           "id": "184915"
         },
 
         {
-          "encounterId": "",
+          "encounterId": "2469",
           "name": "Anduin Wrynn",
           "id": "181954"
         },
 
         {
-          "encounterId": "",
+          "encounterId": "2457",
           "name": "Lords of Dread",
           "id": "26533"
         },
 
         {
-          "encounterId": "",
+          "encounterId": "2467",
           "name": "Rygelon",
           "id": "182777"
         },
 
         {
-          "encounterId": "",
+          "encounterId": "2464",
           "name": "The Jailer",
           "id": "185421"
         }
