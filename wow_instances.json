@@ -8,9 +8,12 @@
       "wowheadBonuses": {
         "normal": "7189",
         "heroic": "7188",
-        "mythic": "7187"
+        "mythic": "7187",
+        "special:normal": "8757:1524",
+        "special:heroic": "8758:1537",
+        "special:mythic": "8759:1550"
       },
-      "isKillCountSupported": true,
+      "isKillCountSupported": false,
       "bosses": [
         {
           "encounterId": "2458",
@@ -88,9 +91,12 @@
       "wowheadBonuses": {
         "normal": "6805",
         "heroic": "7188:1485",
-        "mythic": "7187:1498"
+        "mythic": "7187:1498",
+        "special:normal": "8761:1524",
+        "special:heroic": "8764:1536",
+        "special:mythic": "8762:1550"
       },
-      "isKillCountSupported": true,
+      "isKillCountSupported": false,
       "bosses": [
         {
           "encounterId": "2435",
@@ -162,7 +168,10 @@
       "wowheadBonuses": {
         "normal": "6652",
         "heroic": "7188:1485",
-        "mythic": "7187:1498"
+        "mythic": "7187:1498",
+        "special:normal": "8757:1550",
+        "special:heroic": "8758:1563",
+        "special:mythic": "8759:1576"
       },
       "isKillCountSupported": false,
       "bosses": [
