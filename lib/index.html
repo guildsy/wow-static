@@ -152,6 +152,10 @@
 			color: #C79C6E;
 		}
 
+		[name$="evoker"] + span {
+			color: #33937f;
+		}
+
 		.buttons > .button-row {
 			margin-top: 1rem;
 		}
@@ -293,6 +297,7 @@
 				<div id="priest" class="small button">priest</div>
 				<div id="mage" class="small button">mage</div>
 				<div id="warlock" class="small button">warlock</div>
+				<div id="evoker" class="small button">evoker</div>
 			</div>
 
 			<!-- <div class="button-row">
@@ -325,6 +330,7 @@
 				<label><input type="checkbox" name="ranged-priest" /><span>Priest</span></label>
 				<label><input type="checkbox" name="ranged-mage" /><span>Mage</span></label>
 				<label><input type="checkbox" name="ranged-warlock" /><span>Warlock</span></label>
+				<label><input type="checkbox" name="ranged-evoker" /><span>Evoker</span></label>
 			</label>
 
 			<label class="checkboxes">healers:
@@ -333,6 +339,7 @@
 				<label><input type="checkbox" name="healers-druid" /><span>Druid</span></label>
 				<label><input type="checkbox" name="healers-monk" /><span>Monk</span></label>
 				<label><input type="checkbox" name="healers-priest" /><span>Priest</span></label>
+				<label><input type="checkbox" name="healers-evoker" /><span>Evoker</span></label>
 			</label>
 
 			<label class="checkboxes">tanks:
@@ -964,8 +971,10 @@
 
 				$('[name="ranged-hunter"]').prop('checked', true);
 				$('[name="ranged-shaman"]').prop('checked', true);
+				$('[name="ranged-evoker"]').prop('checked', true);
 
 				$('[name="healers-shaman"]').prop('checked', true);
+				$('[name="healers-evoker"]').prop('checked', true);
 			});
 
 			$('#plate').click(function() {
@@ -1087,43 +1096,48 @@
 				$('[name="ranged-warlock"]').prop('checked', true);
 			});
 
-			$('#abominable').click(function() {
-				$('#death_knight').click();
-				$('#warlock').click();
-				$('#demon_hunter').click();
+			$('#evoker').click(function() {
+				$('[name="ranged-evoker"]').prop('checked', true);
+				$('[name="healers-evoker"]').prop('checked', true);
 			});
 
-			$('#mystic').click(function() {
-				$('#hunter').click();
-				$('#mage').click();
-				$('#druid').click();
-			});
+			// $('#abominable').click(function() {
+			// 	$('#death_knight').click();
+			// 	$('#warlock').click();
+			// 	$('#demon_hunter').click();
+			// });
 
-			$('#venerated').click(function() {
-				$('#paladin').click();
-				$('#priest').click();
-				$('#shaman').click();
-			});
+			// $('#mystic').click(function() {
+			// 	$('#hunter').click();
+			// 	$('#mage').click();
+			// 	$('#druid').click();
+			// });
 
-			$('#zenith').click(function() {
-				$('#warrior').click();
-				$('#rogue').click();
-				$('#monk').click();
-			});
+			// $('#venerated').click(function() {
+			// 	$('#paladin').click();
+			// 	$('#priest').click();
+			// 	$('#shaman').click();
+			// });
 
-			$('#apogee').click(function() {
-				$('#warrior').click();
-				$('#paladin').click();
-				$('#priest').click();
-				$('#monk').click();
-			});
+			// $('#zenith').click(function() {
+			// 	$('#warrior').click();
+			// 	$('#rogue').click();
+			// 	$('#monk').click();
+			// });
 
-			$('#thaumaturgic').click(function() {
-				$('#shaman').click();
-				$('#mage').click();
-				$('#warlock').click();
-				$('#druid').click();
-			});
+			// $('#apogee').click(function() {
+			// 	$('#warrior').click();
+			// 	$('#paladin').click();
+			// 	$('#priest').click();
+			// 	$('#monk').click();
+			// });
+
+			// $('#thaumaturgic').click(function() {
+			// 	$('#shaman').click();
+			// 	$('#mage').click();
+			// 	$('#warlock').click();
+			// 	$('#druid').click();
+			// });
 
 			getAll(renderList);
 		});
