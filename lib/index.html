@@ -368,73 +368,56 @@
 
 	<script>
 		const SEPULCHER_OF_THE_FIRST_ONES = [
+
 		{
-          "encounterId": "",
-          "name": "Vigilant Guardian",
-          "id": "180773"
+          "encounterId": "unknown",
+          "name": "Eranog",
+          "id": "184972"
         },
 
         {
-          "encounterId": "",
-          "name": "Skolex <The Insatiable Ravener>",
-          "id": "183937"
+          "encounterId": "unknown",
+          "name": "Terros",
+          "id": "190496"
         },
 
         {
-          "encounterId": "",
-          "name": "Artificer Xy'mox <Cartel Xy>",
-          "id": "183501"
+          "encounterId": "unknown",
+          "name": "The Primal Council",
+          "id": "187771"
         },
 
         {
-          "encounterId": "",
-          "name": "Dausegne <The Fallen Oracle>",
-          "id": "181224"
+          "encounterId": "unknown",
+          "name": "Sennarth, The Cold Breath",
+          "id": "187967"
         },
 
         {
-          "encounterId": "",
-          "name": "Prototype Pantheon",
-          "id": "181549"
+          "encounterId": "unknown",
+          "name": "Dathea, Ascended",
+          "id": "189813"
         },
 
         {
-          "encounterId": "",
-          "name": "Lihuvim <Principal Architect>",
-          "id": "182169"
+          "encounterId": "unknown",
+          "name": "Kurog Grimtotem",
+          "id": "181378"
         },
 
         {
-          "encounterId": "",
-          "name": "Halondrus <The Reclaimer>",
-          "id": "184915"
+          "encounterId": "unknown",
+          "name": "Broodkeeper Diurna",
+          "id": "190245"
         },
 
         {
-          "encounterId": "",
-          "name": "Anduin Wrynn",
-          "id": "181954"
+          "encounterId": "unknown",
+          "name": "Raszageth the Storm-Eater",
+          "id": "193909"
         },
 
-        {
-          "encounterId": "",
-          "name": "Lords of Dread",
-          "id": "26533"
-        },
-
-        {
-          "encounterId": "",
-          "name": "Rygelon",
-          "id": "182777"
-        },
-
-        {
-          "encounterId": "",
-          "name": "The Jailer",
-          "id": "185421"
-        },
-
-			{name: 'Trash', id: '13742'}
+			{name: 'Trash', id: '14030'}
 		].map(({name, id}) => [name, id]);
 
 		BOSSES = SEPULCHER_OF_THE_FIRST_ONES;
@@ -661,8 +644,8 @@
 			if ( ! id) return;
 
 			if (id.indexOf('wowhead.com')) {
-				var match = /wowhead.com\/item=(\d+).*/.exec(id);
-				if (match) id = match[1];
+				var match = /wowhead.com\/(beta\/)*item=(\d+).*/.exec(id);
+				if (match) id = match[2];
 			}
 
 			const res = await fetch('/wowhead/' + id);
@@ -853,6 +836,14 @@
 					$('[name="tanks-demon_hunter"]').prop('checked', true);
 					break;
 
+				case 1467:
+					$('[name="ranged-evoker"]').prop('checked', true);
+					break;
+
+				case 1468:
+					$('[name="healers-evoker"]').prop('checked', true);
+					break;
+
 				default:
 					console.log('Unknown spec', spec);
 			}
@@ -989,49 +980,49 @@
 				$('[name="tanks-warrior"]').prop('checked', true);
 			});
 
-			$('#conq').click(function() {
-				$('[name="melee-paladin"]').prop('checked', true);
-				$('[name="melee-demon_hunter"]').prop('checked', true);
+			// $('#conq').click(function() {
+			// 	$('[name="melee-paladin"]').prop('checked', true);
+			// 	$('[name="melee-demon_hunter"]').prop('checked', true);
 
-				$('[name="ranged-priest"]').prop('checked', true);
-				$('[name="ranged-warlock"]').prop('checked', true);
+			// 	$('[name="ranged-priest"]').prop('checked', true);
+			// 	$('[name="ranged-warlock"]').prop('checked', true);
 
-				$('[name="healers-paladin"]').prop('checked', true);
-				$('[name="healers-priest"]').prop('checked', true);
+			// 	$('[name="healers-paladin"]').prop('checked', true);
+			// 	$('[name="healers-priest"]').prop('checked', true);
 
-				$('[name="tanks-paladin"]').prop('checked', true);
-				$('[name="tanks-demon_hunter"]').prop('checked', true);
-			});
+			// 	$('[name="tanks-paladin"]').prop('checked', true);
+			// 	$('[name="tanks-demon_hunter"]').prop('checked', true);
+			// });
 
-			$('#vanq').click(function() {
-				$('[name="melee-death_knight"]').prop('checked', true);
-				$('[name="melee-druid"]').prop('checked', true);
-				$('[name="melee-rogue"]').prop('checked', true);
+			// $('#vanq').click(function() {
+			// 	$('[name="melee-death_knight"]').prop('checked', true);
+			// 	$('[name="melee-druid"]').prop('checked', true);
+			// 	$('[name="melee-rogue"]').prop('checked', true);
 
-				$('[name="ranged-druid"]').prop('checked', true);
-				$('[name="ranged-mage"]').prop('checked', true);
+			// 	$('[name="ranged-druid"]').prop('checked', true);
+			// 	$('[name="ranged-mage"]').prop('checked', true);
 
-				$('[name="healers-druid"]').prop('checked', true);
+			// 	$('[name="healers-druid"]').prop('checked', true);
 
-				$('[name="tanks-death_knight"]').prop('checked', true);
-				$('[name="tanks-druid"]').prop('checked', true);
-			});
+			// 	$('[name="tanks-death_knight"]').prop('checked', true);
+			// 	$('[name="tanks-druid"]').prop('checked', true);
+			// });
 
-			$('#prot').click(function() {
-				$('[name="melee-warrior"]').prop('checked', true);
-				$('[name="melee-hunter"]').prop('checked', true);
-				$('[name="melee-shaman"]').prop('checked', true);
-				$('[name="melee-monk"]').prop('checked', true);
+			// $('#prot').click(function() {
+			// 	$('[name="melee-warrior"]').prop('checked', true);
+			// 	$('[name="melee-hunter"]').prop('checked', true);
+			// 	$('[name="melee-shaman"]').prop('checked', true);
+			// 	$('[name="melee-monk"]').prop('checked', true);
 
-				$('[name="ranged-hunter"]').prop('checked', true);
-				$('[name="ranged-shaman"]').prop('checked', true);
+			// 	$('[name="ranged-hunter"]').prop('checked', true);
+			// 	$('[name="ranged-shaman"]').prop('checked', true);
 
-				$('[name="healers-shaman"]').prop('checked', true);
-				$('[name="healers-monk"]').prop('checked', true);
+			// 	$('[name="healers-shaman"]').prop('checked', true);
+			// 	$('[name="healers-monk"]').prop('checked', true);
 
-				$('[name="tanks-warrior"]').prop('checked', true);
-				$('[name="tanks-monk"]').prop('checked', true);
-			});
+			// 	$('[name="tanks-warrior"]').prop('checked', true);
+			// 	$('[name="tanks-monk"]').prop('checked', true);
+			// });
 
 
 			$('#death_knight').click(function() {
