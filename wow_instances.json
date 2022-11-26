@@ -6,9 +6,9 @@
       "id": "14030",
       "name": "Vault of the Incarnates",
       "wowheadBonuses": {
-        "normal": "8757:1524",
-        "heroic": "8758:1537",
-        "mythic": "8759:1550"
+        "normal": "0",
+        "heroic": "7980",
+        "mythic": "7981"
       },
       "isKillCountSupported": false,
       "bosses": [
