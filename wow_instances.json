@@ -1,6 +1,74 @@
 {
   "instances": [
     {
+      "order": 16,
+      "encounterInstanceId": "0000",
+      "id": "14663",
+      "name": "Aberrus, the Shadowed Crucible",
+      "wowheadBonuses": {
+        "normal": "0",
+        "heroic": "7980",
+        "mythic": "7981"
+      },
+      "isKillCountSupported": false,
+      "bosses": [
+        {
+          "encounterId": "unknown",
+          "name": "Kazzara, the Hellforged",
+          "id": "201261"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "The Amalgamation Chamber",
+          "id": "201774"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "The Forgotten Experiments",
+          "id": "200912"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Warlord Kagni",
+          "id": "199659"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Rashok",
+          "id": "201320"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Zskarn",
+          "id": "202637"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Magmorax",
+          "id": "201579"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Neltharion",
+          "id": "203133"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Scalecommander Sarkareth",
+          "id": "205319"
+        }
+      ]
+    },
+
+    {
       "order": 15,
       "encounterInstanceId": "0000",
       "id": "14030",
