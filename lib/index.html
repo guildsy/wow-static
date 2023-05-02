@@ -104,55 +104,68 @@
 			padding: 5px 0;
 		}
 
-		[name$="death_knight"] + span {
+		[name$="death_knight"] + span,
+		#death_knight {
 			color: #C41F3B;
 		}
 
-		[name$="demon_hunter"] + span {
+		[name$="demon_hunter"] + span,
+		#demon_hunter {
 			color: #A330C9 !important;
 		}
 
-		[name$="druid"] + span {
+		[name$="druid"] + span,
+		#druid {
 			color: #FF7D0A;
 		}
 
-		[name$="hunter"] + span {
+		[name$="hunter"] + span,
+		#hunter {
 			color: #ABD473;
 		}
 
-		[name$="mage"] + span {
+		[name$="mage"] + span,
+		#mage {
 			color: #69CCF0;
 		}
 
-		[name$="monk"] + span {
+		[name$="monk"] + span,
+		#monk {
 			color: #00FF96;
 		}
 
-		[name$="paladin"] + span {
+		[name$="paladin"] + span,
+		#paladin {
 			color: #F58CBA;
 		}
 
-		[name$="priest"] + span {
+		[name$="priest"] + span,
+		#priest {
 			color: #000;
 		}
 
-		[name$="rogue"] + span {
+		[name$="rogue"] + span,
+		#rogue {
 			color: #FFF569;
 		}
 
-		[name$="shaman"] + span {
+		[name$="shaman"] + span,
+		#shaman {
 			color: #0070DE;
 		}
 
-		[name$="warlock"] + span {
+		[name$="warlock"] + span,
+		#warlock {
 			color: #9482C9;
 		}
 
-		[name$="warrior"] + span {
+		[name$="warrior"] + span,
+		#warrior {
 			color: #C79C6E;
 		}
 
-		[name$="evoker"] + span {
+		[name$="evoker"] + span,
+		#evoker {
 			color: #33937f;
 		}
 
@@ -300,14 +313,12 @@
 				<div id="evoker" class="small button">evoker</div>
 			</div>
 
-			<!-- <div class="button-row">
-				<div id="abominable" class="small button">abominable</div>
-				<div id="mystic" class="small button">mystic</div>
-				<div id="venerated" class="small button">venerated</div>
-				<div id="zenith" class="small button">zenith</div>
-				<div id="apogee" class="small button">apogee</div>
-				<div id="thaumaturgic" class="small button">thaumaturgic</div>
-			</div> -->
+			<div class="button-row">
+				<div id="tier-dreadful" class="small button">dreadful</div>
+				<div id="tier-mystic" class="small button">mystic</div>
+				<div id="tier-venerated" class="small button">venerated</div>
+				<div id="tier-zenith" class="small button">zenith</div>
+			</div>
 		</div>
 
 		<div>
@@ -367,60 +378,61 @@
 	</div>
 
 	<script>
-		const SEPULCHER_OF_THE_FIRST_ONES = [
-
-		{
+		const BOSSES = [
+        {
           "encounterId": "unknown",
-          "name": "Eranog",
-          "id": "184972"
+          "name": "Kazzara, the Hellforged",
+          "id": "201261"
         },
 
         {
           "encounterId": "unknown",
-          "name": "Terros",
-          "id": "190496"
+          "name": "The Amalgamation Chamber",
+          "id": "201774"
         },
 
         {
           "encounterId": "unknown",
-          "name": "The Primal Council",
-          "id": "187771"
+          "name": "The Forgotten Experiments",
+          "id": "200912"
         },
 
         {
           "encounterId": "unknown",
-          "name": "Sennarth, The Cold Breath",
-          "id": "187967"
+          "name": "Warlord Kagni",
+          "id": "199659"
         },
 
         {
           "encounterId": "unknown",
-          "name": "Dathea, Ascended",
-          "id": "189813"
+          "name": "Rashok",
+          "id": "201320"
         },
 
         {
           "encounterId": "unknown",
-          "name": "Kurog Grimtotem",
-          "id": "181378"
+          "name": "Zskarn",
+          "id": "202637"
         },
 
         {
           "encounterId": "unknown",
-          "name": "Broodkeeper Diurna",
-          "id": "190245"
+          "name": "Magmorax",
+          "id": "201579"
         },
 
         {
           "encounterId": "unknown",
-          "name": "Raszageth the Storm-Eater",
-          "id": "193909"
+          "name": "Neltharion",
+          "id": "203133"
         },
 
-			{name: 'Trash', id: '14030'}
-		].map(({name, id}) => [name, id]);
-
-		BOSSES = SEPULCHER_OF_THE_FIRST_ONES;
+        {
+          "encounterId": "unknown",
+          "name": "Scalecommander Sarkareth",
+          "id": "205319"
+        }
+      ].map(({name, id}) => [name, id]);
 
 		ITEMS = {};
 		CURRENT_ITEM = null;
@@ -643,9 +655,10 @@
 		async function onWowhead(id, isAutomated) {
 			if ( ! id) return;
 
-			if (id.indexOf('wowhead.com')) {
-				var match = /wowhead.com\/(beta\/)*item=(\d+).*/.exec(id);
-				if (match) id = match[2];
+			if (id.includes('wowhead.com')) {
+				var match = /wowhead.com\/(?:beta\/)*(?:ptr\/)*item=(\d+).*/.exec(id);
+				console.log(match)
+				if (match) id = match[1];
 			}
 
 			const res = await fetch('/wowhead/' + id);
@@ -898,12 +911,14 @@
 				$('[name="ranged-priest"]').prop('checked', true);
 				$('[name="ranged-mage"]').prop('checked', true);
 				$('[name="ranged-warlock"]').prop('checked', true);
+				$('[name="ranged-evoker"]').prop('checked', true);
 
 				$('[name="healers-paladin"]').prop('checked', true);
 				$('[name="healers-shaman"]').prop('checked', true);
 				$('[name="healers-druid"]').prop('checked', true);
 				$('[name="healers-monk"]').prop('checked', true);
 				$('[name="healers-priest"]').prop('checked', true);
+				$('[name="healers-evoker"]').prop('checked', true);
 
 			});
 
@@ -1092,29 +1107,30 @@
 				$('[name="healers-evoker"]').prop('checked', true);
 			});
 
-			// $('#abominable').click(function() {
-			// 	$('#death_knight').click();
-			// 	$('#warlock').click();
-			// 	$('#demon_hunter').click();
-			// });
+			$('#tier-dreadful').click(function() {
+				$('#death_knight').click();
+				$('#warlock').click();
+				$('#demon_hunter').click();
+			});
 
-			// $('#mystic').click(function() {
-			// 	$('#hunter').click();
-			// 	$('#mage').click();
-			// 	$('#druid').click();
-			// });
+			$('#tier-mystic').click(function() {
+				$('#hunter').click();
+				$('#mage').click();
+				$('#druid').click();
+			});
 
-			// $('#venerated').click(function() {
-			// 	$('#paladin').click();
-			// 	$('#priest').click();
-			// 	$('#shaman').click();
-			// });
+			$('#tier-venerated').click(function() {
+				$('#paladin').click();
+				$('#priest').click();
+				$('#shaman').click();
+			});
 
-			// $('#zenith').click(function() {
-			// 	$('#warrior').click();
-			// 	$('#rogue').click();
-			// 	$('#monk').click();
-			// });
+			$('#tier-zenith').click(function() {
+				$('#warrior').click();
+				$('#rogue').click();
+				$('#monk').click();
+				$('#evoker').click();
+			});
 
 			// $('#apogee').click(function() {
 			// 	$('#warrior').click();
