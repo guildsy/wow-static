@@ -6,9 +6,9 @@
       "id": "14663",
       "name": "Aberrus, the Shadowed Crucible",
       "wowheadBonuses": {
-        "normal": "0",
-        "heroic": "7980",
-        "mythic": "7981"
+        "normal": "14663-normal",
+        "heroic": "14663-heroic",
+        "mythic": "14663-mythic"
       },
       "isKillCountSupported": false,
       "bosses": [
