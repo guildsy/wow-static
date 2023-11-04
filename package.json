@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node lib/server.js",
     "instances": "node lib/minify-instances.js",
-    "items": "node lib/minify-items.js"
+    "items": "node lib/minify-items.js",
+    "item-levels": "node find_item_levels.js"
   },
   "author": "",
   "license": "MIT",

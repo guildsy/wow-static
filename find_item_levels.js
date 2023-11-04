@@ -1,30 +1,40 @@
+/*
+  HOW TO USE
+
+  1. Go to vaultItemHack in RC for main instructions
+  2. Replace IDs in `tierBySourceId` with new boss IDs, value is the index of the bucket
+  3. run this via `yarn run item-levels`
+*/
+
+const INSTANCE_ID = "14643";
+
 const fs = require("fs");
 
 const wowItems = JSON.parse(fs.readFileSync("wow_items.json")).items;
 const wowInstances = JSON.parse(fs.readFileSync("wow_instances.json")).instances;
 
-const vault = wowInstances.find((x) => x.id === "14663");
-const vaultBossIds = vault.bosses.map((x) => x.id);
+const raid = wowInstances.find((x) => x.id === INSTANCE_ID);
+const bossIds = raid.bosses.map((x) => x.id);
 
-const vaultItems = wowItems.filter((x) => vaultBossIds.includes(x.sourceId));
+const items = wowItems.filter((x) => bossIds.includes(x.sourceId));
 
 const tierBySourceId = {
-  201261: 0,
-  201774: 0,
-  199659: 0,
+  209333: 0,
+  206689: 0,
 
-  200912: 1,
-  201320: 1,
+  208478: 1,
+  208363: 1,
 
-  202637: 2,
-  201579: 2,
+  208445: 2,
+  206172: 2,
+  214082: 2,
 
-  203133: 3,
-  205319: 3,
+  210601: 3,
+  213646: 3,
 };
 
 const tierByItemId = {};
-vaultItems.forEach((item) => {
+items.forEach((item) => {
   tierByItemId[item.id] = tierBySourceId[item.sourceId];
 });
 
