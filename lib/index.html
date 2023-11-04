@@ -375,6 +375,8 @@
 		</form>
 
 		<textarea id="boss-url-list"></textarea>
+
+		<div id="button-restart-automation" class="small button">restart automation</div>
 	</div>
 
 	<script>
@@ -449,7 +451,8 @@
 			}
 		};
 
-		let bossItemUrlsCache = [];
+		// Set the value based on what's there initially
+		let bossItemUrlsCache = $('#boss-url-list').val().split('\n');;
 
 		window.addEventListener('focus', () => {
 			window.setTimeout(() => {
@@ -468,18 +471,18 @@
 			$('#boss-url-list').val(bossItemUrlsCache.join('\n'));
 		}
 
+		function removeItemIdFromTextarea(itemId) {
+			// remove this item from the cache as it's been handled
+			bossItemUrlsCache = bossItemUrlsCache.filter((x) => !x.includes(itemId));
+			updateBossUrlList();
+		}
+
 		async function automateItemUrlSubmission() {
 			const itemUrls = [...bossItemUrlsCache];
 			for (let itemUrl of itemUrls) {
 				try {
 					// pass the url to the submission function
-					const isOk = await onWowhead(itemUrl, true);
-
-					if (isOk) {
-						// remove this item from the cache as it's been handled
-						bossItemUrlsCache = bossItemUrlsCache.filter((x) => x !== itemUrl);
-						updateBossUrlList();
-					}
+					await onWowhead(itemUrl, true);
 				} catch (e) {
 					console.error('error handling auto loot', e)
 				}
@@ -587,6 +590,10 @@
 			EMPTY_ITEM.sourceId = item.sourceId;
 			renderItem(EMPTY_ITEM);
 			$('#wowhead').find('input').focus();
+
+			// maybe remove this item from automation list
+			removeItemIdFromTextarea(item.id);
+
 			return true;
 		}
 
@@ -718,7 +725,7 @@
 			} else if (slot === 'finger' || slot === 'back' || slot === 'neck') {
 				$('[type="checkbox"]').prop('checked', true);
 			} else if (isOffhand || isWeapon || slot === 'trinket' || data.isClassSpecific) {
-				selectSpecs(data.specs);
+				if (data.specs) selectSpecs(data.specs);
 			} else {
 				var types = ['cloth', 'leather', 'mail', 'plate'];
 
@@ -892,6 +899,11 @@
 			$('#boss-url').on('submit', function(e) {
 				e.preventDefault();
 				onBossUrl($(this).find('input').val());
+			})
+
+			$('#button-restart-automation').click(() => {
+				bossItemUrlsCache = $('#boss-url-list').val().split('\n');
+				automateItemUrlSubmission()
 			})
 
 			BOSSES.forEach(function(boss) {
