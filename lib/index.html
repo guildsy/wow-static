@@ -379,58 +379,58 @@
 
 	<script>
 		const BOSSES = [
-        {
+		{
           "encounterId": "unknown",
-          "name": "Kazzara, the Hellforged",
-          "id": "201261"
+          "name": "Gnarlroot",
+          "id": "209333"
         },
 
         {
           "encounterId": "unknown",
-          "name": "The Amalgamation Chamber",
-          "id": "201774"
+          "name": "Igira the Cruel",
+          "id": "206689"
         },
 
         {
           "encounterId": "unknown",
-          "name": "The Forgotten Experiments",
-          "id": "200912"
+          "name": "Volcoross",
+          "id": "208478"
         },
 
         {
           "encounterId": "unknown",
-          "name": "Warlord Kagni",
-          "id": "199659"
+          "name": "Council ofDreams",
+          "id": "208363"
         },
 
         {
           "encounterId": "unknown",
-          "name": "Rashok",
-          "id": "201320"
+          "name": "Larodar, Keeper of the Flame",
+          "id": "208445"
         },
 
         {
           "encounterId": "unknown",
-          "name": "Zskarn",
-          "id": "202637"
+          "name": "Nymue",
+          "id": "206172"
         },
 
         {
           "encounterId": "unknown",
-          "name": "Magmorax",
-          "id": "201579"
+          "name": "Smolderon",
+          "id": "214082"
         },
 
         {
           "encounterId": "unknown",
-          "name": "Neltharion",
-          "id": "203133"
+          "name": "Tindral Sageswift",
+          "id": "210601"
         },
 
         {
           "encounterId": "unknown",
-          "name": "Scalecommander Sarkareth",
-          "id": "205319"
+          "name": "Fyrakk",
+          "id": "213646"
         }
       ].map(({name, id}) => [name, id]);
 
@@ -656,7 +656,7 @@
 			if ( ! id) return;
 
 			if (id.includes('wowhead.com')) {
-				var match = /wowhead.com\/(?:beta\/)*(?:ptr\/)*item=(\d+).*/.exec(id);
+				var match = /wowhead.com\/(?:beta\/)*(?:ptr(?:-2)?\/)*item=(\d+).*/.exec(id);
 				console.log(match)
 				if (match) id = match[1];
 			}
