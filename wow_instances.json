@@ -1,6 +1,74 @@
 {
   "instances": [
     {
+      "order": 17,
+      "encounterInstanceId": "0000",
+      "id": "14643",
+      "name": "Amirdrassil, the Dream's Hope",
+      "wowheadBonuses": {
+        "normal": "1485",
+        "heroic": "1498",
+        "mythic": "1511"
+      },
+      "isKillCountSupported": false,
+      "bosses": [
+        {
+          "encounterId": "unknown",
+          "name": "Gnarlroot",
+          "id": "209333"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Igira the Cruel",
+          "id": "206689"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Volcoross",
+          "id": "208478"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Council ofDreams",
+          "id": "208363"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Larodar, Keeper of the Flame",
+          "id": "208445"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Nymue",
+          "id": "206172"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Smolderon",
+          "id": "214082"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Tindral Sageswift",
+          "id": "210601"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Fyrakk",
+          "id": "213646"
+        }
+      ]
+    },
+
+    {
       "order": 16,
       "encounterInstanceId": "0000",
       "id": "14663",
