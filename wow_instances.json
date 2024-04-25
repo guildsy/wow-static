@@ -11,6 +11,7 @@
         "mythic": "1511"
       },
       "isKillCountSupported": false,
+      "raidGroupName": "awakened",
       "bosses": [
         {
           "encounterId": "unknown",
@@ -79,6 +80,7 @@
         "mythic": "14663-mythic"
       },
       "isKillCountSupported": false,
+      "raidGroupName": "awakened",
       "bosses": [
         {
           "encounterId": "unknown",
@@ -147,6 +149,7 @@
         "mythic": "7981"
       },
       "isKillCountSupported": false,
+      "raidGroupName": "awakened",
       "bosses": [
         {
           "encounterId": "unknown",
