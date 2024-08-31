@@ -1,6 +1,68 @@
 {
   "instances": [
     {
+      "order": 18,
+      "encounterInstanceId": "0000",
+      "id": "14980",
+      "name": "Nerub-ar Palace",
+      "wowheadBonuses": {
+        "normal": "1498",
+        "heroic": "1511",
+        "mythic": "1524"
+      },
+      "isKillCountSupported": false,
+      "bosses": [
+        {
+          "encounterId": "unknown",
+          "name": "Ulgrax the Devourer",
+          "id": "228713"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "The Bloodbound Horror",
+          "id": "214502"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Sikran",
+          "id": "219853"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Rasha'nan",
+          "id": "224552"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Broodtwister Ovi'nax",
+          "id": "214506"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Nexus-Princess Ky'veza",
+          "id": "228470"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Silken Court",
+          "id": "223779"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Queen Ansurek",
+          "id": "219778"
+        }
+      ]
+    },
+
+    {
       "order": 17,
       "encounterInstanceId": "0000",
       "id": "14643",
