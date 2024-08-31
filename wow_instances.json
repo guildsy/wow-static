@@ -6,9 +6,9 @@
       "id": "14980",
       "name": "Nerub-ar Palace",
       "wowheadBonuses": {
-        "normal": "1498",
-        "heroic": "1511",
-        "mythic": "1524"
+        "normal": "nerub-normal",
+        "heroic": "nerub-heroic",
+        "mythic": "nerub-mythic"
       },
       "isKillCountSupported": false,
       "bosses": [
