@@ -6,8 +6,23 @@
   3. run this via `yarn run item-levels`
 */
 
-const INSTANCE_ID = "14643";
+// EDIT THESE TWO
+const INSTANCE_ID = "14980";
+const tierBySourceId = {
+  228713: 0,
+  214502: 0,
 
+  219853: 1,
+  224552: 1,
+
+  214506: 2,
+  228470: 2,
+
+  223779: 3,
+  219778: 3,
+};
+
+// DON'T NEED TO EDIT BELOW
 const fs = require("fs");
 
 const wowItems = JSON.parse(fs.readFileSync("wow_items.json")).items;
@@ -17,21 +32,6 @@ const raid = wowInstances.find((x) => x.id === INSTANCE_ID);
 const bossIds = raid.bosses.map((x) => x.id);
 
 const items = wowItems.filter((x) => bossIds.includes(x.sourceId));
-
-const tierBySourceId = {
-  209333: 0,
-  206689: 0,
-
-  208478: 1,
-  208363: 1,
-
-  208445: 2,
-  206172: 2,
-  214082: 2,
-
-  210601: 3,
-  213646: 3,
-};
 
 const tierByItemId = {};
 items.forEach((item) => {
