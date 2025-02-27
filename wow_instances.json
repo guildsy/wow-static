@@ -1,6 +1,68 @@
 {
   "instances": [
     {
+      "order": 19,
+      "encounterInstanceId": "0000",
+      "id": "15522",
+      "name": "Liberation of Undermine",
+      "wowheadBonuses": {
+        "normal": "undermine-normal",
+        "heroic": "undermine-heroic",
+        "mythic": "undermine-mythic"
+      },
+      "isKillCountSupported": false,
+      "bosses": [
+        {
+          "encounterId": "unknown",
+          "name": "Vexie Fullthrottle and The Geargrinders",
+          "id": "225822"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Cauldron of Carnage",
+          "id": "229181"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Rik Reverb",
+          "id": "228652"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Stix Bunkjunker",
+          "id": "230322"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Sprocketmonger Lockenstock",
+          "id": "230583"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "One-Armed Bandit",
+          "id": "228458"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Mug'Zee",
+          "id": "229953"
+        },
+
+        {
+          "encounterId": "unknown",
+          "name": "Chrome King Gallywix",
+          "id": "237194"
+        }
+      ]
+    },
+
+    {
       "order": 18,
       "encounterInstanceId": "0000",
       "id": "14980",
