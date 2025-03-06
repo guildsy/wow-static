@@ -8,7 +8,8 @@
     "start": "node lib/server.js",
     "instances": "node lib/minify-instances.js",
     "items": "node lib/minify-items.js",
-    "item-levels": "node find_item_levels.js"
+    "item-levels": "node find_item_levels.js",
+    "encounters": "node fetch-encounter-ids.js"
   },
   "author": "",
   "license": "MIT",
@@ -18,6 +19,7 @@
     "json-minify": "^1.0.0",
     "node-fetch": "^2.6.1",
     "request": "^2.61.0",
-    "xml2js": "^0.4.17"
+    "xml2js": "^0.4.17",
+    "yargs": "^17.7.2"
   }
 }
