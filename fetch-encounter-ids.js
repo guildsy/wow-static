@@ -24,6 +24,9 @@ fetch("https://us.api.blizzard.com/data/wow/search/journal-encounter?namespace=s
 })
 	.then((x) => x.json())
 	.then((x) => {
+		const instance = x.results[0].data.instance;
+		console.log(instance.id, instance.name.en_US);
+
 		x.results.forEach(({data: bossData}) => {
 			console.log(bossData.id, bossData.name.en_US);
 		});
