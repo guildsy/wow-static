@@ -10,52 +10,52 @@
         "heroic": "undermine-heroic",
         "mythic": "undermine-mythic"
       },
-      "isKillCountSupported": false,
+      "isKillCountSupported": true,
       "bosses": [
         {
-          "encounterId": "unknown",
+          "encounterId": "2639",
           "name": "Vexie Fullthrottle and The Geargrinders",
           "id": "225822"
         },
 
         {
-          "encounterId": "unknown",
+          "encounterId": "2640",
           "name": "Cauldron of Carnage",
           "id": "229181"
         },
 
         {
-          "encounterId": "unknown",
+          "encounterId": "2641",
           "name": "Rik Reverb",
           "id": "228652"
         },
 
         {
-          "encounterId": "unknown",
+          "encounterId": "2653",
           "name": "Sprocketmonger Lockenstock",
           "id": "230583"
         },
 
         {
-          "encounterId": "unknown",
+          "encounterId": "2642",
           "name": "Stix Bunkjunker",
           "id": "230322"
         },
 
         {
-          "encounterId": "unknown",
+          "encounterId": "2644",
           "name": "One-Armed Bandit",
           "id": "228458"
         },
 
         {
-          "encounterId": "unknown",
+          "encounterId": "2645",
           "name": "Mug'Zee",
           "id": "229953"
         },
 
         {
-          "encounterId": "unknown",
+          "encounterId": "2646",
           "name": "Chrome King Gallywix",
           "id": "237194"
         }
