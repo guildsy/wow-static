@@ -15,6 +15,7 @@ const IGNORED_ITEM_NAMES = [
 	'223094',
 	'223048',
 	'224435',
+	'236687',
 ];
 
 const {
