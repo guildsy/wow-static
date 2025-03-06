@@ -9,7 +9,8 @@
     "instances": "node lib/minify-instances.js",
     "items": "node lib/minify-items.js",
     "item-levels": "node find_item_levels.js",
-    "encounters": "node fetch-encounter-ids.js"
+    "encounters": "node fetch-encounter-ids.js",
+    "compare-loot": "node compare-loot.js"
   },
   "author": "",
   "license": "MIT",
