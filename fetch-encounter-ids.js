@@ -17,7 +17,9 @@ const {
 	})
 	.parse();
 
-fetch("https://us.api.blizzard.com/data/wow/search/journal-encounter?namespace=static-us&instance.name.en_US=Liberation%20of%20Undermine&orderby=id&locale=en_US&_page=1", {
+const instanceNameEncoded = encodeURIComponent(instanceName);
+
+fetch(`https://us.api.blizzard.com/data/wow/search/journal-encounter?namespace=static-us&instance.name.en_US=${instanceNameEncoded}&orderby=id&locale=en_US&_page=1`, {
 	headers: {
 		Authorization: `Bearer ${apiKey}`
 	}

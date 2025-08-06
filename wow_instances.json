@@ -2,7 +2,7 @@
   "instances": [
     {
       "order": 20,
-      "encounterInstanceId": "?",
+      "encounterInstanceId": "1302",
       "id": "16178",
       "name": "Manaforge Omega",
       "wowheadBonuses": {
@@ -10,52 +10,52 @@
         "heroic": "manaforge-heroic",
         "mythic": "manaforge-mythic"
       },
-      "isKillCountSupported": false,
+      "isKillCountSupported": true,
       "bosses": [
         {
-          "encounterId": "?",
+          "encounterId": "2684",
           "name": "Plexus Sentinel",
           "id": "233814"
         },
 
         {
-          "encounterId": "?",
+          "encounterId": "2686",
           "name": "Loom'ithar",
           "id": "233815"
         },
 
         {
-          "encounterId": "?",
+          "encounterId": "2685",
           "name": "Soulbinder Naazindhri",
           "id": "233816"
         },
 
         {
-          "encounterId": "?",
+          "encounterId": "2687",
           "name": "Forgeweaver Araz",
           "id": "247989"
         },
 
         {
-          "encounterId": "?",
+          "encounterId": "2688",
           "name": "The Soul Hunters",
           "id": "237661"
         },
 
         {
-          "encounterId": "?",
+          "encounterId": "2747",
           "name": "Fractillus",
           "id": "237861"
         },
 
         {
-          "encounterId": "?",
+          "encounterId": "2690",
           "name": "Nexus-King Salhadaar",
           "id": "237763"
         },
 
         {
-          "encounterId": "?",
+          "encounterId": "2691",
           "name": "Dimensius",
           "id": "233824"
         }
