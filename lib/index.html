@@ -314,10 +314,15 @@
 			</div>
 
 			<div class="button-row">
-				<div id="tier-dreadful" class="small button">dreadful</div>
+				<!-- <div id="tier-dreadful" class="small button">dreadful</div>
 				<div id="tier-mystic" class="small button">mystic</div>
 				<div id="tier-venerated" class="small button">venerated</div>
-				<div id="tier-zenith" class="small button">zenith</div>
+				<div id="tier-zenith" class="small button">zenith</div> -->
+
+				<div id="tier-voidforged" class="small button">voidforged</div>
+				<div id="tier-voidwoven" class="small button">voidwoven</div>
+				<div id="tier-voidcast" class="small button">voidcast</div>
+				<div id="tier-voidcured" class="small button">voidcured</div>
 			</div>
 		</div>
 
@@ -382,51 +387,66 @@
 	<script>
 		const BOSSES = [
         {
-          "encounterId": "?",
-          "name": "Plexus Sentinel",
-          "id": "233814"
+          "encounterId": "000",
+          "name": "Imperator Averzian",
+          "id": "240435",
+          "customInstanceName": "The Voidspire"
         },
 
         {
-          "encounterId": "?",
-          "name": "Loom'ithar",
-          "id": "233815"
+          "encounterId": "000",
+          "name": "Vorasius",
+          "id": "240434",
+          "customInstanceName": "The Voidspire"
         },
 
         {
-          "encounterId": "?",
-          "name": "Soulbinder Naazindhri",
-          "id": "233816"
+          "encounterId": "000",
+          "name": "Fallen-King Salhadaar",
+          "id": "240432",
+          "customInstanceName": "The Voidspire"
         },
 
         {
-          "encounterId": "?",
-          "name": "Forgeweaver Araz",
-          "id": "247989"
+          "encounterId": "000",
+          "name": "Vaelgor & Ezzorak",
+          "id": "242056",
+          "customInstanceName": "The Voidspire"
         },
 
         {
-          "encounterId": "?",
-          "name": "The Soul Hunters",
-          "id": "237661"
+          "encounterId": "000",
+          "name": "Lightblinded Vanguard",
+          "id": "250589",
+          "customInstanceName": "The Voidspire"
         },
 
         {
-          "encounterId": "?",
-          "name": "Fractillus",
-          "id": "237861"
+          "encounterId": "000",
+          "name": "Crown of the Cosmos",
+          "id": "244761",
+          "customInstanceName": "The Voidspire"
         },
 
         {
-          "encounterId": "?",
-          "name": "Nexus-King Salhadaar",
-          "id": "237763"
+          "encounterId": "000",
+          "name": "Chimaerus",
+          "id": "256116",
+          "customInstanceName": "The Dreamrift"
         },
 
         {
-          "encounterId": "?",
-          "name": "Dimensius",
-          "id": "233824"
+          "encounterId": "000",
+          "name": "Belo'ren",
+          "id": "240387",
+          "customInstanceName": "March on Quel’Danas"
+        },
+
+        {
+          "encounterId": "000",
+          "name": "Midnight Falls",
+          "id": "214650",
+          "customInstanceName": "March on Quel’Danas"
         }
       ].map(({name, id}) => [name, id]);
 
@@ -1113,29 +1133,48 @@
 				$('[name="healers-evoker"]').prop('checked', true);
 			});
 
-			$('#tier-dreadful').click(function() {
-				$('#death_knight').click();
-				$('#warlock').click();
-				$('#demon_hunter').click();
-			});
-
-			$('#tier-mystic').click(function() {
-				$('#hunter').click();
-				$('#mage').click();
-				$('#druid').click();
-			});
-
-			$('#tier-venerated').click(function() {
-				$('#paladin').click();
-				$('#priest').click();
-				$('#shaman').click();
-			});
-
-			$('#tier-zenith').click(function() {
+			// TIER
+			// $('#tier-dreadful').click(function() {
+			// 	$('#death_knight').click();
+			// 	$('#warlock').click();
+			// 	$('#demon_hunter').click();
+			// });
+			// $('#tier-mystic').click(function() {
+			// 	$('#hunter').click();
+			// 	$('#mage').click();
+			// 	$('#druid').click();
+			// });
+			// $('#tier-venerated').click(function() {
+			// 	$('#paladin').click();
+			// 	$('#priest').click();
+			// 	$('#shaman').click();
+			// });
+			// $('#tier-zenith').click(function() {
+			// 	$('#warrior').click();
+			// 	$('#rogue').click();
+			// 	$('#monk').click();
+			// 	$('#evoker').click();
+			// });
+			$('#tier-voidforged').click(function() {
 				$('#warrior').click();
+				$('#paladin').click();
+				$('#death_knight').click();
+			});
+			$('#tier-voidwoven').click(function() {
+				$('#priest').click();
+				$('#mage').click();
+				$('#warlock').click();
+			});
+			$('#tier-voidcast').click(function() {
+				$('#hunter').click();
+				$('#shaman').click();
+				$('#evoker').click();
+			});
+			$('#tier-voidcured').click(function() {
 				$('#rogue').click();
 				$('#monk').click();
-				$('#evoker').click();
+				$('#druid').click();
+				$('#demon_hunter').click();
 			});
 
 			// $('#apogee').click(function() {
