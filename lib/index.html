@@ -314,10 +314,15 @@
 			</div>
 
 			<div class="button-row">
-				<div id="tier-dreadful" class="small button">dreadful</div>
+				<!-- <div id="tier-dreadful" class="small button">dreadful</div>
 				<div id="tier-mystic" class="small button">mystic</div>
 				<div id="tier-venerated" class="small button">venerated</div>
-				<div id="tier-zenith" class="small button">zenith</div>
+				<div id="tier-zenith" class="small button">zenith</div> -->
+
+				<div id="tier-voidforged" class="small button">voidforged</div>
+				<div id="tier-voidwoven" class="small button">voidwoven</div>
+				<div id="tier-voidcast" class="small button">voidcast</div>
+				<div id="tier-voidcured" class="small button">voidcured</div>
 			</div>
 		</div>
 
@@ -1128,29 +1133,48 @@
 				$('[name="healers-evoker"]').prop('checked', true);
 			});
 
-			$('#tier-dreadful').click(function() {
-				$('#death_knight').click();
-				$('#warlock').click();
-				$('#demon_hunter').click();
-			});
-
-			$('#tier-mystic').click(function() {
-				$('#hunter').click();
-				$('#mage').click();
-				$('#druid').click();
-			});
-
-			$('#tier-venerated').click(function() {
-				$('#paladin').click();
-				$('#priest').click();
-				$('#shaman').click();
-			});
-
-			$('#tier-zenith').click(function() {
+			// TIER
+			// $('#tier-dreadful').click(function() {
+			// 	$('#death_knight').click();
+			// 	$('#warlock').click();
+			// 	$('#demon_hunter').click();
+			// });
+			// $('#tier-mystic').click(function() {
+			// 	$('#hunter').click();
+			// 	$('#mage').click();
+			// 	$('#druid').click();
+			// });
+			// $('#tier-venerated').click(function() {
+			// 	$('#paladin').click();
+			// 	$('#priest').click();
+			// 	$('#shaman').click();
+			// });
+			// $('#tier-zenith').click(function() {
+			// 	$('#warrior').click();
+			// 	$('#rogue').click();
+			// 	$('#monk').click();
+			// 	$('#evoker').click();
+			// });
+			$('#tier-voidforged').click(function() {
 				$('#warrior').click();
+				$('#paladin').click();
+				$('#death_knight').click();
+			});
+			$('#tier-voidwoven').click(function() {
+				$('#priest').click();
+				$('#mage').click();
+				$('#warlock').click();
+			});
+			$('#tier-voidcast').click(function() {
+				$('#hunter').click();
+				$('#shaman').click();
+				$('#evoker').click();
+			});
+			$('#tier-voidcured').click(function() {
 				$('#rogue').click();
 				$('#monk').click();
-				$('#evoker').click();
+				$('#druid').click();
+				$('#demon_hunter').click();
 			});
 
 			// $('#apogee').click(function() {
