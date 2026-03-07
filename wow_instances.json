@@ -1,6 +1,83 @@
 {
   "instances": [
     {
+      "order": 21,
+      "encounterInstanceId": "000",
+      "id": "16340",
+      "name": "Midnight Season 1",
+      "wowheadBonuses": {
+        "normal": "midnight-s1-normal",
+        "heroic": "midnight-s1-heroic",
+        "mythic": "midnight-s1-mythic"
+      },
+      "isKillCountSupported": false,
+      "bosses": [
+        {
+          "encounterId": "000",
+          "name": "Imperator Averzian",
+          "id": "240435",
+          "customInstanceName": "The Voidspire"
+        },
+
+        {
+          "encounterId": "000",
+          "name": "Vorasius",
+          "id": "240434",
+          "customInstanceName": "The Voidspire"
+        },
+
+        {
+          "encounterId": "000",
+          "name": "Fallen-King Salhadaar",
+          "id": "240432",
+          "customInstanceName": "The Voidspire"
+        },
+
+        {
+          "encounterId": "000",
+          "name": "Vaelgor & Ezzorak",
+          "id": "242056",
+          "customInstanceName": "The Voidspire"
+        },
+
+        {
+          "encounterId": "000",
+          "name": "Lightblinded Vanguard",
+          "id": "250589",
+          "customInstanceName": "The Voidspire"
+        },
+
+        {
+          "encounterId": "000",
+          "name": "Crown of the Cosmos",
+          "id": "244761",
+          "customInstanceName": "The Voidspire"
+        },
+
+        {
+          "encounterId": "000",
+          "name": "Chimaerus",
+          "id": "256116",
+          "customInstanceName": "The Dreamrift"
+        },
+
+        {
+          "encounterId": "000",
+          "name": "Belo'ren",
+          "id": "240387",
+          "customInstanceName": "March on Quel’Danas"
+        },
+
+        {
+          "encounterId": "000",
+          "name": "Midnight Falls",
+          "id": "214650",
+          "customInstanceName": "March on Quel’Danas"
+        }
+      ]
+    },
+
+    {
       "order": 20,
       "encounterInstanceId": "1302",
       "id": "16178",
