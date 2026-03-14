@@ -347,6 +347,7 @@
 				<label><input type="checkbox" name="ranged-mage" /><span>Mage</span></label>
 				<label><input type="checkbox" name="ranged-warlock" /><span>Warlock</span></label>
 				<label><input type="checkbox" name="ranged-evoker" /><span>Evoker</span></label>
+				<label><input type="checkbox" name="ranged-demon_hunter" /><span>Demon Hunter</span></label>
 			</label>
 
 			<label class="checkboxes">healers:
@@ -880,6 +881,7 @@
 
 				default:
 					console.log('Unknown spec', spec);
+					alert(`Unknown spec: ${spec}`);
 			}
 		}
 
@@ -938,6 +940,7 @@
 				$('[name="ranged-mage"]').prop('checked', true);
 				$('[name="ranged-warlock"]').prop('checked', true);
 				$('[name="ranged-evoker"]').prop('checked', true);
+				$('[name="ranged-demon_hunter"]').prop('checked', true);
 
 				$('[name="healers-paladin"]').prop('checked', true);
 				$('[name="healers-shaman"]').prop('checked', true);
@@ -945,7 +948,6 @@
 				$('[name="healers-monk"]').prop('checked', true);
 				$('[name="healers-priest"]').prop('checked', true);
 				$('[name="healers-evoker"]').prop('checked', true);
-
 			});
 
 			$('#strength').click(function() {
@@ -988,6 +990,7 @@
 				$('[name="melee-demon_hunter"]').prop('checked', true);
 
 				$('[name="ranged-druid"]').prop('checked', true);
+				$('[name="ranged-demon_hunter"]').prop('checked', true);
 
 				$('[name="healers-druid"]').prop('checked', true);
 				$('[name="healers-monk"]').prop('checked', true);
@@ -1113,6 +1116,7 @@
 			$('#demon_hunter').click(function() {
 				$('[name="melee-demon_hunter"]').prop('checked', true);
 				$('[name="tanks-demon_hunter"]').prop('checked', true);
+				$('[name="ranged-demon_hunter"]').prop('checked', true);
 			});
 
 			$('#priest').click(function() {
