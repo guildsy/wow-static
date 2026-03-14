@@ -386,6 +386,11 @@
 	</div>
 
 	<script>
+		const ITEM_BLACKLIST = [
+			"265695", // https://www.wowhead.com/item=265695/elementary-voidcore-shard
+			"264672", // https://www.wowhead.com/item=264672/cosmic-ritual-stone
+		];
+
 		const BOSSES = [
         {
           "encounterId": "000",
@@ -683,6 +688,11 @@
 				if (match) id = match[1];
 			}
 
+			if (ITEM_BLACKLIST.includes(id)) {
+				console.warn("Ignoring item due to being in the blacklist");
+				return;
+			}
+
 			const res = await fetch('/wowhead/' + id);
 			const data = await res.json();
 
@@ -690,6 +700,14 @@
 
 			if (data.isClassSpecific) {
 				console.warn('probably tier piece', data);
+			}
+
+			switch (data.class) {
+				case "Recipes":
+				case "Housing": {
+					console.warn("Ignoring item due to class type", data.class, data)
+					return;
+				}
 			}
 
 			$('[name="name"]').val(data.name);
@@ -751,7 +769,7 @@
 				});
 			}
 
-			return await onSend();
+			await onSend();
 		}
 
 		function selectSpec(spec) {
