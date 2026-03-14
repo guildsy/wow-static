@@ -387,6 +387,10 @@
 
 	<script>
 		const ITEM_BLACKLIST = [
+			"14",
+			"15",
+			"16",
+			"17",
 			"265695", // https://www.wowhead.com/item=265695/elementary-voidcore-shard
 			"264672", // https://www.wowhead.com/item=264672/cosmic-ritual-stone
 		];
@@ -495,6 +499,10 @@
 			// remove this item from the cache as it's been handled
 			bossItemUrlsCache = bossItemUrlsCache.filter((x) => !x.includes(itemId));
 			updateBossUrlList();
+		}
+
+		function progressAutomation(mostRecentItemId) {
+			removeItemIdFromTextarea(mostRecentItemId);
 		}
 
 		async function automateItemUrlSubmission() {
@@ -611,8 +619,7 @@
 			renderItem(EMPTY_ITEM);
 			$('#wowhead').find('input').focus();
 
-			// maybe remove this item from automation list
-			removeItemIdFromTextarea(item.id);
+			progressAutomation(item.id);
 
 			return true;
 		}
@@ -690,6 +697,7 @@
 
 			if (ITEM_BLACKLIST.includes(id)) {
 				console.warn("Ignoring item due to being in the blacklist");
+				progressAutomation(id);
 				return;
 			}
 
@@ -706,6 +714,7 @@
 				case "Recipes":
 				case "Housing": {
 					console.warn("Ignoring item due to class type", data.class, data)
+					progressAutomation(id);
 					return;
 				}
 			}
@@ -889,12 +898,35 @@
 					$('[name="tanks-demon_hunter"]').prop('checked', true);
 					break;
 
+				case 1480:
+					$('[name="ranged-demon_hunter"]').prop('checked', true);
+					break;
+
 				case 1467:
+					$('[name="ranged-evoker"]').prop('checked', true);
+					break;
+				case 1473:
 					$('[name="ranged-evoker"]').prop('checked', true);
 					break;
 
 				case 1468:
 					$('[name="healers-evoker"]').prop('checked', true);
+					break;
+
+				// initial specs - can ignore
+				case 1455:
+				case 1456:
+				case 1447:
+				case 1465:
+				case 1448:
+				case 1449:
+				case 1450:
+				case 1451:
+				case 1452:
+				case 1453:
+				case 1444:
+				case 1454:
+				case 1446:
 					break;
 
 				default:
