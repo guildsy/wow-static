@@ -17,8 +17,10 @@ const tierBySourceId = {
 
   242056: 2,
   250589: 2,
+  240387: 2,
 
-  244761: 3
+  244761: 3,
+  214650: 3
 };
 
 // DON'T NEED TO EDIT BELOW
