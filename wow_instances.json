@@ -10,66 +10,66 @@
         "heroic": "midnight-s1-heroic",
         "mythic": "midnight-s1-mythic"
       },
-      "isKillCountSupported": false,
+      "isKillCountSupported": true,
       "bosses": [
         {
-          "encounterId": "000",
+          "encounterId": "2733",
           "name": "Imperator Averzian",
           "id": "240435",
           "customInstanceName": "The Voidspire"
         },
 
         {
-          "encounterId": "000",
+          "encounterId": "2734",
           "name": "Vorasius",
           "id": "240434",
           "customInstanceName": "The Voidspire"
         },
 
         {
-          "encounterId": "000",
+          "encounterId": "2736",
           "name": "Fallen-King Salhadaar",
           "id": "240432",
           "customInstanceName": "The Voidspire"
         },
 
         {
-          "encounterId": "000",
+          "encounterId": "2735",
           "name": "Vaelgor & Ezzorak",
           "id": "242056",
           "customInstanceName": "The Voidspire"
         },
 
         {
-          "encounterId": "000",
+          "encounterId": "2737",
           "name": "Lightblinded Vanguard",
           "id": "250589",
           "customInstanceName": "The Voidspire"
         },
 
         {
-          "encounterId": "000",
+          "encounterId": "2738",
           "name": "Crown of the Cosmos",
           "id": "244761",
           "customInstanceName": "The Voidspire"
         },
 
         {
-          "encounterId": "000",
+          "encounterId": "2795",
           "name": "Chimaerus",
           "id": "256116",
           "customInstanceName": "The Dreamrift"
         },
 
         {
-          "encounterId": "000",
+          "encounterId": "2739",
           "name": "Belo'ren",
           "id": "240387",
           "customInstanceName": "March on Quel’Danas"
         },
 
         {
-          "encounterId": "000",
+          "encounterId": "2740",
           "name": "Midnight Falls",
           "id": "214650",
           "customInstanceName": "March on Quel’Danas"
