@@ -3,6 +3,12 @@
     {
       "order": 21,
       "encounterInstanceId": "000",
+      "encounterInstanceIds": [
+        "1307",
+        "1314",
+        "1308",
+        "1305"
+      ],
       "id": "16340",
       "name": "Midnight Season 1",
       "wowheadBonuses": {
@@ -73,6 +79,13 @@
           "name": "Midnight Falls",
           "id": "214650",
           "customInstanceName": "March on Quel’Danas"
+        },
+
+        {
+          "encounterId": "2711",
+          "name": "Rotmire",
+          "id": "254176",
+          "customInstanceName": "Sporefall"
         }
       ]
     },
