@@ -1,6 +1,78 @@
 {
   "instances": [
     {
+      "order": 22,
+      "encounterInstanceId": "000",
+      "encounterInstanceIds": [
+      ],
+      "id": "16915",
+      "name": "Midnight Season 2",
+      "wowheadBonuses": {
+        "normal": "midnight-s2-normal",
+        "heroic": "midnight-s2-heroic",
+        "mythic": "midnight-s2-mythic"
+      },
+      "isKillCountSupported": false,
+      "bosses": [
+        {
+          "encounterId": "0",
+          "name": "Nek'zali the Soulcoiler",
+          "id": "253563",
+          "customInstanceName": "The Venomous Abyss"
+        },
+
+        {
+          "encounterId": "0",
+          "name": "Entombed Sentinels",
+          "id": "258557",
+          "customInstanceName": "The Venomous Abyss"
+        },
+
+        {
+          "encounterId": "0",
+          "name": "The Lost Explorers",
+          "id": "267077",
+          "customInstanceName": "The Venomous Abyss"
+        },
+
+        {
+          "encounterId": "0",
+          "name": "Vashnik the Malignant",
+          "id": "266403",
+          "customInstanceName": "The Venomous Abyss"
+        },
+
+        {
+          "encounterId": "0",
+          "name": "Sszorak",
+          "id": "257347",
+          "customInstanceName": "The Venomous Abyss"
+        },
+
+        {
+          "encounterId": "0",
+          "name": "The Twin Fangs",
+          "id": "257361",
+          "customInstanceName": "The Venomous Abyss"
+        },
+
+        {
+          "encounterId": "0",
+          "name": "The Coiled Altar",
+          "id": "259447",
+          "customInstanceName": "The Venomous Abyss"
+        },
+
+        {
+          "encounterId": "0",
+          "name": "Ula'tek",
+          "id": "268956",
+          "customInstanceName": "The Venomous Abyss"
+        }
+      ]
+    },
+
+    {
       "order": 21,
       "encounterInstanceId": "000",
       "encounterInstanceIds": [
