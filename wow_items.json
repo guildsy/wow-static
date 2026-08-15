@@ -64773,6 +64773,53 @@
                     "demon_hunter"
                 ],
                 "healers": [
+                    "paladin",
+                    "shaman",
+                    "druid",
+                    "monk",
+                    "priest",
+                    "evoker"
+                ],
+                "tanks": []
+            },
+            "name": "Spine of the Hissing Abyss",
+            "id": "268197",
+            "sourceId": "258557",
+            "slot": "offhand",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "paladin",
+                    "warrior"
+                ],
+                "ranged": [],
+                "healers": [],
+                "tanks": [
+                    "death_knight"
+                ]
+            },
+            "name": "Caustic Keeper-Crusher",
+            "id": "268198",
+            "sourceId": "258557",
+            "slot": "weapon",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [],
+                "ranged": [
+                    "shaman",
+                    "druid",
+                    "priest",
+                    "mage",
+                    "warlock",
+                    "evoker",
+                    "demon_hunter"
+                ],
+                "healers": [
                     "shaman",
                     "druid",
                     "priest",
@@ -64785,6 +64832,22 @@
             "sourceId": "253563",
             "slot": "weapon",
             "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "hunter",
+                    "rogue"
+                ],
+                "ranged": [],
+                "healers": [],
+                "tanks": []
+            },
+            "name": "Ancient Construct's Venomshiv",
+            "id": "268204",
+            "sourceId": "258557",
+            "slot": "weapon",
+            "icon": "data:image/jpeg;base64,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"
         },
         {
             "allowed": {
@@ -64845,6 +64908,76 @@
             "sourceId": "253563",
             "slot": "feet",
             "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "druid",
+                    "monk",
+                    "rogue",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "druid",
+                    "demon_hunter"
+                ],
+                "healers": [
+                    "druid",
+                    "monk"
+                ],
+                "tanks": [
+                    "druid",
+                    "monk",
+                    "demon_hunter"
+                ]
+            },
+            "name": "Shadow Hunter's Warmask",
+            "id": "268219",
+            "sourceId": "258557",
+            "slot": "head",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "paladin",
+                    "warrior"
+                ],
+                "ranged": [],
+                "healers": [
+                    "paladin"
+                ],
+                "tanks": [
+                    "death_knight",
+                    "paladin",
+                    "warrior"
+                ]
+            },
+            "name": "Venom Warden's Greaves",
+            "id": "268224",
+            "sourceId": "258557",
+            "slot": "legs",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [],
+                "ranged": [
+                    "priest",
+                    "mage",
+                    "warlock"
+                ],
+                "healers": [
+                    "priest"
+                ],
+                "tanks": []
+            },
+            "name": "Venom-Singed Cuffs",
+            "id": "268228",
+            "sourceId": "258557",
+            "slot": "wrist",
+            "icon": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQIAHAAcAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAA4ADgDASIAAhEBAxEB/8QAHAAAAgMAAwEAAAAAAAAAAAAAAAUDBAYBAgcI/8QAMBAAAgECBQIFAwIHAAAAAAAAAQIDBBEABRIhMRNBBhRRYXEiMoEjQiQzU2Kh0fD/xAAZAQEAAwEBAAAAAAAAAAAAAAAFAgMEBgH/xAAuEQABAgMECQQDAQAAAAAAAAABAgQAAxEhMUFRBRITYXGBkaHRFCIywSNCsfD/2gAMAwEAAhEDEQA/APl609VUy1FTLJNNK5d5HYszsTckk7kk98X4aXbE1JSa4gw+4c40GR5Z5jUzskcUal5Hc2VFHJJ4AA5OOtasisgARyLt6EAkmF+W5d1yWZljjRSzs5sFA5JPYe+HUdBQlW669Smj3VWuOod93H7tuFOwucXZRFHFLBTTFKFSD/K0mUgmzEX2F+F/J34s0Hh/M88p/OFoqeME9KOQHUR68d8eOFiYfTt7Ric+G4d+EK6OabEeoc2HAZcd57ca0yMOWfwopJWbzkYLRhrAvFYWt7jcHvx24oyUIBNxx2xo8+gzKknhlcGKsptRjcC6tccHtY8fk47N5PNaQ1tEdKBtM0PLQP6H1Hoe+NkqUicjU/Ydx5GO6hzgzSSVtZmuPgrsfBw31GUY4rUU9VFU0s0kE0Th45I2IZGBuCCNwQRe+DDavgWO5NsGME1skKtiUp0op9sWvC8BqplpgoJJ3xo5ngdJaSjkEdHEQWIS3VYX+pvYW2H532soyGleRJqOJwn0gzyi9xfhBxyLkn0t67PKenmzCRXiopGpYAQCo2Y22A9uP+ti5zPUZYayrz8j9eemcatG6OTtfWTrh8R9+OuURT01RPl71sn6Ua/apFy2NVltT0Mqp4ktsgvbCXNq0eWameJ4SRwy6fjFLKc4pfJiPqgGP6Sd9/T/ABicpCJHtTC0wLnJqoYxezZZKqWVZNxpPPphJk0IoIxW3fy1YenWro1GPRcLIN7nSSLjuL9xuylzWDSVFtxa+KeS10dP5ijlddm1Angg4tTM1JgWDaIqcNA4kGUsWGkKc6pVhkJZgyAXUrwwPBHqMGI1jaCc5NOzsp3y95GZrrbeK5Jtp2sPn2uY1GSpx75KbOtDl4zFDHJLSWitlONo5V3/AOxiePMhR0q0lZE1JJMAzSStbqsfuYEC25PAOwPoMen+GcwonyqFI9EdlAIG2/f848boMxkBPUIeK2lo3AZWHwdsM8oCNIRklQuXOSuqGQaoJLex3Ta9yDve/wAY2rdKTWUak4Gw+D2hidpITEBDhOqBiLRzF/8AY3/iKQOJlIUrYni+OfBOX5ZT5KlRJRwySO5e7KDa/wDrGckzWoilShzqiNBNKv6cuoGGU/2tweRtfvhr4cd5qARQTa1Q/tPY7jFgNV0N/fpG5JSuQNmqzMQzqqWjcvGtPGfbSMYeqoIJ/EHl0HTXp6pChtb0xrnleNiImXXa2oi+nGazPM4aTRS0sYZ2Omw5Ldha12Ptg966Qj2ptP8AIQaSVAVVdFLPYo6eGGkog/WZ9azav1VcWsVJ+3f0t84MIKmaogl85Np60ouo3JivyCfU7D2AAHe5iMtpKpVypQVkCB13wa50pMK/wJSU5mvaEvWZPosRh1ltQIEAv9RO5vgwY9arINYOdS001Y0VHnAeEU9VBDVwf050DrwRwfnHWBJMpeWryFpHpH1GooC+lkXST9J/eASdrE22F8GDD4AdpCJnI4jn9Go4XwPKmKYzdpJNMxgeX2KHjdElZnsuZIsOQwGpYLeRtQVYTa9nPC2sdr3NsJtVLlyDpSGprApVqhtwurkKttu4vz8DbBgwS1bokNkORatVeVCRZv335UhrSL2a4crbqNEppzqAbd27rWEVRIXmPTBLOdwN7n4wYMGB3blUpdgvjY0aJmpqTdH/2Q=="
         },
         {
             "allowed": {
@@ -65058,6 +65191,52 @@
             "sourceId": "253563",
             "slot": "back",
             "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "paladin",
+                    "warrior",
+                    "hunter",
+                    "shaman",
+                    "druid",
+                    "monk",
+                    "rogue",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "hunter",
+                    "shaman",
+                    "druid",
+                    "priest",
+                    "mage",
+                    "warlock",
+                    "evoker",
+                    "demon_hunter"
+                ],
+                "healers": [
+                    "paladin",
+                    "shaman",
+                    "druid",
+                    "monk",
+                    "priest",
+                    "evoker"
+                ],
+                "tanks": [
+                    "death_knight",
+                    "paladin",
+                    "warrior",
+                    "druid",
+                    "monk",
+                    "demon_hunter"
+                ]
+            },
+            "name": "Sentinel's Vitriolic Chain",
+            "id": "268250",
+            "sourceId": "258557",
+            "slot": "neck",
+            "icon": "data:image/jpeg;base64,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"
         },
         {
             "allowed": {
@@ -65505,6 +65684,131 @@
             "sourceId": "253563",
             "slot": "trinket",
             "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "paladin",
+                    "warrior",
+                    "hunter",
+                    "shaman",
+                    "druid",
+                    "monk",
+                    "rogue",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "hunter"
+                ],
+                "healers": [],
+                "tanks": [
+                    "death_knight",
+                    "paladin",
+                    "warrior",
+                    "druid",
+                    "monk",
+                    "demon_hunter"
+                ]
+            },
+            "name": "Keeper's Seething Core",
+            "id": "270165",
+            "sourceId": "258557",
+            "slot": "trinket",
+            "icon": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQIAHAAcAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAA4ADgDASIAAhEBAxEB/8QAGwAAAgMBAQEAAAAAAAAAAAAAAAYFBwgDBAH/xAA2EAACAQIEBAELAwQDAAAAAAABAgMEEQAFBiESEzFBUQcUIjJCYXGBkaHBFSNSM0RiktHh8P/EABkBAAMBAQEAAAAAAAAAAAAAAAIDBAUBBv/EACgRAAICAQMCBgIDAAAAAAAAAAECAAMRBCExBUESEyJRccEy8JGhsf/aAAwDAQACEQMRAD8AyC80tVUvNPI8ksjl5HdizMSbkknqTiWhpuYvEq8N9hiLy5A8ov0viw9MZDU5lJHT00UskkjqioiXLE32v22B+mMvXagVDJMntfEhsiyKsrZGFPGXYC7Nb0UHvPjifptMDLUWqq3vGdwSPWt3A740bofQ2XZLlscGZJHUyxG/KT+mt+x29I/H/jEvqbJIJqNmTTeXqb7MykuOnfa/S3zx49uv23WEIvp99vuT+tsknAlBaOzKPM6yREiMVPRKZXv1IANifmBhE1vlFQuoJ5ypeKQ81HA9Egjxxo3IodFJU1NBU5OmWVdVG0RmhReFnP8AIncXJ2PbCxrvSbUeQQFJVqYIrxecRgbLeyk+/t8sDR1EafVZCkBtt/8Ac/MUq+W5ZeJnUzTUlWk8EkkU0bhkdGKsjDcEEdCD3wY9WdQcFWUvbftgx7WtvEoIl6ttPJpqISVsYbpxW6Y0xp8Uul9P0iwKBmVTTmWWRlHEoY7dttrfQYzfpMXqomHsvfFv6zzzj1Rm9OymNaZlplRr7IAo4t/HfGH1ik6m9a+25P8AQ+4t/wAszSvkTeLMcoWSuRkV34gXO5B9oj39cPuqsug83dIGLqq2B2FvHFHaB1HHQVcEaSosk11AJsLBb/i2HXPtbrHVQQMUHN9G4P8A7vb64w7ArL5apvnOfqcFilcGUf5YWNHmnKjQruSGAtf/AL2+2IiLWLJV0qzDm5fLCIq6ntcOD6zWPtA7g+I95v7fLXmcctfFKq3bmKdulyR+L4qvM2MeZLJHISpqOKwPa1m/ONarSJdWA494hBvOnlTyP9CzpIOPjUuQjDcMmxVge4IODDD5Z5Q2ltPVcu8vmQVWtuSGZAb/AAGDGn0w2W6ZSeRkfwTKK1JG0qrS9SsFahc2UkKT4YszyiVKVRpswKMzVlAr8wb8TIoVwf8AIEfS2KeppOB/zixNNZrFXZN+iZjK0MQfjpaq5bzeTsbfxPQ+7DdfT4bVv9ufgw3GDmcaTUlbPDHIKiRKqlbmI9+vuPiDhgOup84y1qeumXziNfRZTwsPBh4npv12wvZlkWZUTKFoXinZS0bRjigqVG90bx39X5bHbCjmE/73EIeW/tC+OLp6rt147cRbVBo2nVFTm1NNRVsYmqbAiUE26+sd+wtjhSl6luVF+4yWiSx9d2I6YVKI1Ukhip0kZ5LKAo3OHPLmi0lRvPmDBs0YFqWkXflEi3MkI2DDsvUdeuDuRaRhOTwP3tOlQvE7+WbM1lrqDJYn4kyumSndgdmcbt9zgwg1k0k8zSyuWdiWZj3JwYr0tAoqWsdv0xyjAxPEytE7I6lWU2IIsQRj35ZmElKTtxDwODBip0DDBhEAjeN+T61raKN0gdQjizpIvGjfFTt9sfKvUGX1DNK2R5a8pG7HjFz8AwH0tgwYzToqVbxKMGJatQdpFVGfVaX8z5FECP7eMK3+3rffEHNMSSxJZj1J74MGKqqlXgQlUDicPTkdY0UuzGyqouSfAYMGDFaqCIZn/9k="
+        },
+        {
+            "allowed": {
+                "melee": [],
+                "ranged": [
+                    "priest",
+                    "mage",
+                    "warlock"
+                ],
+                "healers": [
+                    "priest"
+                ],
+                "tanks": []
+            },
+            "name": "Venomwoven Idol",
+            "id": "270910",
+            "sourceId": "258557",
+            "slot": "misc",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "druid",
+                    "monk",
+                    "rogue",
+                    "demon_hunter"
+                ],
+                "ranged": [
+                    "druid",
+                    "demon_hunter"
+                ],
+                "healers": [
+                    "druid",
+                    "monk"
+                ],
+                "tanks": [
+                    "druid",
+                    "monk",
+                    "demon_hunter"
+                ]
+            },
+            "name": "Venomcured Idol",
+            "id": "270911",
+            "sourceId": "258557",
+            "slot": "misc",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "hunter",
+                    "shaman"
+                ],
+                "ranged": [
+                    "hunter",
+                    "shaman",
+                    "evoker"
+                ],
+                "healers": [
+                    "shaman",
+                    "evoker"
+                ],
+                "tanks": []
+            },
+            "name": "Venomcast Idol",
+            "id": "270912",
+            "sourceId": "258557",
+            "slot": "misc",
+            "icon": "data:image/jpeg;base64,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"
+        },
+        {
+            "allowed": {
+                "melee": [
+                    "death_knight",
+                    "paladin",
+                    "warrior"
+                ],
+                "ranged": [],
+                "healers": [
+                    "paladin"
+                ],
+                "tanks": [
+                    "death_knight",
+                    "paladin",
+                    "warrior"
+                ]
+            },
+            "name": "Venomforged Idol",
+            "id": "270913",
+            "sourceId": "258557",
+            "slot": "misc",
+            "icon": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAA4ADgDASIAAhEBAxEB/8QAHAAAAgMBAAMAAAAAAAAAAAAAAAYCBAUDAQcI/8QAMBAAAgEDAgUDAgUFAQAAAAAAAQIDAAQRBSEGEjFBURMicRRhMlKBwdEjJEKhsfH/xAAaAQEAAwEBAQAAAAAAAAAAAAAFAwQHBgIB/8QAKxEAAQQBAgYABQUAAAAAAAAAAQACAwQRBRIhMUFRYXEGExSB0SJCoeHw/9oADAMBAAIRAxEAPwD46up7i6upru7nluLidzJLLKxZ5HJyWYnckk5JNESZrwi71s8NW5m1SACAzYbPphc82381FK/a0lXqVUzytj7nCtaJwprGq3kFpb2rRvOMxmX2AjBOd+2BT3ZcB6Fp0clvqqy3M4jz6qTiMZx0VSf9mrGoTSWlhDFdxIL+8b1Jn2VoIlxhR+X7/vVeXT5byBJYYBGjxmVLl5jz8oOzMvbI2H2GaBlszTcjgePytJraFSp5c4bz5/2FzvOEuH7wqPpX09ljHPJHIWDnYZUHv8bUlcW8MzaHce2Rp7V90kKcpx25hnY1u8P63b3WqTJcyNG0kZjjeT3KxxgBvAP/AJTICNd4R1ABVt44IQrkHmIbJI/Q17ZLNXeNxyFXtU6GoQOMTQ13HBHcd16egmntLqG7tJ5be4hcSRSxOVeNwchlI3BBAIIool6UU6Cs6c3BUU7U98HWtvY6ab26t0u0lGWCuVeMZxzD7+OtIiGtaPVSsAikUkAYG+enSqtqNz27Wp3QLderMZJu3D2nq6FvdkS6jcSukQHpEEFihOwdqXdX1mRbZbSFlVEJ5VXrv3Pk4rFvNWubnIDMo+d6oASSMNiSahjq4xuSmoa6JctgHE9Vr8ICRuILd1gW45WLFGGQRg52707xX1tYX+qXFvAEMR544jkArg5Uj7Vk8D6TLAsuoyY5owf6WDz8uNyO2fscVR4j1WWUXt2wKyXh5cM2SF/fbaq0hE85A5cknRiOnaYJJeDnZOPGMD+eiUrg5b5oqErd/NFMhqzqR+XKcEbOyoilmY4AHenTh3g76tgt3OySSYCRoM+49AT/ABVTg21toybm55yzHCcuPaPO/wCtNutzS6NaRPaXHqR3aFo2Ye+PBwc9s5oe5ak3fKj4FaJ8O6BVbB9XcG4dB+fftULLhjR1vHt75hbMhIPqSHGR1GxqIj4b0zWZWt39aBcNGxjLg7dN/nHasWMl5mkuMyZ/EWJJJ81o6cmjpH/dXEuTsRHHuB8mojG797yc9AlGPgyDDCxhBzkqGpaqqpcRWrm1sZD0P4iv5R3xnO1KGo3L3M3M2wAwAO1OV1Hw2wbltZpHDcqs0r4K+fOT4qvJw/pVy7i0aZMKCM9Se4xv0+amhmih5ghFanQu6h+mN7T4B/rH2SM6k0Uw8Q8OS6ZEJ451uIT1IGGX5H8UUpHM17ct4rhrmnzVZTHKMFdtKc/Tgp15avzXXrWyQOT7CSp8Zooo54BeV3lKZ4rNx1Ct2GoWKR80ius6bKyAEH5BFbH12k3tvLPdpaRsq4VVQhifI8/8ooqB0Qc5IQX5NhBAx6XGO64anJLWaW0caf4sXZz22rs+r6LbqBH7WZML6OcJnY82fxHGe9FFeRXa44JK+DVJWNy0AfZL3EOtNc2s6ZLI2ACy4OwwMYooopCGNrG4auT1e1LNPl56L//Z"
         },
         {
             "allowed": {
