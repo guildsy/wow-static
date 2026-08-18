@@ -10,6 +10,7 @@
 const INSTANCE_ID = "16915";
 const tierBySourceId = {
   253563: 0,
+  252959: 0,
 
   258557: 1,
   267077: 1,
